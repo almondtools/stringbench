@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
@@ -13,10 +11,17 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-@State(Scope.Benchmark)
-public class Sample {
+import com.almondtools.stringsandchars.io.StringCharProvider;
+import com.almondtools.stringsandchars.search.KnuthMorrisPratt;
+import com.almondtools.stringsandchars.search.StringFinder;
+import com.almondtools.stringsandchars.search.StringMatch;
+import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 
-	private static final int SIZE = 256 * 256 * 1024;
+@State(Scope.Benchmark)
+public class SinglePatternSample {
+
+	private static final int MAX_SPACE = 256 * 256 * 1024;
+	private static final int MAX_SAMPLES = 512;
 
 	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
 	private int alphabetSize;
@@ -35,10 +40,15 @@ public class Sample {
 		this.patternSize = patternSize;
 	}
 	
+	@Override
+	public String toString() {
+		return "alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
+	}
+	
 	@Setup
 	public void setup() throws IOException {
 		int sampleSize = alphabetSize * patternSize * 256;
-		int sampleNumber = SIZE / sampleSize;
+		int sampleNumber = Math.min(MAX_SPACE / sampleSize, MAX_SAMPLES);
 
 		Random random = new Random(13);
 
@@ -64,11 +74,11 @@ public class Sample {
 	private List<Integer>[] generateIndex(String[] sample, String[] pattern) {
 		List<Integer>[] index = new List[sample.length];
 		for (int i = 0; i < index.length; i++) {
-			Pattern p = Pattern.compile(Pattern.quote(pattern[i]));
-			Matcher m = p.matcher(sample[i]);
+			StringSearchAlgorithm a = new KnuthMorrisPratt(pattern[i]);
+			StringFinder finder = a.createFinder(new StringCharProvider(sample[i], 0));
 			index[i] = new ArrayList<Integer>();
-			while (m.find()) {
-				index[i].add(m.start());
+			for (StringMatch match : finder.findAllNonOverlapping()) {
+				index[i].add((int) match.start());
 			}
 		}
 		return index;

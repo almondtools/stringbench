@@ -16,9 +16,9 @@ import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
 @State(Scope.Thread)
-public abstract class MatcherBenchmark {
+public abstract class MultiPatternMatcherBenchmark {
 
-	private Sample sample;
+	private MultiPatternSample sample;
 
 	public abstract void prepare(String[] pattern);
 
@@ -27,7 +27,7 @@ public abstract class MatcherBenchmark {
 	public abstract String getId();
 
 	@Setup
-	public void setup(Sample sample) {
+	public void setup(MultiPatternSample sample) {
 		this.sample = sample;
 		prepare(sample.getPattern());
 	}

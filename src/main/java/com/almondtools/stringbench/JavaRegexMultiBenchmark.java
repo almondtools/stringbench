@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
+public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
-	private static final String JAVA_REGEX = "java.util.Pattern regex search (boyer-moore)";
+	private static final String JAVA_REGEX = "java.util.Pattern regex search for multiple strings (regex)";
 
 	private Pattern[] searchPattern;
 	
@@ -20,8 +20,17 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 	public void prepare(String[] pattern) {
 		searchPattern = new Pattern[pattern.length];
 		for (int i = 0; i < pattern.length; i++) {
-			searchPattern[i] = Pattern.compile(Pattern.quote(pattern[i]));
+			searchPattern[i] = Pattern.compile(pattern(pattern));
 		}
+	}
+
+	private String pattern(String[] pattern) {
+		StringBuilder buffer = new StringBuilder();
+		for (int i = 0; i < pattern.length; i++) {
+			buffer.append('|');
+			buffer.append(Pattern.quote(pattern[i]));
+		}
+		return buffer.substring(1);
 	}
 
 	@Override

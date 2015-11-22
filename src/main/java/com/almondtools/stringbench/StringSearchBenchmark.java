@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.eaio.stringsearch.StringSearch;
 
-public abstract class StringSearchBenchmark extends MatcherBenchmark {
+public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmark {
 
 	private StringSearch algorithm;
 	private String[] pattern;

@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import static java.util.Arrays.asList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +9,7 @@ import com.almondtools.stringsandchars.io.StringCharProvider;
 import com.almondtools.stringsandchars.search.StringMatch;
 import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 
-public abstract class StringsAndCharsBenchmark extends SinglePatternMatcherBenchmark {
+public abstract class StringsAndCharsMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	private StringSearchAlgorithm[] algorithm;
 
@@ -15,11 +17,11 @@ public abstract class StringsAndCharsBenchmark extends SinglePatternMatcherBench
 	public void prepare(String[] pattern) {
 		this.algorithm = new StringSearchAlgorithm[pattern.length];
 		for (int i = 0; i < algorithm.length; i++) {
-			algorithm[i] = create(pattern[i]);
+			algorithm[i] = create(asList(pattern));
 		}
 	}
 
-	public abstract StringSearchAlgorithm create(String pattern);
+	public abstract StringSearchAlgorithm create(List<String> pattern);
 
 	@Override
 	public List<Integer> find(int i, String text) {

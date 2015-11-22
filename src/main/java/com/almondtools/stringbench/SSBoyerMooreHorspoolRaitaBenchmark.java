@@ -5,7 +5,7 @@ import com.eaio.stringsearch.StringSearch;
 
 public class SSBoyerMooreHorspoolRaitaBenchmark extends StringSearchBenchmark {
 
-	private static final String ID = "Stringsearch Boyer Moore Horspool Raita";
+	private static final String ID = "Stringsearch Boyer-Moore-Horspool-Raita";
 
 	@Override
 	public String getId() {
