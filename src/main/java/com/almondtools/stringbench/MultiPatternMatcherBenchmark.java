@@ -35,7 +35,7 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 2)
+	@Warmup(iterations = 1)
 	@Measurement(iterations = 2)
 	@Fork(1)
 	public void benchmarkPrepare() {
@@ -45,7 +45,7 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 2)
+	@Warmup(iterations = 1)
 	@Measurement(iterations = 2)
 	@Fork(1)
 	public void benchmarkFind() {
