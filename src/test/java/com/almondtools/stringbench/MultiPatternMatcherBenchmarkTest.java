@@ -20,7 +20,8 @@ public class MultiPatternMatcherBenchmarkTest {
 		new SCSetHorspoolBenchmark(),
 		new SCAhoCorasickBenchmark(),
 		new SCSetBackwardOracleMatchingBenchmark(),
-		new SCWuManberBenchmark()
+		new SCWuManberBenchmark(),
+		new ACAhoCorasickBenchmark()
 	};
 
 	@DataPoints
