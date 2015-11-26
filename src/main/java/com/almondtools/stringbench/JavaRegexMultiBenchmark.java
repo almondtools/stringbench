@@ -9,7 +9,7 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	private static final String JAVA_REGEX = "java.util.Pattern regex search for multiple strings (regex)";
 
-	private Pattern[] searchPattern;
+	private Pattern searchPattern;
 	
 	@Override
 	public String getId() {
@@ -18,10 +18,7 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	@Override
 	public void prepare(String[] pattern) {
-		searchPattern = new Pattern[pattern.length];
-		for (int i = 0; i < pattern.length; i++) {
-			searchPattern[i] = Pattern.compile(pattern(pattern));
-		}
+		searchPattern = Pattern.compile(pattern(pattern));
 	}
 
 	private String pattern(String[] pattern) {
@@ -36,7 +33,7 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public List<Integer> find(int i, String text) {
 		List<Integer> result = new ArrayList<Integer>();
-		Matcher matcher = searchPattern[i].matcher(text);
+		Matcher matcher = searchPattern.matcher(text);
 		while (matcher.find()) {
 			result.add(matcher.start());
 		}

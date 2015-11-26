@@ -16,6 +16,7 @@ public class MultiPatternMatcherBenchmarkTest {
 	
 	@DataPoints
 	public static MultiPatternMatcherBenchmark[] benchmark = {
+		new JavaIndexOfMultiBenchmark(),
 		new JavaRegexMultiBenchmark(),
 		new SCSetHorspoolBenchmark(),
 		new SCAhoCorasickBenchmark(),

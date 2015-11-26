@@ -16,6 +16,7 @@ public class SinglePatternMatcherBenchmarkTest {
 	
 	@DataPoints
 	public static SinglePatternMatcherBenchmark[] benchmark = {
+		new JavaIndexOfBenchmark(),
 		new JavaRegexBenchmark(),
 		new SCHorspoolBenchmark(),
 		new SCKnuthMorrisPrattBenchmark(),
