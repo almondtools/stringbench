@@ -31,7 +31,7 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public List<Integer> find(int i, String text) {
+	public List<Integer> find(String text) {
 		List<Integer> result = new ArrayList<Integer>();
 		Matcher matcher = searchPattern.matcher(text);
 		while (matcher.find()) {

@@ -21,7 +21,7 @@ public abstract class StringsAndCharsMultiBenchmark extends MultiPatternMatcherB
 	public abstract StringSearchAlgorithm create(List<String> pattern);
 
 	@Override
-	public List<Integer> find(int i, String text) {
+	public List<Integer> find(String text) {
 		List<StringMatch> matches = algorithm.createFinder(new StringCharProvider(text, 0)).findAll();
 		List<Integer> indexes = new ArrayList<Integer>(matches.size());
 		for (StringMatch match : matches) {

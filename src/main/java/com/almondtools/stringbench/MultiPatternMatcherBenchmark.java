@@ -22,12 +22,15 @@ public abstract class MultiPatternMatcherBenchmark {
 
 	public abstract void prepare(String[] pattern);
 
-	public abstract List<Integer> find(int i, String text);
+	public abstract List<Integer> find(String text);
 
 	public abstract String getId();
 
 	@Setup
 	public void setup(MultiPatternSample sample) {
+		if (!sample.isValid()) {
+			throw new RuntimeException();
+		}
 		this.sample = sample;
 		prepare(sample.getPattern());
 	}
@@ -49,10 +52,8 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Measurement(iterations = 2)
 	@Fork(1)
 	public void benchmarkFind() {
-		for (int i = 0; i < sample.patterns(); i++) {
-			List<Integer> result = find(i, sample.getSample(i));
-			sample.validate(i, result);
-		}
+		List<Integer> result = find(sample.getSample());
+		sample.validate(result);
 	}
 
 	@TearDown

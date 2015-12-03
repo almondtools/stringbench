@@ -12,8 +12,9 @@ import org.junit.runner.RunWith;
 @RunWith(Theories.class)
 public class SinglePatternMatcherBenchmarkTest {
 
-	private static final int[] numbers = new int[] { 2, 8, 128 };
-	
+	private static final int[] ALPHABET = new int[] { 4, 16, 128 };
+	private static final int[] SIZE = new int[] { 8, 64 };
+
 	@DataPoints
 	public static SinglePatternMatcherBenchmark[] benchmark = {
 		new JavaIndexOfBenchmark(),
@@ -38,9 +39,12 @@ public class SinglePatternMatcherBenchmarkTest {
 
 	private static SinglePatternSample[] createSamples() {
 		List<SinglePatternSample> samples = new ArrayList<>();
-		for (int i = 0; i < numbers.length; i++) {
-			for (int j = 0; j < numbers.length; j++) {
-				samples.add(createSample(numbers[i], numbers[j]));
+		for (int i = 0; i < ALPHABET.length; i++) {
+			for (int j = 0; j < SIZE.length; j++) {
+				SinglePatternSample sample = createSample(ALPHABET[i], SIZE[j]);
+				if (sample.isValid()) {
+					samples.add(sample);
+				}
 			}
 		}
 		return samples.toArray(new SinglePatternSample[0]);

@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
 @RunWith(Theories.class)
 public class MultiPatternMatcherBenchmarkTest {
 
-	private static final int[] numbers = new int[] { 2, 64 };
+	private static final int[] ALPHABET = new int[] { 4, 64 };
+	private static final int[] SIZE = new int[] { 4, 16 };
 	
 	@DataPoints
 	public static MultiPatternMatcherBenchmark[] benchmark = {
@@ -37,18 +38,22 @@ public class MultiPatternMatcherBenchmarkTest {
 
 	private static MultiPatternSample[] createSamples() {
 		List<MultiPatternSample> samples = new ArrayList<>();
-		for (int i = 0; i < numbers.length; i++) {
-			for (int j = 0; j < numbers.length; j++) {
-				samples.add(createSample(numbers[i], numbers[j]));
+		for (int i = 0; i < ALPHABET.length; i++) {
+			for (int j = 0; j < SIZE.length; j++) {
+				MultiPatternSample sample = createSample(ALPHABET[i], SIZE[j], ALPHABET[i] / 2);
+				if (sample.isValid()) {
+					samples.add(sample);
+				}
 			}
 		}
 		return samples.toArray(new MultiPatternSample[0]);
 	}
 
-	private static MultiPatternSample createSample(int alphabet, int pattern) {
+	private static MultiPatternSample createSample(int alphabet, int pattern, int patternNumber) {
 		try {
-			System.out.println("creating sample with alphabet size " + alphabet + " and pattern size " + pattern);
+			System.out.println("creating sample with alphabet size " + alphabet + " and pattern size " + pattern + " (" + patternNumber + " patterns)");
 			MultiPatternSample sample = new MultiPatternSample();
+			sample.setPatternNumber(patternNumber);
 			sample.setAlphabetSize(alphabet);
 			sample.setPatternSize(pattern);
 			sample.setup();

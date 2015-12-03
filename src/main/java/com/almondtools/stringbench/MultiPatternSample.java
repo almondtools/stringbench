@@ -22,85 +22,108 @@ import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 @State(Scope.Benchmark)
 public class MultiPatternSample {
 
-	private static final int MAX_SPACE = 256 * 256 * 1024;
-	private static final int MAX_SAMPLES = 128;
-
+	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
+	
+	@Param({ "2", "8", "32", "128" })
+	private int patternNumber;
 	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
 	private int alphabetSize;
 	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
 	private int patternSize;
 
-	private String[] sample;
+	private String sample;
 	private String[] pattern;
-	private List<Integer>[] expected;
+	private List<Integer> expected;
+	
+	public void setPatternNumber(int patternNumber) {
+		this.patternNumber = patternNumber;
+	}
 
 	public void setAlphabetSize(int alphabetSize) {
 		this.alphabetSize = alphabetSize;
 	}
-	
+
 	public void setPatternSize(int patternSize) {
 		this.patternSize = patternSize;
 	}
-	
+
+	public boolean isValid() {
+		return pattern != null && pattern.length > 0;
+	}
+
 	@Override
 	public String toString() {
-		return "alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
+		return "pattern number : " + patternNumber + ", alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
 	}
-	
+
 	@Setup
 	public void setup() throws IOException {
-		int sampleSize = alphabetSize * patternSize * 256;
-		int sampleNumber = Math.min(MAX_SPACE / sampleSize, MAX_SAMPLES);
-
 		Random random = new Random(13);
-
-		this.sample = generateSample(random, alphabetSize, sampleSize, sampleNumber);
-		this.pattern = generatePattern(random, sample, patternSize);
+		int sampleSize = generateSampleSize();
+		
+		this.sample = generateSample(random, sampleSize);
+		this.pattern = generatePatterns(random, sample);
 		this.expected = generateIndex(sample, pattern);
-
 	}
 
-	private String[] generateSample(Random random, int alphabetSize, int sampleSize, int sampleNumber) {
-		String[] sample = new String[sampleNumber];
-		for (int i = 0; i < sampleNumber; i++) {
-			char[] sampleI = new char[sampleSize];
-			for (int j = 0; j < sampleSize; j++) {
-				sampleI[j] = (char) ('a' + random.nextInt(alphabetSize));
-			}
-			sample[i] = new String(sampleI);
+	private int generateSampleSize() {
+		int result = 256;
+		for (int i = 0; i < patternSize && result < MAX_SAMPLE_SIZE; i++) {
+			result *= alphabetSize;
 		}
-		return sample;
+		return result;
 	}
 
-	@SuppressWarnings("unchecked")
-	private List<Integer>[] generateIndex(String[] sample, String[] pattern) {
-		List<Integer>[] index = new List[sample.length];
-		for (int i = 0; i < index.length; i++) {
-			StringSearchAlgorithm a = new AhoCorasick(asList(pattern));
-			StringFinder finder = a.createFinder(new StringCharProvider(sample[i], 0));
-			index[i] = new ArrayList<Integer>();
-			for (StringMatch match : finder.findAllNonOverlapping()) {
-				index[i].add((int) match.start());
-			}
+	private String generateSample(Random random, int sampleSize) {
+		char[] sample = new char[sampleSize];
+		for (int i = 0; i < sampleSize; i++) {
+			sample[i] = getChar(random.nextInt(alphabetSize));
 		}
-		return index;
+		return new String(sample);
 	}
 
-	private String[] generatePattern(Random random, String[] sample, int patternSize) {
-		String[] pattern = new String[sample.length];
-		for (int i = 0; i < pattern.length; i++) {
-			int index = random.nextInt(sample[i].length() - patternSize);
-			pattern[i] = sample[i].substring(index, index + patternSize); 
+	private char getChar(int index) {
+		return (char) ('a' + index);
+	}
+
+	public String[] generatePatterns(Random random, String sample) {
+		if (isNotSelective()) {
+			return new String[0];
+		} else {
+			return generateRandomPatterns(random, sample);
+		}
+	}
+
+	private boolean isNotSelective() {
+		int result = 1;
+		for (int i = 0; i < patternSize && result <= patternNumber; i++) {
+			result *= alphabetSize;
+		}
+		return result <= patternNumber;
+	}
+
+	private String[] generateRandomPatterns(Random random, String sample) {
+		String[] pattern = new String[patternNumber];
+		int randomRange = sample.length() - patternSize;
+		for (int i = 0; i < patternNumber; i++) {
+			int index = random.nextInt(randomRange);
+			pattern[i] = sample.substring(index, index + patternSize);
 		}
 		return pattern;
 	}
 
-	public int patterns() {
-		return pattern.length;
+	private List<Integer> generateIndex(String sample, String[] pattern) {
+		StringSearchAlgorithm a = new AhoCorasick(asList(pattern));
+		StringFinder finder = a.createFinder(new StringCharProvider(sample, 0));
+		List<Integer> index = new ArrayList<>();
+		for (StringMatch match : finder.findAllNonOverlapping()) {
+			index.add((int) match.start());
+		}
+		return index;
 	}
 
-	public String getSample(int i) {
-		return sample[i];
+	public String getSample() {
+		return sample;
 	}
 
 	public String[] getPattern() {
@@ -113,9 +136,9 @@ public class MultiPatternSample {
 		this.pattern = null;
 	}
 
-	public void validate(int i, List<Integer> result) {
-		if (result == null || !result.containsAll(expected[i])) {
-			throw new IllegalStateException("expected " + expected[i] + ", but found " + result);
+	public void validate(List<Integer> result) {
+		if (result == null || !result.containsAll(expected)) {
+			throw new IllegalStateException("expected " + expected + ", but found " + result);
 		}
 	}
 

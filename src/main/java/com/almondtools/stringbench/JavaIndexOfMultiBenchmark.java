@@ -21,7 +21,7 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public List<Integer> find(int i, String text) {
+	public List<Integer> find(String text) {
 		List<Integer> result = new ArrayList<Integer>();
 		int next[] = new int[searchPattern.length]; 
 		Arrays.fill(next, -1);
@@ -41,7 +41,7 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 				if (next[j] < match) {
 					match = next[j];
 					len = searchPattern[j].length();
-				} else if (next[i] == match && len < searchPattern[j].length()) {
+				} else if (next[j] == match && len < searchPattern[j].length()) {
 					len = searchPattern[j].length();
 				}
 			}

@@ -28,6 +28,9 @@ public abstract class SinglePatternMatcherBenchmark {
 
 	@Setup
 	public void setup(SinglePatternSample sample) {
+		if (!sample.isValid()) {
+			throw new RuntimeException();
+		}
 		this.sample = sample;
 		prepare(sample.getPattern());
 	}
@@ -50,7 +53,7 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Fork(1)
 	public void benchmarkFind() {
 		for (int i = 0; i < sample.patterns(); i++) {
-			List<Integer> result = find(i, sample.getSample(i));
+			List<Integer> result = find(i, sample.getSample());
 			sample.validate(i, result);
 		}
 	}
