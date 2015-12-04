@@ -107,7 +107,8 @@ public class MultiPatternSample {
 		int randomRange = sample.length() - patternSize;
 		for (int i = 0; i < patternNumber; i++) {
 			int index = random.nextInt(randomRange);
-			pattern[i] = sample.substring(index, index + patternSize);
+			int size = patternSize /2 + 1 + random.nextInt(patternSize / 2);
+			pattern[i] = sample.substring(index, index + size);
 		}
 		return pattern;
 	}
