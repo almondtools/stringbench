@@ -22,6 +22,8 @@ public class SinglePatternMatcherBenchmarkTest {
 		new SCHorspoolBenchmark(),
 		new SCKnuthMorrisPrattBenchmark(),
 		new SCSundayBenchmark(),
+		new SCShiftAndBenchmark(),
+		new SCBNDMBenchmark(),
 		new SSBNDMBenchmark(),
 		new SSBoyerMooreHorspoolBenchmark(),
 		new SSBoyerMooreHorspoolRaitaBenchmark()
