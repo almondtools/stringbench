@@ -1,6 +1,8 @@
 package com.almondtools.stringbench;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,10 +24,18 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	private String pattern(String[] pattern) {
+		String[] sortedpatterns = Arrays.copyOf(pattern, pattern.length);
+		Arrays.sort(sortedpatterns, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+				return o2.length() - o1.length();
+			}
+		});
 		StringBuilder buffer = new StringBuilder();
-		for (int i = 0; i < pattern.length; i++) {
+		for (int i = 0; i < sortedpatterns.length; i++) {
 			buffer.append('|');
-			buffer.append(Pattern.quote(pattern[i]));
+			buffer.append(Pattern.quote(sortedpatterns[i]));
 		}
 		return buffer.substring(1);
 	}

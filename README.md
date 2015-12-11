@@ -62,7 +62,5 @@ Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06
   * (SDK) Simple `String.indexOf` dominates the region of few patterns of small alphabet and size
   * (SC) SetHorspool performs best for few patterns of large alphabet and size
   * (SC) WuManber performs best for long patterns with small alphabets
-  * (AC) AhoCorasick performs best for many small patterns with large alphabets
   * (SC) SetBackwardOracleMatching performs best for many long patterns with large alphabets
-  * The algorithms of (SC) AhoCorasick and (AC) AhoCorasick do not scale in the same way (to be investigated)
   
