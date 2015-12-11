@@ -35,7 +35,7 @@ If you want another framework participating in this benchmarks, meet following c
 * the benchmarked algorithms have to pass the tests without deviations 
 
 
-Interpretation of the [results of 2015-11-22](benchmarkresults/result-2015-11-22.txt)
+Interpretation of the [results of 2015-11-22](benchmarkresults/result-2015-11-22.txt?raw=true)
 -------------------------------------------
 * Participating: SDK, SC, SS
 * Single Pattern
@@ -49,7 +49,7 @@ Interpretation of the [results of 2015-11-22](benchmarkresults/result-2015-11-22
   * SC SetBackwardOracleMatching performs best for long patterns with middle sized alphabets
   * SC SetHorspool performs best for long patterns with large alphabets
   
-Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06.txt)
+Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06.txt?raw=true)
 -------------------------------------------
 * Participating: SDK, SC, SS, AC
 * Single Pattern
