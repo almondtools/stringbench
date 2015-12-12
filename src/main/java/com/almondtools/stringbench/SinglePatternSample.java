@@ -157,7 +157,7 @@ public class SinglePatternSample {
 
 	public void validate(int i, List<Integer> result) {
 		if (result == null || !result.containsAll(expected[i])) {
-			throw new IllegalStateException("expected " + expected[i] + ", but found " + result);
+			throw new ResultNotAcceptedException(expected[i], result);
 		}
 	}
 

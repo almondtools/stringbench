@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import junit.framework.ComparisonFailure;
-
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -141,7 +139,7 @@ public class MultiPatternSample {
 
 	public void validate(List<Integer> result) {
 		if (result == null || !result.containsAll(expected)) {
-			throw new ComparisonFailure("Found patterns do not match: ", expected.toString(), result.toString());
+			throw new ResultNotAcceptedException(expected, result);
 		}
 	}
 

@@ -29,7 +29,7 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Setup
 	public void setup(SinglePatternSample sample) {
 		if (!sample.isValid()) {
-			throw new RuntimeException();
+			throw new SampleNotQualifiedException();
 		}
 		this.sample = sample;
 		prepare(sample.getPattern());

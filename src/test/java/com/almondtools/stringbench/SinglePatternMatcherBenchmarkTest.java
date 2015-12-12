@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Rule;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
@@ -12,6 +13,9 @@ import org.junit.runner.RunWith;
 @RunWith(Theories.class)
 public class SinglePatternMatcherBenchmarkTest {
 
+	@Rule
+	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
+	
 	private static final int[] ALPHABET = new int[] { 4, 16, 128 };
 	private static final int[] SIZE = new int[] { 8, 64 };
 

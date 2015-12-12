@@ -29,7 +29,7 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Setup
 	public void setup(MultiPatternSample sample) {
 		if (!sample.isValid()) {
-			throw new RuntimeException();
+			throw new SampleNotQualifiedException();
 		}
 		this.sample = sample;
 		prepare(sample.getPattern());
