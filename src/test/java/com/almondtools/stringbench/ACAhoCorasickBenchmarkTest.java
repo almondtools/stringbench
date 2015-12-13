@@ -29,7 +29,7 @@ public class ACAhoCorasickBenchmarkTest {
 	@Test
 	public void testACAhoCorasick8_128_256() {
 		MultiPatternMatcherBenchmark benchmark = new ACAhoCorasickBenchmark();
-		benchmark.setup(createMultiPatternSample(8, 128, 256));
+		benchmark.setup(createMultiPatternSample(8, 256, 8));
 		benchmark.benchmarkFind();
 	}
 
