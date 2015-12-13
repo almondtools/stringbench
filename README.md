@@ -52,15 +52,17 @@ Interpretation of the [results of 2015-11-22](benchmarkresults/result-2015-11-22
 Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06.txt?raw=true)
 -------------------------------------------
 * Participating: SDK, SC, SS, AC
+* (AC) AhoCorassic is remarkably fast with many patterns, but in this setup it is not reliable: The results for patterns/samples deviate from those returned by other algorithms (even the naive brute force ones). Therefore it will be excluded from the benchmark until the source of this deviation is clarified
+* It gets obvious that the benchmark setup is not fair: Patterns are generated as substrings from the sample, which ensures that at least one match could be found. Brute force algorithms based on backtracking will match this pattern very quick. In scenarios with large alphabets such brute force algorithms will probably backtrack only small distance. Real random data would probably penalize brute force algorithms compared to the current setup.     
 * Single Pattern
   * (SDK) Simple `String.indexOf` dominates the region of small patterns with small alphabet
   * (SC) ShiftAnd performs good for small alphabet size and smaller patterns
   * (SC) BNDM performs good for small alphabet size and larger patterns
-  * (SC) Horspool/(SDK) `Pattern.compile/Matcher.find` work best for middle alphabet size and smaller patterns
-  * (SC) Horspool/(SC) Sunday and `Pattern.compile/Matcher.find` cover the region of large alphabets and large patterns
+  * (SC) Horspool/(SC) Sunday/(SDK) `Pattern.compile/Matcher.find` cover the region of large alphabets and large patterns
 * Multi Pattern
-  * (SDK) Simple `String.indexOf` dominates the region of few patterns of small alphabet and size
+  * (SDK) Simple `String.indexOf` dominates the region of few patterns of small pattern size
   * (SC) SetHorspool performs best for few patterns of large alphabet and size
-  * (SC) WuManber performs best for long patterns with small alphabets
-  * (SC) SetBackwardOracleMatching performs best for many long patterns with large alphabets
+  * (SC) AhoCorasick performs best for more patterns of small alphabet and size
+  * (SC) WuManber performs best for more patterns of medium alphabet and size 
+  * (SC) SetBackwardOracleMatching performs best for more patterns with large alphabets
   
