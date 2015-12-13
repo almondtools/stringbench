@@ -109,8 +109,20 @@ public class MultiPatternSample {
 			int index = random.nextInt(randomRange);
 			int size = patternSize /2 + 1 + random.nextInt(patternSize / 2);
 			pattern[i] = sample.substring(index, index + size);
+			if (i % 2 == 1) {
+				pattern[i] = mutate(random, pattern[i]);
+			}
 		}
 		return pattern;
+	}
+
+	private String mutate(Random random, String string) {
+		int len = string.length();
+		int posToMutate = len / 2 + random.nextInt(len / 2);
+		int posToMutateTo = random.nextInt(len);
+		StringBuilder buffer = new StringBuilder(string);
+		buffer.setCharAt(posToMutate, buffer.charAt(posToMutateTo));
+		return buffer.toString();
 	}
 
 	private List<Integer> generateIndex(String sample, String[] pattern) {

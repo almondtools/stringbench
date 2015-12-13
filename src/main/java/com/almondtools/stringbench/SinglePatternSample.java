@@ -119,8 +119,20 @@ public class SinglePatternSample {
 		for (int i = 0; i < MAX_PATTERNS; i++) {
 			int index = random.nextInt(randomRange);
 			pattern[i] = sample.substring(index, index + patternSize);
+			if (i % 2 == 1) {
+				pattern[i] = mutate(random, pattern[i]);
+			}
 		}
 		return pattern;
+	}
+
+	private String mutate(Random random, String string) {
+		int len = string.length();
+		int posToMutate = len / 2 + random.nextInt(len / 2);
+		int posToMutateTo = random.nextInt(len);
+		StringBuilder buffer = new StringBuilder(string);
+		buffer.setCharAt(posToMutate, buffer.charAt(posToMutateTo));
+		return buffer.toString();
 	}
 
 	@SuppressWarnings("unchecked")

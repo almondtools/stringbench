@@ -9,10 +9,11 @@ import org.ahocorasick.trie.Trie.TrieBuilder;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
+//excluded from benchmark (moved to tests) until result is correct https://github.com/robert-bor/aho-corasick/issues/29
 @State(Scope.Thread)
 public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 
-	private static final String ID = "AhoCorasick Aho-Corasick";
+	private static final String ID = "AhoCorasick.org Aho-Corasick";
 	
 	private Trie trie;
 
