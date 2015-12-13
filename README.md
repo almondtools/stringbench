@@ -66,3 +66,18 @@ Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06
   * (SC) WuManber performs best for more patterns of medium alphabet and size 
   * (SC) SetBackwardOracleMatching performs best for more patterns with large alphabets
   
+Interpretation of the [results of 2015-12-13](benchmarkresults/result-2015-12-13.txt?raw=true)
+-------------------------------------------
+* Participating: SDK, SC, SS
+* Single Pattern
+  * (SDK) Simple `String.indexOf` dominates the region of small patterns with small alphabet
+  * (SC) ShiftAnd performs good for small alphabet size and smaller patterns
+  * (SC) BNDM performs good for small alphabet size and larger patterns
+  * (SC) Horspool/(SC) Sunday/(SDK) `Pattern.compile/Matcher.find` cover the region of large alphabets and large patterns
+* Multi Pattern
+  * (SDK) Simple `String.indexOf` dominates the region of few patterns of small pattern size
+  * (SC) SetHorspool performs good for few patterns of large alphabet
+  * (SC) AhoCorasick performs good for more patterns of small pattern size
+  * (SC) WuManber performs good for more patterns of medium alphabet and size 
+  * (SC) SetBackwardOracleMatching performs best for more patterns with large pattern size
+  
