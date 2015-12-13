@@ -25,7 +25,7 @@ public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmar
 
 	@Override
 	public List<Integer> find(int i, String text) {
-		List<Integer> indexes = new ArrayList<Integer>();
+		List<Integer> indexes = new ArrayList<>();
 		int pos = 0;
 		while (pos > -1 && pos < text.length()) {
 			int result = algorithm.searchString(text, pos, pattern[i], processed[i]);

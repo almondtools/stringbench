@@ -23,7 +23,7 @@ public abstract class StringsAndCharsMultiBenchmark extends MultiPatternMatcherB
 	@Override
 	public List<Integer> find(String text) {
 		List<StringMatch> matches = algorithm.createFinder(new StringCharProvider(text, 0)).findAll();
-		List<Integer> indexes = new ArrayList<Integer>(matches.size());
+		List<Integer> indexes = new ArrayList<>(matches.size());
 		for (StringMatch match : matches) {
 			indexes.add((int) match.start());
 		}

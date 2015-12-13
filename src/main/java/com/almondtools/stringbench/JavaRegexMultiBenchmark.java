@@ -42,7 +42,7 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	@Override
 	public List<Integer> find(String text) {
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		Matcher matcher = searchPattern.matcher(text);
 		while (matcher.find()) {
 			result.add(matcher.start());

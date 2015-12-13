@@ -21,7 +21,7 @@ public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 
 	@Override
 	public List<Integer> find(int i, String text) {
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		int pos = 0;
 		while (pos > -1 && pos < text.length()) {
 			int match = text.indexOf(searchPattern[i], pos);

@@ -22,7 +22,7 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	@Override
 	public List<Integer> find(String text) {
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		int next[] = new int[searchPattern.length]; 
 		Arrays.fill(next, -1);
 		int pos = 0;

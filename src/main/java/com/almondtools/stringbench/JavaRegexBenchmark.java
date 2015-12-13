@@ -26,7 +26,7 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 
 	@Override
 	public List<Integer> find(int i, String text) {
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		Matcher matcher = searchPattern[i].matcher(text);
 		while (matcher.find()) {
 			result.add(matcher.start());

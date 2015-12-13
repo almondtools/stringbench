@@ -33,7 +33,7 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 
 	@Override
 	public List<Integer> find(String text) {
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		for (Emit emit : trie.parseText(text)) {
 			result.add(emit.getStart());
 		}
