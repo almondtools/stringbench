@@ -74,7 +74,7 @@ public class ProcessResults {
 		String templateName = "benchmarkresults/result.html";
 		String template = Files.readAllLines(Paths.get(templateName)).stream().collect(joining("\n"));
 
-		String title = key <= 1 ? "Exact String Matching for single Patterns" : "Exact String Matching for multiple Patterns";
+		String title = key <= 1 ? "Exact String Matching for single Patterns" : "Exact String Matching for " + key + " Patterns";
 
 		String content = template.replace("${title}", title).replace("${file}", fileName);
 
