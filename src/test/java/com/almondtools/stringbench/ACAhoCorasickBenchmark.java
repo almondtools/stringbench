@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +10,8 @@ import org.ahocorasick.trie.Trie;
 import org.ahocorasick.trie.Trie.TrieBuilder;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
+
+import com.almondtools.stringbenchanalyzer.Family;
 
 //excluded from benchmark (moved to tests) until result is correct https://github.com/robert-bor/aho-corasick/issues/29
 @State(Scope.Thread)
@@ -20,6 +24,11 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public String getId() {
 		return ID;
+	}
+	
+	@Override
+	public Family getFamily() {
+		return PREFIX;
 	}
 
 	@Override

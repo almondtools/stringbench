@@ -1,19 +1,28 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.almondtools.stringbenchanalyzer.Family;
+
 public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 
-	private static final String JAVA_REGEX = "java.util.Pattern regex search (boyer-moore)";
-
+	private static final String ID = "java.util.Pattern regex search (boyer-moore)";
+	
 	private Pattern[] searchPattern;
 	
 	@Override
 	public String getId() {
-		return JAVA_REGEX;
+		return ID;
+	}
+	
+	@Override
+	public Family getFamily() {
+		return SUFFIX;
 	}
 
 	@Override

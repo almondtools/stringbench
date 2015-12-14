@@ -1,4 +1,4 @@
-package com.almondtools.stringbench;
+package com.almondtools.stringbenchanalyzer;
 
 import static java.util.stream.Collectors.joining;
 
@@ -11,13 +11,15 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 	private int patternSize;
 	private double time;
 	private String name;
+	private Family family;
 
-	public BenchmarkRecord(int patternNumber, int alphabet, int patternSize, double time, String name) {
+	public BenchmarkRecord(int patternNumber, int alphabet, int patternSize, double time, String name, Family family) {
 		this.patternNumber = patternNumber;
 		this.alphabet = alphabet;
 		this.patternSize = patternSize;
 		this.time = time;
 		this.name = name;
+		this.family = family;
 	}
 
 	public int getNumber() {
@@ -39,6 +41,14 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 	public String getName() {
 		return name;
 	}
+	
+	public Family getFamily() {
+		return family;
+	}
+
+	public String getNameAndFamily() {
+		return name + ':' + family;
+	}
 
 	@Override
 	public int compareTo(BenchmarkRecord o) {
@@ -46,7 +56,7 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 	}
 
 	public String coordinates() {
-		return Stream.of(name, alphabet, patternSize)
+		return Stream.of(name, family, alphabet, patternSize)
 			.map(value -> value.toString())
 			.collect(joining(";"));
 	}

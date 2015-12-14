@@ -1,5 +1,8 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
+
+import com.almondtools.stringbenchanalyzer.Family;
 import com.eaio.stringsearch.BoyerMooreHorspool;
 import com.eaio.stringsearch.StringSearch;
 
@@ -12,6 +15,11 @@ public class SSBoyerMooreHorspoolBenchmark extends StringSearchBenchmark {
 		return ID;
 	}
 	
+	@Override
+	public Family getFamily() {
+		return SUFFIX;
+	}
+
 	@Override
 	public StringSearch create() {
 		return new BoyerMooreHorspool();

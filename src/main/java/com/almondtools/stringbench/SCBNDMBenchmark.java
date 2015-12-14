@@ -1,8 +1,11 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringbenchanalyzer.Family.FACTOR;
+
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
+import com.almondtools.stringbenchanalyzer.Family;
 import com.almondtools.stringsandchars.search.BNDM;
 import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 
@@ -14,6 +17,11 @@ public class SCBNDMBenchmark extends StringsAndCharsBenchmark {
 	@Override
 	public String getId() {
 		return ID;
+	}
+	
+	@Override
+	public Family getFamily() {
+		return FACTOR;
 	}
 	
 	@Override

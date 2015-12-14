@@ -15,6 +15,8 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
+import com.almondtools.stringbenchanalyzer.Family;
+
 @State(Scope.Thread)
 public abstract class SinglePatternMatcherBenchmark {
 
@@ -25,6 +27,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	public abstract List<Integer> find(int i, String text);
 
 	public abstract String getId();
+
+	public abstract Family getFamily();
 
 	@Setup
 	public void setup(SinglePatternSample sample) {

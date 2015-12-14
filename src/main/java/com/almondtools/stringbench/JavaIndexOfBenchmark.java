@@ -1,17 +1,26 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringbenchanalyzer.Family.NAIVE;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import com.almondtools.stringbenchanalyzer.Family;
+
 public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 
-	private static final String JAVA_REGEX = "String.indexOf (naive)";
+	private static final String ID = "String.indexOf (naive)";
 
 	private String[] searchPattern;
 
 	@Override
 	public String getId() {
-		return JAVA_REGEX;
+		return ID;
+	}
+	
+	@Override
+	public Family getFamily() {
+		return NAIVE;
 	}
 
 	@Override
