@@ -20,8 +20,6 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.EnumMap;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -31,13 +29,9 @@ import java.util.stream.Stream;
 public class ProcessResults {
 
 	private String file;
-	private Map<Family, Integer> registeredNumber;
-	private Map<String, String> registeredColors;
 
 	public ProcessResults(String file) {
 		this.file = file;
-		this.registeredNumber = new EnumMap<Family, Integer>(Family.class);
-		this.registeredColors = new HashMap<String, String>();
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -51,141 +45,41 @@ public class ProcessResults {
 		for (Map.Entry<Integer, Map<String, Optional<BenchmarkRecord>>> entry : grouped.entrySet()) {
 			Integer key = entry.getKey();
 			Map<String, Optional<BenchmarkRecord>> benchmarks = entry.getValue();
-			writeSCSV(key, benchmarks);
-			writeHighChart(key, benchmarks);
+			String csv = file.substring(0, file.length() - 4) + "_" + key + ".csv";
+			String html = file.substring(0, file.length() - 4) + "_" + key + ".html";
+			writeSCSV(key, benchmarks, csv);
+			writeChart(key, html, csv);
 		}
 
 	}
 
-	private void writeSCSV(Integer key, Map<String, Optional<BenchmarkRecord>> benchmarks) throws IOException {
-		String name = file.substring(0, file.length() - 4) + "_" + key + ".csv";
-		Files.write(Paths.get(name), new Iterable<String>() {
+	private void writeSCSV(Integer key, Map<String, Optional<BenchmarkRecord>> benchmarks, String filename) throws IOException {
+		Files.write(Paths.get(filename), new Iterable<String>() {
 
 			@Override
 			public Iterator<String> iterator() {
-				return benchmarks.values().stream()
+				return Stream.concat(Stream.of("name,family,alphabet,pattern"), benchmarks.values().stream()
 					.flatMap(opt -> opt.map(value -> Stream.of(value)).orElse(noBenchmarks()))
 					.sorted(comparing(BenchmarkRecord::getAlphabet).thenComparing(BenchmarkRecord::getPatternSize))
-					.map(value -> value.coordinates())
+					.map(value -> value.coordinates()))
 					.iterator();
 			}
 
 		}, StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
 	}
 
-	private void writeHighChart(Integer key, Map<String, Optional<BenchmarkRecord>> benchmarks) throws IOException {
-		String name = file.substring(0, file.length() - 4) + "_" + key + ".html";
+	private void writeChart(Integer key, String name, String csv) throws IOException {
+		String fileName = csv.substring("benchmarkresults/".length());
+		
 		String templateName = "benchmarkresults/result.html";
 		String template = Files.readAllLines(Paths.get(templateName)).stream().collect(joining("\n"));
 
 		String title = key <= 1 ? "Exact String Matching for single Patterns" : "Exact String Matching for multiple Patterns";
 
-		Map<String, List<BenchmarkRecord>> grouped = benchmarks.values().stream()
-			.filter(Optional::isPresent)
-			.map(Optional::get)
-			.collect(groupingBy(BenchmarkRecord::getNameAndFamily));
-
-		String data = grouped.entrySet().stream()
-			.map(entry -> createHighChartData(entry.getValue()))
-			.collect(joining(","));
-
-		String content = template.replace("${title}", title).replace("${data}", data);
+		String content = template.replace("${title}", title).replace("${file}", fileName);
 
 		Files.write(Paths.get(name), asList(content), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
-	}
-
-	private String createHighChartData(List<BenchmarkRecord> value) {
-
-		String name = value.stream().map(BenchmarkRecord::getName).findFirst().orElse("unknown");
-		Family family = value.stream().map(BenchmarkRecord::getFamily).findFirst().orElse(Family.SPECIAL);
-
-		StringBuilder buffer = new StringBuilder();
-		buffer.append('{');
-
-		buffer.append("name: '").append(name).append("',");
-		buffer.append("marker: {")
-			.append("symbol: '").append(shapeFor(family)).append("'")
-			.append("},");
-		buffer.append("color: '").append(colorFor(name, family)).append("',");
-		buffer.append("data: [").append(dataFor(value)).append("]");
-		buffer.append('}');
-		return buffer.toString();
-	}
-
-	private String shapeFor(Family family) {
-		switch (family) {
-		case NAIVE:
-			return "square";
-		case PREFIX:
-			return "triangle";
-		case SUFFIX:
-			return "triangle-down";
-		case FACTOR:
-			return "diamond";
-		default:
-			return "circle";
-		}
-	}
-
-	private String colorFor(String name, Family family) {
-		return registeredColors.computeIfAbsent(name, key -> newColorFor(key, family));
-	}
-
-	private String newColorFor(String name, Family family) {
-		int number = registeredNumber.compute(family, (k, v) -> v == null ? 0 : v + 1);
-		if (number == 0) {
-			return baseColor(family);
-		} else {
-			return color(family, number);
-		}
-	}
-
-	private String baseColor(Family family) {
-		switch (family) {
-		case NAIVE:
-			return rgba(256, 256, 0);
-		case PREFIX:
-			return rgba(0, 256, 0);
-		case SUFFIX:
-			return rgba(0, 256, 256);
-		case FACTOR:
-			return rgba(0, 0, 256);
-		case HASHING:
-			return rgba(256, 0, 256);
-		default:
-			return rgba(256, 0, 0);
-		}
-	}
-
-	private String color(Family family, int number) {
-		int r = number % 2 == 0 ? (128 >> (number - 1)) + 32 : 0;
-		int l = number % 2 == 0 ? 0 : (128 >> number) + 32;
-
-		switch (family) {
-		case NAIVE:
-			return rgba(256 - r, 256 - l, 0);
-		case PREFIX:
-			return rgba(r, 256, l);
-		case SUFFIX:
-			return rgba(0, 256 - r, 256 - l);
-		case FACTOR:
-			return rgba(r, l, 256);
-		case HASHING:
-			return rgba(256 - r, 0, 256 - l);
-		default:
-			return rgba(256, r, l);
-		}
-	}
-
-	private String rgba(int r, int g, int b) {
-		return "rgba(" + r + "," + g + "," + b + ",256)";
-	}
-
-	private String dataFor(List<BenchmarkRecord> records) {
-		return records.stream()
-			.map(record -> "[" + record.getPatternSize() + ',' + record.getAlphabet() + "]")
-			.collect(joining(","));
 	}
 
 	public Stream<BenchmarkRecord> noBenchmarks() {

@@ -58,7 +58,7 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 	public String coordinates() {
 		return Stream.of(name, family, alphabet, patternSize)
 			.map(value -> value.toString())
-			.collect(joining(";"));
+			.collect(joining(","));
 	}
 
 	@Override
