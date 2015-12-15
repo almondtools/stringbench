@@ -26,7 +26,7 @@ var xValue = function(d) { return d.pattern;}, // data -> value
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
     xAxis = d3.svg.axis()
     	.scale(xScale)
-    	.tickFormat(function(d){console.log(d);return d.toFixed(0);})
+    	.tickFormat(function(d){return d.toFixed(0);})
     	.orient("bottom");
 
 // setup y
@@ -37,12 +37,36 @@ var yValue = function(d) { return d.alphabet;}, // data -> value
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis()
     	.scale(yScale)
-    	.tickFormat(function(d){console.log(d);return d.toFixed(0);})
+    	.tickFormat(function(d){return d.toFixed(0);})
     	.orient("left");
 
 // setup fill color
-var cValue = function(d) { return d.name;},
-    color = d3.scale.category10();
+var cValue = function(d) { return d.name;};
+    
+var colorScale = function (map, domain) {
+  	var colors = [
+  	 ["#00ff00", "#00ff88", "#00aa00", "#008800", "#00aa44"],
+  	 ["#00ffff", "#0088ff", "#00aaaa", "#008888", "#0044aa"],
+  	 ["#0000ff", "#8800ff", "#0000aa", "#000088", "#4400aa"],
+  	 ["#ff00ff", "#ff0088", "#aa00aa", "#880088", "#aa0044"],
+  	 ["#ff0000", "#ff8800", "#aa0000", "#880000", "#aa4400"],
+  	 ["#ffff00", "#88ff00", "#aaaa00", "#888800", "#44aa00"]
+  	];
+  	var dom = [];
+  	var rng = [];
+  	var c = 0;
+  	for (var fam in map) {
+    	var algs = map[fam];
+  		for (var i in algs) {
+  			dom.push(algs[i]);
+  			rng.push(colors[c][i]);
+  		}
+  		c+=1;
+  	}
+  	return d3.scale.ordinal()
+  		.domain(dom)
+  		.range(rng)
+}
 
 // add the graph canvas to the body of the webpage
 var svg = d3.select("body").append("svg")
@@ -58,11 +82,20 @@ var tooltip = d3.select("body").append("div")
 
 // load data
 d3.csv("result-2015-12-06_32.csv", function(error, data) {
-	
+
+  var map = {};
+  var domain = {};
   data.forEach(function(d) {
+    var alg = map[d.family] || [];
+    if (alg.indexOf(d.name) < 0) {
+      alg.push(d.name);
+      domain[d.name] = d.family;
+      map[d.family] = alg;
+    }
 	d.alphabet = +d.alphabet;
 	d.pattern = +d.pattern;
   });
+  var color = colorScale(map, domain);
 	
   // don't want dots overlapping axis, so add in buffer to data domain
   xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+512]);
