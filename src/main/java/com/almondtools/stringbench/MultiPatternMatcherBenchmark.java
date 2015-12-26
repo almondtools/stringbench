@@ -42,8 +42,8 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 1)
-	@Measurement(iterations = 2)
+	@Warmup(iterations = 4)
+	@Measurement(iterations = 4)
 	@Fork(1)
 	public void benchmarkFind() {
 		List<Integer> result = find(sample.getSample());
