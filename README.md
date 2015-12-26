@@ -53,7 +53,7 @@ Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06
 -------------------------------------------
 * Participating: SDK, SC, SS, AC
 * (AC) AhoCorassic is remarkably fast with many patterns, but in this setup it is not reliable: The results for patterns/samples deviate from those returned by other algorithms (even the naive brute force ones). Therefore it will be excluded from the benchmark until the source of this deviation is clarified
-* It gets obvious that the benchmark setup is not fair: Patterns are generated as substrings from the sample, which ensures that at least one match could be found. Brute force algorithms based on backtracking will match this pattern very quick. In scenarios with large alphabets such brute force algorithms will probably backtrack only small distance. Real random data would probably penalize brute force algorithms compared to the current setup.     
+* It gets obvious that the benchmark setup is not fair: Patterns are generated as substrings from the sample, which ensures that at least one match could be found. Brute force algorithms based on backtracking will match this pattern very quick. In scenarios with large alphabets such brute force algorithms will probably backtrack only small distance. Real random data would probably penalize brute force algorithms compared to the current setup.
 * Single Pattern
   * (SDK) Simple `String.indexOf` dominates the region of small patterns with small alphabet
   * (SC) ShiftAnd performs good for small alphabet size and smaller patterns
@@ -69,6 +69,7 @@ Interpretation of the [results of 2015-12-06](benchmarkresults/result-2015-12-06
 Interpretation of the [results of 2015-12-13](benchmarkresults/result-2015-12-13.txt?raw=true)
 -------------------------------------------
 * Participating: SDK, SC, SS
+* The benchmark is yet not optimal. It does search all non overlapping matches in a text. This makes it easier for the naive search, because it can skip the search to the point after the last match. The other algorithms collect all matches and filter out the overlapping ones. Certainly this is a good reason to optimize the non-overlapping matching algorithms. Yet it is also a reason to optimize the benchmark that each algorithm is also tested for overlapping matches.   
 * Single Pattern
   * (SDK) Simple `String.indexOf` dominates the region of small patterns with small alphabet
   * (SC) ShiftAnd performs good for small alphabet size and smaller patterns
