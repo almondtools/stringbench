@@ -42,8 +42,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 4)
-	@Measurement(iterations = 4)
+	@Warmup(iterations = 10)
+	@Measurement(iterations = 10)
 	@Fork(1)
 	public void benchmarkFind() {
 		for (int i = 0; i < sample.patterns(); i++) {

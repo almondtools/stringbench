@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import static com.almondtools.stringsandchars.search.MatchOption.LONGEST_MATCH;
+import static com.almondtools.stringsandchars.search.MatchOption.NO_OVERLAP;
 import static java.util.Arrays.asList;
 
 import java.io.IOException;
@@ -24,11 +26,11 @@ public class MultiPatternSample {
 
 	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
 	
-	@Param({ "2", "8", "32", "128" })
+	@Param({ /*"2", "8", "32",*/ "128" })
 	private int patternNumber;
-	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
+	@Param({ /*"2", "4", "8", "16",*/ "32"/*, "64", "128", "256"*/ })
 	private int alphabetSize;
-	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
+	@Param({ /*"2", "4", "8", "16",*/ "32"/*, "64", "128", "256"*/ })
 	private int patternSize;
 
 	private String sample;
@@ -127,9 +129,9 @@ public class MultiPatternSample {
 
 	private List<Integer> generateIndex(String sample, String[] pattern) {
 		StringSearchAlgorithm a = new AhoCorasick(asList(pattern));
-		StringFinder finder = a.createFinder(new StringCharProvider(sample, 0));
+		StringFinder finder = a.createFinder(new StringCharProvider(sample, 0), LONGEST_MATCH, NO_OVERLAP);
 		List<Integer> index = new ArrayList<>();
-		for (StringMatch match : finder.findAllNonOverlapping()) {
+		for (StringMatch match : finder.findAll()) {
 			index.add((int) match.start());
 		}
 		return index;

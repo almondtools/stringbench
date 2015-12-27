@@ -13,6 +13,7 @@ import org.openjdk.jmh.annotations.TearDown;
 
 import com.almondtools.stringsandchars.io.StringCharProvider;
 import com.almondtools.stringsandchars.search.KnuthMorrisPratt;
+import com.almondtools.stringsandchars.search.MatchOption;
 import com.almondtools.stringsandchars.search.StringFinder;
 import com.almondtools.stringsandchars.search.StringMatch;
 import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
@@ -140,9 +141,9 @@ public class SinglePatternSample {
 		List<Integer>[] index = new List[pattern.length];
 		for (int i = 0; i < pattern.length; i++) {
 			StringSearchAlgorithm a = new KnuthMorrisPratt(pattern[i]);
-			StringFinder finder = a.createFinder(new StringCharProvider(sample, 0));
+			StringFinder finder = a.createFinder(new StringCharProvider(sample, 0),MatchOption.LONGEST_MATCH, MatchOption.NO_OVERLAP);
 			index[i] = new ArrayList<Integer>();
-			for (StringMatch match : finder.findAllNonOverlapping()) {
+			for (StringMatch match : finder.findAll()) {
 				index[i].add((int) match.start());
 			}
 		}
