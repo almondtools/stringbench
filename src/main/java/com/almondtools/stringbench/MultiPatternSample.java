@@ -25,18 +25,18 @@ import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 public class MultiPatternSample {
 
 	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
-	
-	@Param({ /*"2", "8", "32",*/ "128" })
+
+	@Param({ "2", "8", "32", "128" })
 	private int patternNumber;
-	@Param({ /*"2", "4", "8", "16",*/ "32"/*, "64", "128", "256"*/ })
+	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
 	private int alphabetSize;
-	@Param({ /*"2", "4", "8", "16",*/ "32"/*, "64", "128", "256"*/ })
+	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
 	private int patternSize;
 
 	private String sample;
 	private String[] pattern;
 	private List<Integer> expected;
-	
+
 	public void setPatternNumber(int patternNumber) {
 		this.patternNumber = patternNumber;
 	}
@@ -55,14 +55,15 @@ public class MultiPatternSample {
 
 	@Override
 	public String toString() {
-		return "pattern number : " + patternNumber + ", alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
+		return "pattern number : " + patternNumber + ", alphabet size : " + alphabetSize + ", pattern size : "
+				+ patternSize;
 	}
 
 	@Setup
 	public void setup() throws IOException {
 		Random random = new Random(13);
 		int sampleSize = generateSampleSize();
-		
+
 		this.sample = generateSample(random, sampleSize);
 		this.pattern = generatePatterns(random, sample);
 		this.expected = generateIndex(sample, pattern);
@@ -109,7 +110,7 @@ public class MultiPatternSample {
 		int randomRange = sample.length() - patternSize;
 		for (int i = 0; i < patternNumber; i++) {
 			int index = random.nextInt(randomRange);
-			int size = patternSize /2 + 1 + random.nextInt(patternSize / 2);
+			int size = patternSize / 2 + 1 + random.nextInt(patternSize / 2);
 			pattern[i] = sample.substring(index, index + size);
 			if (i % 2 == 1) {
 				pattern[i] = mutate(random, pattern[i]);
