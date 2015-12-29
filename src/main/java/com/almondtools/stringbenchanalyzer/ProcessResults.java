@@ -35,7 +35,8 @@ public class ProcessResults {
 	}
 
 	public static void main(String[] args) throws IOException {
-		ProcessResults processResults = new ProcessResults(args[0]);
+		String file = args[0];
+		ProcessResults processResults = new ProcessResults(file);
 		processResults.run();
 	}
 

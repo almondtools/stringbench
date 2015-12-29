@@ -21,6 +21,8 @@ import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 @State(Scope.Benchmark)
 public class SinglePatternSample {
 
+	public static final int[] ALPHABET_SIZES = new int[] { 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 };
+
 	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
 	private static final int MAX_PATTERNS = 64;
 
@@ -80,7 +82,7 @@ public class SinglePatternSample {
 		return (char) ('a' + index);
 	}
 
-	public String[] generatePatterns(Random random,String sample){
+	public String[] generatePatterns(Random random, String sample) {
 		if (isNotSelective()) {
 			return generateAllPatterns(patternSize * alphabetSize);
 		} else {
@@ -103,7 +105,7 @@ public class SinglePatternSample {
 		}
 		return pattern;
 	}
-	
+
 	private String createPattern(int i) {
 		char[] pattern = new char[patternSize];
 		for (int j = 0; j < pattern.length; j++) {
@@ -141,7 +143,7 @@ public class SinglePatternSample {
 		List<Integer>[] index = new List[pattern.length];
 		for (int i = 0; i < pattern.length; i++) {
 			StringSearchAlgorithm a = new KnuthMorrisPratt(pattern[i]);
-			StringFinder finder = a.createFinder(new StringCharProvider(sample, 0),MatchOption.LONGEST_MATCH, MatchOption.NO_OVERLAP);
+			StringFinder finder = a.createFinder(new StringCharProvider(sample, 0), MatchOption.LONGEST_MATCH, MatchOption.NO_OVERLAP);
 			index[i] = new ArrayList<Integer>();
 			for (StringMatch match : finder.findAll()) {
 				index[i].add((int) match.start());

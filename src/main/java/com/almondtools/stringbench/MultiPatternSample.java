@@ -24,6 +24,8 @@ import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
 @State(Scope.Benchmark)
 public class MultiPatternSample {
 
+	public static final int[] ALPHABET_SIZES = new int[] { 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 };
+
 	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
 
 	@Param({ "2", "8", "32", "128" })
