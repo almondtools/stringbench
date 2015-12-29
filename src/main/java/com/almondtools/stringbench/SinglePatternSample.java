@@ -1,9 +1,9 @@
 package com.almondtools.stringbench;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+import java.util.Map;
+import java.util.Set;
 
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
@@ -11,29 +11,18 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-import com.almondtools.stringsandchars.io.StringCharProvider;
-import com.almondtools.stringsandchars.search.KnuthMorrisPratt;
-import com.almondtools.stringsandchars.search.MatchOption;
-import com.almondtools.stringsandchars.search.StringFinder;
-import com.almondtools.stringsandchars.search.StringMatch;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
+import com.almondtools.stringbenchgenerator.GeneratorOption;
 
 @State(Scope.Benchmark)
 public class SinglePatternSample {
 
-	public static final int[] ALPHABET_SIZES = new int[] { 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 };
-
-	private static final int MAX_SAMPLE_SIZE = 1024 * 1024;
-	private static final int MAX_PATTERNS = 64;
-
-	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
+	@Param({ "2", "4", "8", "16", "32", "64", "128", "256", "512", "1024" })
 	private int alphabetSize;
-	@Param({ "2", "4", "8", "16", "32", "64", "128", "256" })
+	@Param({ "2", "4", "8", "16", "32", "64", "128", "256", "512", "1024" })
 	private int patternSize;
 
 	private String sample;
-	private String[] pattern;
-	private List<Integer>[] expected;
+	private Map<String, List<Integer>> patterns;
 
 	public void setAlphabetSize(int alphabetSize) {
 		this.alphabetSize = alphabetSize;
@@ -44,7 +33,7 @@ public class SinglePatternSample {
 	}
 
 	public boolean isValid() {
-		return pattern != null && pattern.length > 0;
+		return sample != null && patterns != null && !patterns.isEmpty();
 	}
 
 	@Override
@@ -52,127 +41,44 @@ public class SinglePatternSample {
 		return "alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
 	}
 
+	public String getKey() {
+		return Texts.computeKey(alphabetSize, patternSize, new GeneratorOption[0]);
+	}
+
 	@Setup
 	public void setup() throws IOException {
-		Random random = new Random(13);
-		int sampleSize = generateSampleSize();
-
-		this.sample = generateSample(random, sampleSize);
-		this.pattern = generatePatterns(random, sample);
-		this.expected = generateIndex(sample, pattern);
-	}
-
-	private int generateSampleSize() {
-		int result = 256;
-		for (int i = 0; i < patternSize && result < MAX_SAMPLE_SIZE; i++) {
-			result *= alphabetSize;
-		}
-		return result;
-	}
-
-	private String generateSample(Random random, int sampleSize) {
-		char[] sample = new char[sampleSize];
-		for (int i = 0; i < sampleSize; i++) {
-			sample[i] = getChar(random.nextInt(alphabetSize));
-		}
-		return new String(sample);
-	}
-
-	private char getChar(int index) {
-		return (char) ('a' + index);
-	}
-
-	public String[] generatePatterns(Random random, String sample) {
-		if (isNotSelective()) {
-			return generateAllPatterns(patternSize * alphabetSize);
-		} else {
-			return generateRandomPatterns(random, sample);
-		}
-	}
-
-	private boolean isNotSelective() {
-		int result = 1;
-		for (int i = 0; i < patternSize && result <= MAX_PATTERNS; i++) {
-			result *= alphabetSize;
-		}
-		return result <= MAX_PATTERNS;
-	}
-
-	private String[] generateAllPatterns(int number) {
-		String[] pattern = new String[number];
-		for (int i = 0; i < pattern.length; i++) {
-			pattern[i] = createPattern(i);
-		}
-		return pattern;
-	}
-
-	private String createPattern(int i) {
-		char[] pattern = new char[patternSize];
-		for (int j = 0; j < pattern.length; j++) {
-			int r = i % alphabetSize;
-			pattern[j] = getChar(r);
-			i = i / alphabetSize;
-		}
-		return new String(pattern);
-	}
-
-	private String[] generateRandomPatterns(Random random, String sample) {
-		String[] pattern = new String[MAX_PATTERNS];
-		int randomRange = sample.length() - patternSize;
-		for (int i = 0; i < MAX_PATTERNS; i++) {
-			int index = random.nextInt(randomRange);
-			pattern[i] = sample.substring(index, index + patternSize);
-			if (i % 2 == 1) {
-				pattern[i] = mutate(random, pattern[i]);
-			}
-		}
-		return pattern;
-	}
-
-	private String mutate(Random random, String string) {
-		int len = string.length();
-		int posToMutate = len / 2 + random.nextInt(len / 2);
-		int posToMutateTo = random.nextInt(len);
-		StringBuilder buffer = new StringBuilder(string);
-		buffer.setCharAt(posToMutate, buffer.charAt(posToMutateTo));
-		return buffer.toString();
-	}
-
-	@SuppressWarnings("unchecked")
-	private List<Integer>[] generateIndex(String sample, String[] pattern) {
-		List<Integer>[] index = new List[pattern.length];
-		for (int i = 0; i < pattern.length; i++) {
-			StringSearchAlgorithm a = new KnuthMorrisPratt(pattern[i]);
-			StringFinder finder = a.createFinder(new StringCharProvider(sample, 0), MatchOption.LONGEST_MATCH, MatchOption.NO_OVERLAP);
-			index[i] = new ArrayList<Integer>();
-			for (StringMatch match : finder.findAll()) {
-				index[i].add((int) match.start());
-			}
-		}
-		return index;
+		Text text = Texts.TEXTS.text(getKey(),16);
+		this.sample = text.sample;
+		this.patterns = text.patterns;
 	}
 
 	public int patterns() {
-		return pattern.length;
+		return patterns.size();
 	}
 
 	public String getSample() {
 		return sample;
 	}
 
-	public String[] getPattern() {
-		return pattern;
+	public Set<String> getPattern() {
+		return patterns.keySet();
 	}
 
 	@TearDown
 	public synchronized void tearDown() {
 		this.sample = null;
-		this.pattern = null;
+		this.patterns = null;
 	}
 
-	public void validate(int i, List<Integer> result) {
-		if (result == null || !result.containsAll(expected[i])) {
-			throw new ResultNotAcceptedException(expected[i], result);
+	public void validate(String pattern, List<Integer> result) {
+		List<Integer> expected = patterns.get(pattern);
+		if (result == null) {
+			throw new ResultNotAcceptedException(expected, result);
+		}
+		if (!result.containsAll(expected)) {
+			throw new ResultNotAcceptedException(expected, result);
+		} else if (!expected.containsAll(result)) {
+			throw new ResultNotAcceptedException(expected, result);
 		}
 	}
 

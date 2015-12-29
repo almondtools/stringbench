@@ -1,75 +1,138 @@
 package com.almondtools.stringbenchgenerator;
 
-import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toSet;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import java.util.stream.Stream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class GenerateSamples {
 
 	private static final int FILE_SIZE = 3 * 1024 * 1024;
 	
-	private String base;
 	private int alphabetSize;
-	private GeneratorOption[] options;
 	private Random random;
 
+	private String sample;
+	private Map<String, List<Integer>> patterns;
+	private int number;
 
-	public GenerateSamples(String base, int alphabetSize, GeneratorOption... options) {
-		this.base = base ;
+
+
+	public GenerateSamples(int alphabetSize) {
 		this.alphabetSize = alphabetSize;
-		this.options = options;
-		this.random = new Random(31);
+	}
+	
+	public void resetRandom(int i) {
+		random = new Random(i);
 	}
 
-	public static void main(String[] args) throws IOException {
-		String base = args[0];
-		int alphabetSize = Integer.parseInt(args[1]);
-		GeneratorOption[] options = Stream.of(args)
-			.skip(2)
-			.map(GeneratorOption::valueOf)
-			.toArray(GeneratorOption[]::new);
-		GenerateSamples processResults = new GenerateSamples(base, alphabetSize, options);
-		processResults.run();
+	public String getSample() {
+		return sample;
 	}
 
-	public void run() throws IOException {
-		char[] alphabet = generateAlphabet();
-		Supplier<Integer> distribution = generateDistribution();
-		generateSample(alphabet, distribution);
+	public Map<String, List<Integer>> getPatterns() {
+		return patterns;
 	}
 
-	private void generateSample(char[] alphabet, Supplier<Integer> distribution) throws IOException {
-		String config = alphabetSize
-			+ (options.length == 0 ? "" : "-")
-			+ Stream.of(options)
-				.map(option -> option.toString().toLowerCase())
-				.collect(joining("-"));
-		String name = "sample-" + config + ".smp";
-		Path basePath = Paths.get(base);
-		if (!Files.exists(basePath)) {
-			Files.createDirectories(basePath);
+	public String generateSample(GeneratorOption... options) {
+		if (sample != null) {
+			return sample;
 		}
-		Path path = basePath.resolve(name);
-		try (BufferedWriter writer = Files.newBufferedWriter(path)) {
-			for (int i = 0; i < FILE_SIZE; i++) {
-				int index = distribution.get();
-				char c = alphabet[index];
-				writer.write(c);
+		resetRandom(31);
+		char[] alphabet = generateAlphabet(options);
+		Supplier<Integer> distribution = generateDistribution(options);
+		sample = generateSample(alphabet, distribution);
+		return sample;
+	}
+
+	public Map<String,List<Integer>> generatePatterns(int length, int number) {
+		if (patterns != null && this.number >= number) {
+			return patterns;
+		}
+		if (patterns == null) {
+			patterns = new LinkedHashMap<>();
+		}
+		for (int i = this.number; i < number; i++) {
+			resetRandom(i);
+			String pattern = findPattern(length);
+			if (!patterns.containsKey(pattern)) {
+				List<Integer> occurences = findOccurences(pattern);
+				patterns.put(pattern, occurences);
 			}
 		}
-
+		this.number = number;
+		return patterns;
 	}
 
-	private char[] generateAlphabet() {
-		Function<Integer, Character> chars = generateChars();
+	public List<Integer> generateAllMatches(int length, int number) {
+		if (patterns != null && this.number >= number) {
+			return findOccurences(patterns.keySet().stream()
+				.limit(number)
+				.collect(toSet()));
+		}
+		return null;
+	}
+
+	private String findPattern(int length) {
+		int pos = random.nextInt(sample.length() - length);
+		return sample.substring(pos, pos + length);
+	}
+
+	private List<Integer> findOccurences(String pattern) {
+		List<Integer> occurences = new ArrayList<>();
+		Pattern p = Pattern.compile(Pattern.quote(pattern));
+		Matcher m = p.matcher(sample);
+		while (m.find()) {
+			occurences.add(m.start());
+		}
+		return occurences;
+	}
+
+	private List<Integer> findOccurences(Set<String> patterns) {
+		String[] sortedpatterns = patterns.toArray(new String[0]);
+		Arrays.sort(sortedpatterns, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+				return o2.length() - o1.length();
+			}
+		});
+		StringBuilder buffer = new StringBuilder();
+		for (int i = 0; i < sortedpatterns.length; i++) {
+			buffer.append('|');
+			buffer.append(Pattern.quote(sortedpatterns[i]));
+		}
+
+		List<Integer> occurences = new ArrayList<>();
+		Pattern p = Pattern.compile(buffer.substring(1));
+		Matcher m = p.matcher(sample);
+		while (m.find()) {
+			occurences.add(m.start());
+		}
+		return occurences;
+	}
+
+	private String generateSample(char[] alphabet, Supplier<Integer> distribution) {
+		char[] buffer = new char[FILE_SIZE];
+		for (int i = 0; i < FILE_SIZE; i++) {
+			int index = distribution.get();
+			buffer[i] = alphabet[index];
+		}
+		return new String(buffer);
+	}
+
+	private char[] generateAlphabet(GeneratorOption... options) {
+		Function<Integer, Character> chars = generateChars(options);
 		char[] alphabet = new char[alphabetSize];
 		for (int i = 0; i < alphabet.length; i++) {
 			alphabet[i] = chars.apply(i);
@@ -77,7 +140,7 @@ public class GenerateSamples {
 		return alphabet;
 	}
 
-	private Function<Integer, Character> generateChars() {
+	private Function<Integer, Character> generateChars(GeneratorOption... options) {
 		if (GeneratorOption.SPARSE.in(options)) {
 			return this::sparseChars;
 		} else if (alphabetSize == 2) {
@@ -134,7 +197,7 @@ public class GenerateSamples {
 		return (char) index.intValue();
 	}
 
-	private Supplier<Integer> generateDistribution() {
+	private Supplier<Integer> generateDistribution(GeneratorOption... options) {
 		if (GeneratorOption.NORMAL_DISTRIBUTED.in(options)) {
 			return this::normalDistribution;
 		} else {

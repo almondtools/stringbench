@@ -1,6 +1,7 @@
 package com.almondtools.stringbench;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openjdk.jmh.annotations.Benchmark;
@@ -22,7 +23,7 @@ public abstract class MultiPatternMatcherBenchmark {
 
 	private MultiPatternSample sample;
 
-	public abstract void prepare(String[] pattern);
+	public abstract void prepare(Set<String> pattern);
 
 	public abstract List<Integer> find(String text);
 

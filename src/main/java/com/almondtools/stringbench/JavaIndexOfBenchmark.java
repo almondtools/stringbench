@@ -4,14 +4,13 @@ import static com.almondtools.stringbenchanalyzer.Family.NAIVE;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 
 	private static final String ID = "String.indexOf (naive)";
-
-	private String[] searchPattern;
 
 	@Override
 	public String getId() {
@@ -24,21 +23,20 @@ public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(String[] pattern) {
-		searchPattern = pattern;
+	public void prepare(Set<String> patterns) {
 	}
 
 	@Override
-	public List<Integer> find(int i, String text) {
+	public List<Integer> find(String pattern, String text) {
 		List<Integer> result = new ArrayList<>();
 		int pos = 0;
 		while (pos > -1 && pos < text.length()) {
-			int match = text.indexOf(searchPattern[i], pos);
+			int match = text.indexOf(pattern, pos);
 			if (match < 0) {
 				pos = match;
 			} else {
 				result.add(match);
-				pos = match + searchPattern[i].length();
+				pos = match + pattern.length();
 			}
 		}
 		return result;

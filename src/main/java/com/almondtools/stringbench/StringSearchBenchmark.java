@@ -1,39 +1,39 @@
 package com.almondtools.stringbench;
 
+import static java.util.stream.Collectors.toMap;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import com.eaio.stringsearch.StringSearch;
 
 public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmark {
 
 	private StringSearch algorithm;
-	private String[] pattern;
-	private Object[] processed;
+	private Map<String, Object> processed;
 
 	@Override
-	public void prepare(String[] pattern) {
+	public void prepare(Set<String> patterns) {
 		this.algorithm = create();
-		this.pattern = pattern;
-		this.processed = new Object[pattern.length];
-		for (int i = 0; i < processed.length; i++) {
-			processed[i] = algorithm.processString(pattern[i]);
-		}
+		this.processed = patterns.stream()
+			.collect(toMap(pattern -> pattern, pattern -> algorithm.processString(pattern)));
 	}
 
 	public abstract StringSearch create();
 
 	@Override
-	public List<Integer> find(int i, String text) {
+	public List<Integer> find(String pattern, String text) {
 		List<Integer> indexes = new ArrayList<>();
 		int pos = 0;
 		while (pos > -1 && pos < text.length()) {
-			int result = algorithm.searchString(text, pos, pattern[i], processed[i]);
+			int result = algorithm.searchString(text, pos, pattern, processed.get(pattern));
 			if (result < 0) {
 				break;
 			}
 			indexes.add(result);
-			pos = result + pattern[i].length();
+			pos = result + pattern.length();
 		}
 		return indexes;
 	}

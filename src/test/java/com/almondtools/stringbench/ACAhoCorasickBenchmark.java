@@ -4,6 +4,7 @@ import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.ahocorasick.trie.Emit;
 import org.ahocorasick.trie.Trie;
@@ -32,7 +33,7 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(String[] patterns) {
+	public void prepare(Set<String> patterns) {
 		TrieBuilder builder = Trie.builder().removeOverlaps();
 		for (String pattern : patterns) {
 	        builder.addKeyword(pattern);

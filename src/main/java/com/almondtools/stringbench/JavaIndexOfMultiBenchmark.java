@@ -5,6 +5,7 @@ import static com.almondtools.stringbenchanalyzer.Family.NAIVE;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import com.almondtools.stringbenchanalyzer.Family;
 
@@ -25,8 +26,8 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(String[] pattern) {
-		searchPattern = pattern;
+	public void prepare(Set<String> pattern) {
+		searchPattern = pattern.stream().toArray(String[]::new);
 	}
 
 	@Override

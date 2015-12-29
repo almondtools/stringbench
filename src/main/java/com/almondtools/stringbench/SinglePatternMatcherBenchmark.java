@@ -1,6 +1,7 @@
 package com.almondtools.stringbench;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openjdk.jmh.annotations.Benchmark;
@@ -22,9 +23,9 @@ public abstract class SinglePatternMatcherBenchmark {
 
 	private SinglePatternSample sample;
 
-	public abstract void prepare(String[] pattern);
+	public abstract void prepare(Set<String> pattern);
 
-	public abstract List<Integer> find(int i, String text);
+	public abstract List<Integer> find(String pattern, String text);
 
 	public abstract String getId();
 
@@ -46,9 +47,9 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Measurement(iterations = 10)
 	@Fork(1)
 	public void benchmarkFind() {
-		for (int i = 0; i < sample.patterns(); i++) {
-			List<Integer> result = find(i, sample.getSample());
-			sample.validate(i, result);
+		for (String pattern : sample.getPattern()) {
+			List<Integer> result = find(pattern, sample.getSample());
+			sample.validate(pattern, result);
 		}
 	}
 
@@ -56,5 +57,5 @@ public abstract class SinglePatternMatcherBenchmark {
 	public void tearDown() {
 		this.sample = null;
 	}
-
+	
 }
