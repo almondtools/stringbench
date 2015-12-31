@@ -22,6 +22,7 @@ import com.almondtools.stringbenchanalyzer.Family;
 public abstract class MultiPatternMatcherBenchmark {
 
 	private MultiPatternSample sample;
+	private List<Integer> result;
 
 	public abstract void prepare(Set<String> pattern);
 
@@ -43,17 +44,17 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 10)
-	@Measurement(iterations = 10)
+	@Warmup(iterations = 5)
+	@Measurement(iterations = 5)
 	@Fork(1)
 	public void benchmarkFind() {
-		List<Integer> result = find(sample.getSample());
-		sample.validate(result);
+		result = find(sample.getSample());
 	}
 
 	@TearDown
 	public void tearDown() {
-		this.sample = null;
+		sample.validate(result);
+		sample = null;
 	}
 
 }

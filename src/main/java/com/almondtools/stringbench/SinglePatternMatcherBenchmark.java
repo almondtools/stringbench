@@ -1,6 +1,8 @@
 package com.almondtools.stringbench;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -22,6 +24,7 @@ import com.almondtools.stringbenchanalyzer.Family;
 public abstract class SinglePatternMatcherBenchmark {
 
 	private SinglePatternSample sample;
+	private Map<String, List<Integer>> results;
 
 	public abstract void prepare(Set<String> pattern);
 
@@ -38,24 +41,29 @@ public abstract class SinglePatternMatcherBenchmark {
 		}
 		this.sample = sample;
 		prepare(sample.getPattern());
+		this.results = new HashMap<>();
 	}
 
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 10)
-	@Measurement(iterations = 10)
+	@Warmup(iterations = 5)
+	@Measurement(iterations = 5)
 	@Fork(1)
 	public void benchmarkFind() {
 		for (String pattern : sample.getPattern()) {
 			List<Integer> result = find(pattern, sample.getSample());
-			sample.validate(pattern, result);
+			results.put(pattern, result);
 		}
 	}
 
 	@TearDown
 	public void tearDown() {
-		this.sample = null;
+		for (String pattern : sample.getPattern()) {
+			List<Integer> result = results.get(pattern);
+			sample.validate(pattern, result);
+		}
+		sample = null;
 	}
 	
 }

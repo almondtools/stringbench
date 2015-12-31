@@ -84,9 +84,7 @@ public class MultiPatternSample {
 		if (result == null) {
 			throw new ResultNotAcceptedException(all, result);
 		}
-		if (!result.containsAll(all)) {
-			throw new ResultNotAcceptedException(all, result);
-		} else if (!all.containsAll(result)) {
+		if (result.size() != all.size()) {
 			throw new ResultNotAcceptedException(all, result);
 		}
 	}

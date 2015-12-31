@@ -37,7 +37,7 @@ public class Texts {
 		return "sample-" + size + "-" + length + optionsKey;
 	}
 
-	private Text generate(String key, int number) {
+	public Text generate(String key, int number) {
 		Matcher m = KEY.matcher(key);
 		if (m.matches()) {
 			int size = Integer.parseInt(m.group(1));
