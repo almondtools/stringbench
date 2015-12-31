@@ -25,9 +25,8 @@ public class MultiPatternMatcherBenchmarkTest {
 		new JavaRegexMultiBenchmark(),
 		new SCSetHorspoolBenchmark(),
 		new SCAhoCorasickBenchmark(),
-		new SCSetBackwardOracleMatchingBenchmark(),
 		new SCWuManberBenchmark(),
-		new ACAhoCorasickBenchmark()
+		new SCSetBackwardOracleMatchingBenchmark()
 	};
 
 	@DataPoints

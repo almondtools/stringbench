@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -36,6 +37,11 @@ public class SinglePatternMatcherBenchmarkTest {
 	@DataPoints
 	public static SinglePatternSample[] sample = createSamples();
 
+	@Before
+	public void before() throws Exception {
+		System.gc();
+	}
+	
 	@Theory
 	public void testBenchmarkFind(SinglePatternMatcherBenchmark benchmark, SinglePatternSample sample) throws Exception {
 		System.out.println(benchmark.getId() + " for " + sample.toString());

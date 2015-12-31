@@ -13,7 +13,7 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-import com.almondtools.stringbenchgenerator.GeneratorOption;
+import com.almondtools.stringbenchgenerator.GenerateSamples;
 
 @State(Scope.Benchmark)
 public class MultiPatternSample {
@@ -26,8 +26,8 @@ public class MultiPatternSample {
 	private int patternSize;
 
 	private String sample;
-	private Map<String, List<Integer>> patterns;
-	private List<Integer> all;
+	private Map<String, Integer> patterns;
+	private int all;
 
 	public void setPatternNumber(int patternNumber) {
 		this.patternNumber = patternNumber;
@@ -51,16 +51,13 @@ public class MultiPatternSample {
 			+ patternSize;
 	}
 
-	public String getKey() {
-		return Texts.computeKey(alphabetSize, patternSize, new GeneratorOption[0]);
-	}
-
 	@Setup
 	public void setup() throws IOException {
-		Text text = Texts.TEXTS.text(getKey(), patternNumber);
-		this.sample = text.sample;
-		this.patterns = text.patterns;
-		this.all = text.all;
+		String sampleKey = GenerateSamples.computeKey(alphabetSize); 
+		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize); 
+		this.sample = GenerateSamples.readSample(sampleKey);
+		this.patterns = GenerateSamples.readPatterns(patternKey);
+		this.all = GenerateSamples.readAll(patternKey).getOrDefault(patternNumber, 0);
 	}
 
 	public String getSample() {
@@ -77,15 +74,15 @@ public class MultiPatternSample {
 	public synchronized void tearDown() {
 		this.sample = null;
 		this.patterns = null;
-		this.all = null;
+		this.all = 0;
 	}
 
 	public void validate(List<Integer> result) {
 		if (result == null) {
-			throw new ResultNotAcceptedException(all, result);
+			throw new ResultSizeNotAcceptedException(all, 0);
 		}
-		if (result.size() != all.size()) {
-			throw new ResultNotAcceptedException(all, result);
+		if (result.size() != all) {
+			throw new ResultSizeNotAcceptedException(all, result.size());
 		}
 	}
 

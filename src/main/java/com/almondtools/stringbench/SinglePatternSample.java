@@ -11,7 +11,7 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
-import com.almondtools.stringbenchgenerator.GeneratorOption;
+import com.almondtools.stringbenchgenerator.GenerateSamples;
 
 @State(Scope.Benchmark)
 public class SinglePatternSample {
@@ -22,7 +22,7 @@ public class SinglePatternSample {
 	private int patternSize;
 
 	private String sample;
-	private Map<String, List<Integer>> patterns;
+	private Map<String, Integer> patterns;
 
 	public void setAlphabetSize(int alphabetSize) {
 		this.alphabetSize = alphabetSize;
@@ -41,15 +41,12 @@ public class SinglePatternSample {
 		return "alphabet size : " + alphabetSize + ", pattern size : " + patternSize;
 	}
 
-	public String getKey() {
-		return Texts.computeKey(alphabetSize, patternSize, new GeneratorOption[0]);
-	}
-
 	@Setup
 	public void setup() throws IOException {
-		Text text = Texts.TEXTS.text(getKey(),16);
-		this.sample = text.sample;
-		this.patterns = text.patterns;
+		String sampleKey = GenerateSamples.computeKey(alphabetSize);
+		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize);
+		this.sample = GenerateSamples.readSample(sampleKey);
+		this.patterns = GenerateSamples.readPatterns(patternKey);
 	}
 
 	public int patterns() {
@@ -71,14 +68,12 @@ public class SinglePatternSample {
 	}
 
 	public void validate(String pattern, List<Integer> result) {
-		List<Integer> expected = patterns.get(pattern);
+		Integer expected = patterns.get(pattern);
 		if (result == null) {
-			throw new ResultNotAcceptedException(expected, result);
+			throw new ResultSizeNotAcceptedException(expected, 0);
 		}
-		if (!result.containsAll(expected)) {
-			throw new ResultNotAcceptedException(expected, result);
-		} else if (!expected.containsAll(result)) {
-			throw new ResultNotAcceptedException(expected, result);
+		if (result.size() != expected) {
+			throw new ResultSizeNotAcceptedException(expected, result.size());
 		}
 	}
 

@@ -1,7 +1,17 @@
 package com.almondtools.stringbenchgenerator;
 
+import static com.almondtools.stringbenchgenerator.AlphabetOption.NORMAL_DISTRIBUTED;
+import static com.almondtools.stringbenchgenerator.AlphabetOption.SPARSE;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,24 +24,116 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 public class GenerateSamples {
 
-	private static final int FILE_SIZE = 3 * 1024 * 1024;
-	
+	private static final Pattern PATTERN_LINE = Pattern.compile(":(\\d+)$");
+
+	private static final int[] ALPHABET_SIZES = { 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 };
+	private static AlphabetOption[][] OPTIONS = { { SPARSE }, { NORMAL_DISTRIBUTED }, {} };
+
+	private static final int[] PATTERN_SIZES = { 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 };
+	private static final int[] PATTERN_NUMBERS = { 2, 8, 32, 128 };
+
+	private static final int CHAR_NUMBER = 3 * 1024 * 1024;
+
 	private int alphabetSize;
+	private AlphabetOption[] options;
 	private Random random;
 
 	private String sample;
-	private Map<String, List<Integer>> patterns;
-	private int number;
 
-
-
-	public GenerateSamples(int alphabetSize) {
+	public GenerateSamples(int alphabetSize, AlphabetOption... options) {
 		this.alphabetSize = alphabetSize;
+		this.options = options;
 	}
-	
+
+	public static String computeKey(int alphabetSize, AlphabetOption... options) {
+		return "sample-" + alphabetSize + optionsKey(options);
+	}
+
+	public static String computeKey(int alphabetSize, int patternSize, AlphabetOption... options) {
+		return "pattern-" + alphabetSize + "-" + patternSize + optionsKey(options);
+	}
+
+	private static String optionsKey(AlphabetOption... options) {
+		return options.length == 0 ? "" : Stream.of(options)
+			.map(option -> option.toString().toLowerCase())
+			.collect(joining("-", "-", ""));
+	}
+
+	public static void main(String[] args) throws IOException {
+		String base = args[0];
+		Path basePath = Paths.get(base);
+		if (!Files.exists(basePath)) {
+			Files.createDirectories(basePath);
+		}
+		for (int alphabetSize : ALPHABET_SIZES) {
+			for (AlphabetOption[] options : OPTIONS) {
+				GenerateSamples generator = new GenerateSamples(alphabetSize, options);
+				generator.writeSample(basePath);
+				generator.writePatterns(basePath, PATTERN_SIZES, PATTERN_NUMBERS);
+			}
+		}
+	}
+
+	private void writeSample(Path base) throws IOException {
+		String key = computeKey(alphabetSize, options);
+		Path target = base.resolve(key + ".sample");
+
+		sample = generateSample();
+
+		Files.write(target, sample.getBytes());
+	}
+
+	private void writePatterns(Path base, int[] patternSizes, int[] patternNumbers) throws IOException {
+		int maxPatternNumber = maxNumber(patternNumbers);
+		for (int patternSize : patternSizes) {
+			String key = computeKey(alphabetSize, patternSize, options);
+
+			Set<String> patterns = writeSingleResults(base, key, patternSize, maxPatternNumber);
+
+			writeMultiResults(base, key, patterns, patternNumbers);
+		}
+	}
+
+	public Set<String> writeSingleResults(Path base, String key, int patternSize, int maxPatternNumber) throws IOException {
+		Path target = base.resolve(key + ".result");
+
+		List<String> lines = new ArrayList<String>();
+
+		Map<String, List<Integer>> patterns = generatePatterns(patternSize, maxPatternNumber);
+		for (Map.Entry<String, List<Integer>> entry : patterns.entrySet()) {
+			lines.add(escape(entry.getKey()) + ":" + entry.getValue().size());
+		}
+
+		Files.write(target, lines);
+
+		return patterns.keySet();
+	}
+
+	public void writeMultiResults(Path base, String key, Set<String> patterns, int[] patternNumbers) throws IOException {
+		Path target = base.resolve(key + ".multi.result");
+
+		List<String> lines = new ArrayList<String>();
+
+		Map<Integer, List<Integer>> all = generateAllMatches(patterns, patternNumbers);
+		for (Map.Entry<Integer, List<Integer>> entry : all.entrySet()) {
+			lines.add(entry.getKey() + ":" + entry.getValue().size());
+		}
+
+		Files.write(target, lines);
+	}
+
+	public static int maxNumber(int[] patternNumbers) {
+		int maxPatternNumber = 0;
+		for (int patternNumber : patternNumbers) {
+			maxPatternNumber = maxPatternNumber < patternNumber ? patternNumber : maxPatternNumber;
+		}
+		return maxPatternNumber;
+	}
+
 	public void resetRandom(int i) {
 		random = new Random(i);
 	}
@@ -40,11 +142,7 @@ public class GenerateSamples {
 		return sample;
 	}
 
-	public Map<String, List<Integer>> getPatterns() {
-		return patterns;
-	}
-
-	public String generateSample(GeneratorOption... options) {
+	public String generateSample() {
 		if (sample != null) {
 			return sample;
 		}
@@ -55,37 +153,35 @@ public class GenerateSamples {
 		return sample;
 	}
 
-	public Map<String,List<Integer>> generatePatterns(int length, int number) {
-		if (patterns != null && this.number >= number) {
-			return patterns;
+	public Map<String, List<Integer>> generatePatterns(int patternSize, int patternNumber) {
+		if (sample == null) {
+			generateSample();
 		}
-		if (patterns == null) {
-			patterns = new LinkedHashMap<>();
-		}
-		for (int i = this.number; i < number; i++) {
+		Map<String, List<Integer>> patterns = new LinkedHashMap<>();
+		for (int i = 0; i < patternNumber; i++) {
 			resetRandom(i);
-			String pattern = findPattern(length);
+			String pattern = findPattern(patternSize);
 			if (!patterns.containsKey(pattern)) {
 				List<Integer> occurences = findOccurences(pattern);
 				patterns.put(pattern, occurences);
 			}
 		}
-		this.number = number;
 		return patterns;
 	}
 
-	public List<Integer> generateAllMatches(int length, int number) {
-		if (patterns != null && this.number >= number) {
-			return findOccurences(patterns.keySet().stream()
+	public Map<Integer, List<Integer>> generateAllMatches(Set<String> patterns, int[] patternNumbers) {
+		Map<Integer, List<Integer>> all = new LinkedHashMap<Integer, List<Integer>>();
+		for (int number : patternNumbers) {
+			all.put(number, findOccurences(patterns.stream()
 				.limit(number)
-				.collect(toSet()));
+				.collect(toSet())));
 		}
-		return null;
+		return all;
 	}
 
-	private String findPattern(int length) {
-		int pos = random.nextInt(sample.length() - length);
-		return sample.substring(pos, pos + length);
+	private String findPattern(int patternSize) {
+		int pos = random.nextInt(sample.length() - patternSize);
+		return sample.substring(pos, pos + patternSize);
 	}
 
 	private List<Integer> findOccurences(String pattern) {
@@ -123,15 +219,15 @@ public class GenerateSamples {
 	}
 
 	private String generateSample(char[] alphabet, Supplier<Integer> distribution) {
-		char[] buffer = new char[FILE_SIZE];
-		for (int i = 0; i < FILE_SIZE; i++) {
+		char[] buffer = new char[CHAR_NUMBER];
+		for (int i = 0; i < CHAR_NUMBER; i++) {
 			int index = distribution.get();
 			buffer[i] = alphabet[index];
 		}
 		return new String(buffer);
 	}
 
-	private char[] generateAlphabet(GeneratorOption... options) {
+	private char[] generateAlphabet(AlphabetOption... options) {
 		Function<Integer, Character> chars = generateChars(options);
 		char[] alphabet = new char[alphabetSize];
 		for (int i = 0; i < alphabet.length; i++) {
@@ -140,8 +236,8 @@ public class GenerateSamples {
 		return alphabet;
 	}
 
-	private Function<Integer, Character> generateChars(GeneratorOption... options) {
-		if (GeneratorOption.SPARSE.in(options)) {
+	private Function<Integer, Character> generateChars(AlphabetOption... options) {
+		if (AlphabetOption.SPARSE.in(options)) {
 			return this::sparseChars;
 		} else if (alphabetSize == 2) {
 			return this::binaryChars;
@@ -197,8 +293,8 @@ public class GenerateSamples {
 		return (char) index.intValue();
 	}
 
-	private Supplier<Integer> generateDistribution(GeneratorOption... options) {
-		if (GeneratorOption.NORMAL_DISTRIBUTED.in(options)) {
+	private Supplier<Integer> generateDistribution(AlphabetOption... options) {
+		if (AlphabetOption.NORMAL_DISTRIBUTED.in(options)) {
 			return this::normalDistribution;
 		} else {
 			return this::equalDistribution;
@@ -210,9 +306,9 @@ public class GenerateSamples {
 	}
 
 	private Integer normalDistribution() {
-		int mean = alphabetSize / 2;
-		int var = alphabetSize / 6;
-		int result = (int) (random.nextGaussian() * var + mean);
+		double mean = (double) alphabetSize / 2d;
+		double var = (double) alphabetSize / 6d;
+		int result = (int) Math.round(random.nextGaussian() * var + mean);
 		if (result < 0) {
 			return 0;
 		} else if (result >= alphabetSize) {
@@ -220,6 +316,66 @@ public class GenerateSamples {
 		} else {
 			return result;
 		}
+	}
+
+	public static String readSample(String sampleKey) throws IOException {
+		try (BufferedReader reader = open(sampleKey + ".sample")) {
+			StringBuilder buffer = new StringBuilder();
+			char[] chars = new char[8192];
+			int n = 0;
+			while ((n = reader.read(chars)) > -1) {
+				buffer.append(chars, 0, n);
+			}
+			return buffer.toString();
+		}
+	}
+
+	public static Map<String, Integer> readPatterns(String resultKey) throws IOException {
+		try (BufferedReader reader = open(resultKey + ".result")) {
+			return reader.lines()
+				.map(line -> unescape(line))
+				.map(line -> splitPattern(line))
+				.collect(toMap(value -> value[0], value -> Integer.parseInt(value[1])));
+		}
+
+	}
+
+	public static Map<Integer, Integer> readAll(String resultKey) throws IOException {
+		try (BufferedReader reader = open(resultKey + ".multi.result")) {
+			return reader.lines()
+				.map(line -> unescape(line))
+				.map(line -> splitPattern(line))
+				.collect(toMap(value -> Integer.parseInt(value[0]), value -> Integer.parseInt(value[1])));
+		}
+	}
+
+	public static BufferedReader open(String fileName) throws IOException {
+		System.out.println(fileName);
+		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName)));
+	}
+
+	private static String[] splitPattern(String line) {
+		Matcher m = PATTERN_LINE.matcher(line);
+		if (m.find()) {
+			int pos = m.start();
+			return new String[] { line.substring(0, pos), m.group(1) };
+		} else {
+			return new String[] { line, "0" };
+		}
+	}
+
+	private static String escape(String str) {
+		return str
+			.replace("\\", "\\\\")
+			.replace("\r", "\\r")
+			.replace("\n", "\\n");
+	}
+
+	private static String unescape(String str) {
+		return str
+			.replace("\\\\", "\\")
+			.replace("\\r", "\r")
+			.replace("\\n", "\n");
 	}
 
 }

@@ -1,15 +1,14 @@
 package com.almondtools.stringbench;
 
-import java.util.List;
 import java.util.Map;
 
-class Text {
+public class Text {
 	public String sample;
-	public Map<String, List<Integer>> patterns;
-	public List<Integer> all;
+	public Map<String, Integer> patterns;
+	public Map<Integer, Integer> all;
 
-	public Text(String text, Map<String, List<Integer>> patterns, List<Integer> all) {
-		this.sample = text;
+	public Text(String sample, Map<String, Integer> patterns, Map<Integer, Integer> all) {
+		this.sample = sample;
 		this.patterns = patterns;
 		this.all = all;
 	}
