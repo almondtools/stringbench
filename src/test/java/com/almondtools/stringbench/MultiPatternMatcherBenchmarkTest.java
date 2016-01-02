@@ -1,6 +1,5 @@
 package com.almondtools.stringbench;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,13 +10,13 @@ import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 @RunWith(Theories.class)
-public class MultiPatternMatcherBenchmarkTest {
+public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 
 	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
-	private static final int[] ALPHABET = new int[] { 4, 64 };
-	private static final int[] SIZE = new int[] { 4, 16 };
+	private static final int[] ALPHABET = new int[] { 2, 4, 16, 128 };
+	private static final int[] SIZE = new int[] { 2, 8, 64 };
 	
 	@DataPoints
 	public static MultiPatternMatcherBenchmark[] benchmark = {
@@ -50,20 +49,6 @@ public class MultiPatternMatcherBenchmarkTest {
 			}
 		}
 		return samples.toArray(new MultiPatternSample[0]);
-	}
-
-	private static MultiPatternSample createSample(int alphabet, int pattern, int patternNumber) {
-		try {
-			System.out.println("creating sample with alphabet size " + alphabet + " and pattern size " + pattern + " (" + patternNumber + " patterns)");
-			MultiPatternSample sample = new MultiPatternSample();
-			sample.setPatternNumber(patternNumber);
-			sample.setAlphabetSize(alphabet);
-			sample.setPatternSize(pattern);
-			sample.setup();
-			return sample;
-		} catch (IOException e) {
-			throw new AssertionError(e);
-		}
 	}
 
 }

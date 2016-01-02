@@ -18,6 +18,7 @@ public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmar
 	public void prepare(Set<String> patterns) {
 		this.algorithm = create();
 		this.processed = patterns.stream()
+			.filter(pattern -> algorithm.processString(pattern) != null)
 			.collect(toMap(pattern -> pattern, pattern -> algorithm.processString(pattern)));
 	}
 
@@ -27,8 +28,9 @@ public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmar
 	public List<Integer> find(String pattern, String text) {
 		List<Integer> indexes = new ArrayList<>();
 		int pos = 0;
+		Object processedObject = processed.get(pattern);
 		while (pos > -1 && pos < text.length()) {
-			int result = algorithm.searchString(text, pos, pattern, processed.get(pattern));
+			int result = algorithm.searchString(text, pos, pattern, processedObject);
 			if (result < 0) {
 				break;
 			}

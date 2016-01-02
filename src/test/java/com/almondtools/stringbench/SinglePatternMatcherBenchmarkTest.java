@@ -1,6 +1,5 @@
 package com.almondtools.stringbench;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,13 +11,13 @@ import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 @RunWith(Theories.class)
-public class SinglePatternMatcherBenchmarkTest {
+public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 
 	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
-	private static final int[] ALPHABET = new int[] { 4, 16, 128 };
-	private static final int[] SIZE = new int[] { 8, 64 };
+	private static final int[] ALPHABET = new int[] { 2, 4, 16, 128 };
+	private static final int[] SIZE = new int[] { 2, 8, 64 };
 
 	@DataPoints
 	public static SinglePatternMatcherBenchmark[] benchmark = {
@@ -28,10 +27,7 @@ public class SinglePatternMatcherBenchmarkTest {
 		new SCKnuthMorrisPrattBenchmark(),
 		new SCSundayBenchmark(),
 		new SCShiftAndBenchmark(),
-		new SCBNDMBenchmark(),
-		new SSBNDMBenchmark(),
-		new SSBoyerMooreHorspoolBenchmark(),
-		new SSBoyerMooreHorspoolRaitaBenchmark()
+		new SCBNDMBenchmark()
 	};
 
 	@DataPoints
@@ -60,19 +56,6 @@ public class SinglePatternMatcherBenchmarkTest {
 			}
 		}
 		return samples.toArray(new SinglePatternSample[0]);
-	}
-
-	private static SinglePatternSample createSample(int alphabet, int pattern) {
-		try {
-			System.out.println("creating sample with alphabet size " + alphabet + " and pattern size " + pattern);
-			SinglePatternSample sample = new SinglePatternSample();
-			sample.setAlphabetSize(alphabet);
-			sample.setPatternSize(pattern);
-			sample.setup();
-			return sample;
-		} catch (IOException e) {
-			throw new AssertionError(e);
-		}
 	}
 
 }
