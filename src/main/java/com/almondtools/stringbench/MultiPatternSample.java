@@ -67,6 +67,7 @@ public class MultiPatternSample {
 	public Set<String> getPattern() {
 		return patterns.keySet().stream()
 			.limit(patternNumber)
+			.distinct()
 			.collect(toSet());
 	}
 

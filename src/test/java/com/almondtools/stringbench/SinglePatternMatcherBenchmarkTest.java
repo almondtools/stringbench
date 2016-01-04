@@ -43,6 +43,7 @@ public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 		System.out.println(benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFind();
+		benchmark.tearDown();
 	}
 
 	private static SinglePatternSample[] createSamples() {

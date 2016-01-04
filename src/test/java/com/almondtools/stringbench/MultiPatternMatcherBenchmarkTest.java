@@ -14,19 +14,16 @@ public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 
 	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
-	
+
 	private static final int[] ALPHABET = new int[] { 2, 4, 16, 128 };
 	private static final int[] SIZE = new int[] { 2, 8, 64 };
-	
+	private static final int[] NUMBER = new int[] { 2, 32 };
+
 	@DataPoints
 	public static MultiPatternMatcherBenchmark[] benchmark = {
-		new JavaIndexOfMultiBenchmark(),
-		new JavaRegexMultiBenchmark(),
-		new SCSetHorspoolBenchmark(),
-		new SCAhoCorasickBenchmark(),
-		new SCWuManberBenchmark(),
-		new SCSetBackwardOracleMatchingBenchmark()
-	};
+			// new JavaIndexOfMultiBenchmark(),
+			new JavaRegexMultiBenchmark(), new SCSetHorspoolBenchmark(), new SCAhoCorasickBenchmark(),
+			new SCWuManberBenchmark(), new SCSetBackwardOracleMatchingBenchmark() };
 
 	@DataPoints
 	public static MultiPatternSample[] sample = createSamples();
@@ -36,15 +33,18 @@ public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 		System.out.println(benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFind();
+		benchmark.tearDown();
 	}
 
 	private static MultiPatternSample[] createSamples() {
 		List<MultiPatternSample> samples = new ArrayList<>();
 		for (int i = 0; i < ALPHABET.length; i++) {
 			for (int j = 0; j < SIZE.length; j++) {
-				MultiPatternSample sample = createSample(ALPHABET[i], SIZE[j], ALPHABET[i] / 2);
-				if (sample.isValid()) {
-					samples.add(sample);
+				for (int k = 0; k < NUMBER.length; k++) {
+					MultiPatternSample sample = createSample(ALPHABET[i], SIZE[j], NUMBER[k]);
+					if (sample.isValid()) {
+						samples.add(sample);
+					}
 				}
 			}
 		}

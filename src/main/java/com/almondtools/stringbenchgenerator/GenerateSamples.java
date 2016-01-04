@@ -174,6 +174,7 @@ public class GenerateSamples {
 		for (int number : patternNumbers) {
 			all.put(number, findOccurences(patterns.stream()
 				.limit(number)
+				.distinct()
 				.collect(toSet())));
 		}
 		return all;
@@ -335,7 +336,7 @@ public class GenerateSamples {
 			return reader.lines()
 				.map(line -> unescape(line))
 				.map(line -> splitPattern(line))
-				.collect(toMap(value -> value[0], value -> Integer.parseInt(value[1])));
+				.collect(toMap(value -> value[0], value -> Integer.parseInt(value[1]), (v1, v2) -> Math.max(v1, v2), LinkedHashMap::new));
 		}
 
 	}
@@ -372,10 +373,26 @@ public class GenerateSamples {
 	}
 
 	private static String unescape(String str) {
-		return str
-			.replace("\\\\", "\\")
-			.replace("\\r", "\r")
-			.replace("\\n", "\n");
+		StringBuilder buffer = new StringBuilder();
+		boolean escaped = false;
+		for (char c : str.toCharArray()) {
+			if (escaped) {
+				if (c == 'r') {
+					buffer.append('\r');
+				} else if (c == 'n') {
+					buffer.append('\n');
+				} else {
+					buffer.append(c);
+				}
+				escaped = false;
+			} else if (c == '\\') {
+				escaped = true;
+			} else {
+				buffer.append(c);
+			}
+			
+		}
+		return buffer.toString();
 	}
 
 }
