@@ -1,7 +1,7 @@
 package com.almondtools.stringbench;
 
 import static com.almondtools.stringsandchars.search.MatchOption.LONGEST_MATCH;
-import static com.almondtools.stringsandchars.search.MatchOption.NO_OVERLAP;
+import static com.almondtools.stringsandchars.search.MatchOption.NON_OVERLAP;
 import static java.util.stream.Collectors.toMap;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public abstract class StringsAndCharsBenchmark extends SinglePatternMatcherBench
 
 	@Override
 	public List<Integer> find(String pattern, String text) {
-		List<StringMatch> matches = algorithm.get(pattern).createFinder(new StringCharProvider(text, 0), LONGEST_MATCH, NO_OVERLAP).findAll();
+		List<StringMatch> matches = algorithm.get(pattern).createFinder(new StringCharProvider(text, 0), LONGEST_MATCH, NON_OVERLAP).findAll();
 		List<Integer> indexes = new ArrayList<>(matches.size());
 		for (StringMatch match : matches) {
 			indexes.add((int) match.start());
