@@ -1,5 +1,6 @@
 package com.almondtools.stringbench;
 
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toSet;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
 import com.almondtools.stringbenchgenerator.GenerateSamples;
+import com.almondtools.util.text.CharUtils;
 
 @State(Scope.Benchmark)
 public class MultiPatternSample {
@@ -53,8 +55,8 @@ public class MultiPatternSample {
 
 	@Setup
 	public void setup() throws IOException {
-		String sampleKey = GenerateSamples.computeKey(alphabetSize); 
-		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize); 
+		String sampleKey = GenerateSamples.computeKey(alphabetSize);
+		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize);
 		this.sample = GenerateSamples.readSample(sampleKey);
 		this.patterns = GenerateSamples.readPatterns(patternKey);
 		this.all = GenerateSamples.readAll(patternKey).getOrDefault(patternNumber, 0);
@@ -78,13 +80,23 @@ public class MultiPatternSample {
 		this.all = 0;
 	}
 
-	public void validate(List<Integer> result) {
+	public void validate(Set<String> pattern, List<Integer> result) {
 		if (result == null) {
-			throw new ResultSizeNotAcceptedException(all, 0);
+			throw new ResultSizeNotAcceptedException(pattern.stream()
+				.map(str -> toReadableString(str))
+				.collect(joining(",", "{", "}")), all, 0);
 		}
 		if (result.size() != all) {
-			throw new ResultSizeNotAcceptedException(all, result.size());
+			throw new ResultSizeNotAcceptedException(pattern.stream()
+				.map(str -> toReadableString(str))
+				.collect(joining(",", "{", "}")), all, result.size());
 		}
+	}
+
+	private String toReadableString(String str) {
+		return str.chars()
+			.mapToObj(c -> CharUtils.charToString((char) c))
+			.collect(joining());
 	}
 
 }

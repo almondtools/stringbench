@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
+import org.openjdk.jmh.annotations.Level;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
@@ -50,10 +51,14 @@ public abstract class MultiPatternMatcherBenchmark {
 	public void benchmarkFind() {
 		result = find(sample.getSample());
 	}
+	
+	@TearDown(Level.Iteration)
+	public void validate() {
+		sample.validate(sample.getPattern(), result);
+	}
 
 	@TearDown
 	public void tearDown() {
-		sample.validate(result);
 		sample = null;
 	}
 

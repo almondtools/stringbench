@@ -69,7 +69,11 @@ public class GenerateSamples {
 		if (!Files.exists(basePath)) {
 			Files.createDirectories(basePath);
 		}
-		for (int alphabetSize : ALPHABET_SIZES) {
+		int[] alphabetSizes = ALPHABET_SIZES;
+		if (args.length >= 2) {
+			alphabetSizes = new int[]{Integer.parseInt(args[1])};
+		}
+		for (int alphabetSize : alphabetSizes) {
 			for (AlphabetOption[] options : OPTIONS) {
 				GenerateSamples generator = new GenerateSamples(alphabetSize, options);
 				generator.writeSample(basePath);
@@ -84,6 +88,7 @@ public class GenerateSamples {
 
 		sample = generateSample();
 
+		System.out.println("writing " + target.toString());
 		Files.write(target, sample.getBytes());
 	}
 
@@ -108,6 +113,7 @@ public class GenerateSamples {
 			lines.add(escape(entry.getKey()) + ":" + entry.getValue().size());
 		}
 
+		System.out.println("writing " + target.toString());
 		Files.write(target, lines);
 
 		return patterns.keySet();
@@ -123,6 +129,7 @@ public class GenerateSamples {
 			lines.add(entry.getKey() + ":" + entry.getValue().size());
 		}
 
+		System.out.println("writing " + target.toString());
 		Files.write(target, lines);
 	}
 
@@ -352,7 +359,7 @@ public class GenerateSamples {
 
 	public static BufferedReader open(String fileName) throws IOException {
 		System.out.println(fileName);
-		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName)));
+		return new BufferedReader(new InputStreamReader(GenerateSamples.class.getClassLoader().getResourceAsStream(fileName), "UTF-8"));
 	}
 
 	private static String[] splitPattern(String line) {

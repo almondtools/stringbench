@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import static java.util.stream.Collectors.joining;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +14,7 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
 import com.almondtools.stringbenchgenerator.GenerateSamples;
+import com.almondtools.util.text.CharUtils;
 
 @State(Scope.Benchmark)
 public class SinglePatternSample {
@@ -70,11 +73,17 @@ public class SinglePatternSample {
 	public void validate(String pattern, List<Integer> result) {
 		Integer expected = patterns.get(pattern);
 		if (result == null) {
-			throw new ResultSizeNotAcceptedException(expected, 0);
+			throw new ResultSizeNotAcceptedException(toReadableString(pattern), expected, 0);
 		}
 		if (result.size() != expected) {
-			throw new ResultSizeNotAcceptedException(expected, result.size());
+			throw new ResultSizeNotAcceptedException(toReadableString(pattern), expected, result.size());
 		}
+	}
+
+	private String toReadableString(String str) {
+		return str.chars()
+			.mapToObj(c -> CharUtils.charToString((char) c))
+			.collect(joining());
 	}
 
 }
