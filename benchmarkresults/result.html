@@ -98,7 +98,7 @@ d3.csv("${file}", function(error, data) {
   var color = colorScale(map, domain);
 	
   // don't want dots overlapping axis, so add in buffer to data domain
-  xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+512]);
+  xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+4096]);
   yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+512]);
 
   // x-axis
