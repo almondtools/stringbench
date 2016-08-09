@@ -9,14 +9,10 @@ import java.util.Set;
 import org.ahocorasick.trie.Emit;
 import org.ahocorasick.trie.Trie;
 import org.ahocorasick.trie.Trie.TrieBuilder;
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbench.MultiPatternMatcherBenchmark;
 import com.almondtools.stringbenchanalyzer.Family;
 
-//excluded from benchmark because causing an infinite loop on MultiPatternMatcherBenchmarkTest
-@State(Scope.Thread)
 public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 
 	private static final String ID = "AhoCorasick.org Aho-Corasick";
