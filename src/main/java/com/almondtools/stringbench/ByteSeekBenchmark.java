@@ -1,4 +1,4 @@
-package com.almondtools.stringbench.incubation;
+package com.almondtools.stringbench;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -7,14 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import net.byteseek.io.reader.StringReader;
-import net.byteseek.io.reader.WindowReader;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.ForwardSearchIterator;
 import net.byteseek.searcher.SearchResult;
 import net.byteseek.searcher.Searcher;
-
-import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 
 public abstract class ByteSeekBenchmark extends SinglePatternMatcherBenchmark {
 
@@ -31,8 +27,9 @@ public abstract class ByteSeekBenchmark extends SinglePatternMatcherBenchmark {
 	@Override
 	public List<Integer> find(String pattern, String text) {
 		Searcher<SequenceMatcher> searcher = algorithm.get(pattern);
-		WindowReader reader = new StringReader(text);
-		ForwardSearchIterator<SequenceMatcher> searchIterator = new ForwardSearchIterator<SequenceMatcher>(searcher, reader, 0);
+		byte[] stringBytes = text.getBytes();
+		ForwardSearchIterator<SequenceMatcher> searchIterator = new
+			ForwardSearchIterator<SequenceMatcher>(searcher, stringBytes, 0);
 
 		List<Integer> indexes = new ArrayList<>();
 

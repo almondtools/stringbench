@@ -5,6 +5,7 @@ import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 
+import com.almondtools.stringbench.BSBoyerMooreHorspoolBenchmark;
 import com.almondtools.stringbench.CompareResultNotAccepted;
 import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 import com.almondtools.stringbench.SinglePatternSample;

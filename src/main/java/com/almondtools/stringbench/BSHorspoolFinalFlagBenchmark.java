@@ -1,16 +1,16 @@
-package com.almondtools.stringbench.incubation;
+package com.almondtools.stringbench;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 import net.byteseek.matcher.sequence.ByteSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.Searcher;
-import net.byteseek.searcher.sequence.sunday.SundayQuickSearcher;
+import net.byteseek.searcher.sequence.horspool.HorspoolFinalFlagSearcher;
 
 import com.almondtools.stringbenchanalyzer.Family;
 
-public class BSSundayBenchmark extends ByteSeekBenchmark {
+public class BSHorspoolFinalFlagBenchmark extends ByteSeekBenchmark {
 
-	private static final String ID = "ByteSeek Boyer-Moore-Horspool";
+	private static final String ID = "ByteSeek Horspool Final Flag";
 
 	@Override
 	public String getId() {
@@ -26,7 +26,7 @@ public class BSSundayBenchmark extends ByteSeekBenchmark {
 	@Override
 	public Searcher<SequenceMatcher> create(String pattern) {
 		SequenceMatcher matcher = new ByteSequenceMatcher(pattern);
-		return new SundayQuickSearcher(matcher);
+		return new HorspoolFinalFlagSearcher(matcher);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.almondtools.stringbench.incubation;
+package com.almondtools.stringbench;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 import net.byteseek.matcher.sequence.ByteSequenceMatcher;
@@ -10,7 +10,7 @@ import com.almondtools.stringbenchanalyzer.Family;
 
 public class BSSequenceMatcherBenchmark extends ByteSeekBenchmark {
 
-	private static final String ID = "ByteSeek Boyer-Moore-Horspool";
+	private static final String ID = "ByteSeek Sequence Matcher";
 
 	@Override
 	public String getId() {

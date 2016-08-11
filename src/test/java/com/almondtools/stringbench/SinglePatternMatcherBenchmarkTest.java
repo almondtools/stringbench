@@ -23,11 +23,18 @@ public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 	public static SinglePatternMatcherBenchmark[] benchmark = {
 		new JavaIndexOfBenchmark(),
 		new JavaRegexBenchmark(),
+		
 		new SCHorspoolBenchmark(),
 		new SCKnuthMorrisPrattBenchmark(),
 		new SCSundayBenchmark(),
 		new SCShiftAndBenchmark(),
-		new SCBNDMBenchmark()
+		new SCBNDMBenchmark(),
+		
+		new BSBoyerMooreHorspoolBenchmark(),
+		new BSHorspoolFinalFlagBenchmark(),
+		new BSSequenceMatcherBenchmark(),
+		new BSSundayBenchmark()
+		
 	};
 
 	@DataPoints
