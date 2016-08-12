@@ -33,10 +33,15 @@ public abstract class ByteSeekBenchmark extends SinglePatternMatcherBenchmark {
 
 		List<Integer> indexes = new ArrayList<>();
 
+		long lastPosition = -1;
 		while (searchIterator.hasNext()) {
 			List<SearchResult<SequenceMatcher>> results = searchIterator.next();
 			for (SearchResult<SequenceMatcher> result : results) {
-				indexes.add((int) result.getMatchPosition());
+				long pos = result.getMatchPosition();
+				if (pos >= lastPosition) {
+					indexes.add((int) pos);
+					lastPosition = pos + result.getMatchingObject().length();
+				}
 			}
 		}
 		return indexes;

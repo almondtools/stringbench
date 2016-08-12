@@ -1,7 +1,6 @@
 package com.almondtools.stringbench.incubation;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -11,7 +10,6 @@ import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 import com.almondtools.stringbench.SinglePatternSample;
 import com.almondtools.stringbench.SinglePatternTest;
 
-@Ignore
 public class BSSequenceMatcherIncubationTest extends SinglePatternTest {
 
 	@Rule
