@@ -11,7 +11,7 @@ import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 import com.almondtools.stringbench.SinglePatternSample;
 import com.almondtools.stringbench.SinglePatternTest;
 
-@Ignore //No algorithm should use longer than a minute for finding patterns
+@Ignore
 public class BSHorspoolFinalFlagIncubationTest extends SinglePatternTest {
 
 	@Rule
@@ -29,6 +29,7 @@ public class BSHorspoolFinalFlagIncubationTest extends SinglePatternTest {
 		SinglePatternSample sample = createSample(2, 2);
 		benchmark.setup(sample);
 		benchmark.benchmarkFind();
+		benchmark.validate();
 		benchmark.tearDown();
 	}
 
