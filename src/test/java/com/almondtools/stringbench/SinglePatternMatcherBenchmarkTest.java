@@ -31,8 +31,6 @@ public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 		new SCBNDMBenchmark(),
 		
 		new BSBoyerMooreHorspoolBenchmark(),
-		new BSHorspoolFinalFlagBenchmark(),
-		new BSSequenceMatcherBenchmark(),
 		new BSSundayBenchmark()
 		
 	};

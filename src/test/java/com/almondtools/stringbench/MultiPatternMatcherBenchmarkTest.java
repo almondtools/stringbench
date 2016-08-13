@@ -23,10 +23,15 @@ public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 	public static MultiPatternMatcherBenchmark[] benchmark = {
 		new JavaIndexOfMultiBenchmark(),
 		new JavaRegexMultiBenchmark(),
+		
 		new SCSetHorspoolBenchmark(),
 		new SCAhoCorasickBenchmark(),
 		new SCWuManberBenchmark(),
-		new SCSetBackwardOracleMatchingBenchmark() };
+		new SCSetBackwardOracleMatchingBenchmark(), 
+		
+		new BSSetHorspoolBenchmark(),
+		new BSWuManberBenchmark()
+	};
 
 	@DataPoints
 	public static MultiPatternSample[] sample = createSamples();

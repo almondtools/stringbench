@@ -20,13 +20,47 @@ Minor deviations between the performance of different implementations of the sam
 
 Use this benchmark only to select the algorithm of your choice and then select the implementation that is most suiting your requirements.  
 
-Participants
-------------
-* [Pattern.compile/Matcher.find](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html), [String.indexOf](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html) (SDK)
-* [StringsAndChars (SC)](https://github.com/almondtools/stringsandchars)
-* [StringSearch (SS)](http://johannburkard.de/software/stringsearch/)
-* [AhoCorasick (AC)](https://github.com/robert-bor/aho-corasick)
+An Overview of libraries
+------------------------
 
+###[Java API](http://docs.oracle.com/javase/7/docs/api)
+Java provides two ways to search for strings:
+- naive search with [String.indexOf](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+- Boyer-Moore algorithm with [Pattern.compile/Matcher.find](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
+
+Both algorithms are very stable, passing all benchmarks. The naive algorithm will not perform well on large texts/patterns. The boyer-moore is actively challenged by other implementations below. 
+
+### <a name="stringsandchars"></a>[StringsAndChars (SC)](https://github.com/almondtools/stringsandchars)
+My own library StringAndChars provides many algorithms for single and multiple patterns along with some experimental features (e.g. regex search), providing the algorithms:
+
+- BNDM
+- BOM
+- Horspool
+- Knuth-Morris-Pratt
+- Sunday
+- Aho-Corasick- 
+- Set Backward Oracle Matching
+- Set Horspool
+- Wu-Manber
+
+I am continuously improving the design and trying to keep the test coverage near 100%. It is actively maintained and passes all tests of the benchmark.
+ 
+### <a name="byteseek"></a>[ByteSeek (BS)](https://github.com/nishihatapalmer/byteseek)
+byteseek is a library for efficiently mathcing patterns of bytes and search for those patterns, providing the algorithms:
+
+- Horspool 
+- Sunday
+- Set Horspool
+- Wu-Manber
+
+byteseek provides a well designed api, is actively maintained and passes all tests of the benchmark.
+
+### <a name="stringsearch"></a>[StringSearch (SS)](http://johannburkard.de/software/stringsearch/)
+StringSearch is a very popular string searching library for single pattern search (and also wildcard search). It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting for a [maintainer statement](https://github.com/robert-bor/aho-corasick/issues/36).
+ 
+### <a name="aho-corasick"></a>[AhoCorasick (AC)](https://github.com/robert-bor/aho-corasick)
+AhoCorasick is a popular one-algorithm library that implements the Aho-Corasick algorithm. It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting for a [maintainer statement](https://github.com/johannburkard/StringSearch/issues/4).
+ 
 Participating
 -------------
 If you want another framework participating in this benchmarks, meet following conditions:
