@@ -32,4 +32,21 @@ public class SSBoyerMooreHorspoolIncubationTest extends SinglePatternTest {
 		benchmark.tearDown();
 	}
 
+	@Test (timeout=60_000)
+	public void test24() throws Exception {
+		SinglePatternSample sample = createSample(2, 4);
+		benchmark.setup(sample);
+		benchmark.benchmarkFind();
+		benchmark.validate();
+		benchmark.tearDown();
+	}
+	
+	@Test (timeout=60_000)
+	public void test42() throws Exception {
+		SinglePatternSample sample = createSample(4, 2);
+		benchmark.setup(sample);
+		benchmark.benchmarkFind();
+		benchmark.validate();
+		benchmark.tearDown();
+	}
 }
