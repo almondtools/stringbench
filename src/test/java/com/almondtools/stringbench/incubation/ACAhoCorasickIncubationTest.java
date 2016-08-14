@@ -28,6 +28,7 @@ public class ACAhoCorasickIncubationTest extends MultiPatternTest {
 		MultiPatternSample sample = createSample(2, 2, 8);
 		benchmark.setup(sample);
 		benchmark.benchmarkFind();
+		benchmark.validate();
 		benchmark.tearDown();
 	}
 

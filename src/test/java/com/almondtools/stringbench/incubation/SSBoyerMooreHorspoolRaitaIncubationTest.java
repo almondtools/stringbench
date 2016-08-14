@@ -28,6 +28,7 @@ public class SSBoyerMooreHorspoolRaitaIncubationTest extends SinglePatternTest {
 		SinglePatternSample sample = createSample(2, 2);
 		benchmark.setup(sample);
 		benchmark.benchmarkFind();
+		benchmark.validate();
 		benchmark.tearDown();
 	}
 
