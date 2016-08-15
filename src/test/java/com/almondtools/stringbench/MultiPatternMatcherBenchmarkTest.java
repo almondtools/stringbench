@@ -30,6 +30,7 @@ public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 		new SCSetBackwardOracleMatchingBenchmark(), 
 		
 		new BSSetHorspoolBenchmark(),
+		new BSSetHorspoolFinalFlagBenchmark(),
 		new BSWuManberBenchmark()
 	};
 

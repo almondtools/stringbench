@@ -1,4 +1,4 @@
-package com.almondtools.stringbench;
+package com.almondtools.stringbench.incubation;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 import com.eaio.stringsearch.StringSearch;
 
 public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmark {
@@ -15,11 +16,15 @@ public abstract class StringSearchBenchmark extends SinglePatternMatcherBenchmar
 	private Map<String, Object> processed;
 
 	@Override
-	public void prepare(Set<String> patterns) {
+	public void preparePatterns(Set<String> patterns) {
 		this.algorithm = create();
 		this.processed = patterns.stream()
 			.filter(pattern -> algorithm.processString(pattern) != null)
 			.collect(toMap(pattern -> pattern, pattern -> algorithm.processString(pattern)));
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	public abstract StringSearch create();

@@ -29,9 +29,13 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(Set<String> patterns) {
+	public void preparePatterns(Set<String> patterns) {
 		searchPattern = patterns.stream()
 			.collect(toMap(pattern -> pattern, pattern -> Pattern.compile(Pattern.quote(pattern))));
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	@Override

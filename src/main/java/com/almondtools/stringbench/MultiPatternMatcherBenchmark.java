@@ -25,7 +25,9 @@ public abstract class MultiPatternMatcherBenchmark {
 	private MultiPatternSample sample;
 	private List<Integer> result;
 
-	public abstract void prepare(Set<String> pattern);
+	public abstract void preparePatterns(Set<String> patterns);
+
+	public abstract void prepareText(String text);
 
 	public abstract List<Integer> find(String text);
 
@@ -39,7 +41,8 @@ public abstract class MultiPatternMatcherBenchmark {
 			throw new SampleNotQualifiedException();
 		}
 		this.sample = sample;
-		prepare(sample.getPattern());
+		preparePatterns(sample.getPattern());
+		prepareText(sample.getSample());
 	}
 
 	@Benchmark

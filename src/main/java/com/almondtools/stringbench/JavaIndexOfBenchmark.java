@@ -23,7 +23,11 @@ public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(Set<String> patterns) {
+	public void preparePatterns(Set<String> patterns) {
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	@Override

@@ -29,8 +29,12 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(Set<String> pattern) {
+	public void preparePatterns(Set<String> pattern) {
 		searchPattern = Pattern.compile(pattern(pattern));
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	private String pattern(Set<String> pattern) {

@@ -27,7 +27,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	private SinglePatternSample sample;
 	private Map<String, List<Integer>> results;
 
-	public abstract void prepare(Set<String> pattern);
+	public abstract void preparePatterns(Set<String> pattern);
+	public abstract void prepareText(String text);
 
 	public abstract List<Integer> find(String pattern, String text);
 
@@ -41,7 +42,8 @@ public abstract class SinglePatternMatcherBenchmark {
 			throw new SampleNotQualifiedException();
 		}
 		this.sample = sample;
-		prepare(sample.getPattern());
+		preparePatterns(sample.getPattern());
+		prepareText(sample.getSample());
 		this.results = new HashMap<>();
 	}
 
@@ -52,8 +54,10 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Measurement(iterations = 5)
 	@Fork(1)
 	public void benchmarkFind() {
-		for (String pattern : sample.getPattern()) {
-			List<Integer> result = find(pattern, sample.getSample());
+		Set<String> patterns = sample.getPattern();
+		String text = sample.getSample();
+		for (String pattern : patterns) {
+			List<Integer> result = find(pattern, text);
 			results.put(pattern, result);
 		}
 	}

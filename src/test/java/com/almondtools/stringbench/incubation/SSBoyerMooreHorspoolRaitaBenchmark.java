@@ -2,7 +2,6 @@ package com.almondtools.stringbench.incubation;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 
-import com.almondtools.stringbench.StringSearchBenchmark;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.eaio.stringsearch.BoyerMooreHorspoolRaita;
 import com.eaio.stringsearch.StringSearch;

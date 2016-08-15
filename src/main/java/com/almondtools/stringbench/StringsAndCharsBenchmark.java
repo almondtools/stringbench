@@ -18,9 +18,13 @@ public abstract class StringsAndCharsBenchmark extends SinglePatternMatcherBench
 	private Map<String, StringSearchAlgorithm> algorithm;
 
 	@Override
-	public void prepare(Set<String> patterns) {
+	public void preparePatterns(Set<String> patterns) {
 		this.algorithm = patterns.stream()
 			.collect(toMap(pattern -> pattern, pattern ->create(pattern)));
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	public abstract StringSearchAlgorithm create(String pattern);

@@ -16,8 +16,12 @@ public abstract class StringsAndCharsMultiBenchmark extends MultiPatternMatcherB
 	private StringSearchAlgorithm algorithm;
 
 	@Override
-	public void prepare(Set<String> pattern) {
+	public void preparePatterns(Set<String> pattern) {
 		this.algorithm = create(new ArrayList<>(pattern));
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	public abstract StringSearchAlgorithm create(List<String> pattern);

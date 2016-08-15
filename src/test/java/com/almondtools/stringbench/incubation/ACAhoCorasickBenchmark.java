@@ -30,12 +30,16 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(Set<String> patterns) {
+	public void preparePatterns(Set<String> patterns) {
 		TrieBuilder builder = Trie.builder().removeOverlaps();
 		for (String pattern : patterns) {
 			builder.addKeyword(pattern);
 		}
 		trie = builder.build();
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	@Override

@@ -26,8 +26,12 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepare(Set<String> pattern) {
+	public void preparePatterns(Set<String> pattern) {
 		searchPattern = pattern.stream().toArray(String[]::new);
+	}
+
+	@Override
+	public void prepareText(String text) {
 	}
 
 	@Override
