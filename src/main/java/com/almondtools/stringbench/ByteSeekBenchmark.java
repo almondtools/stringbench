@@ -21,7 +21,13 @@ public abstract class ByteSeekBenchmark extends SinglePatternMatcherBenchmark {
 	@Override
 	public void preparePatterns(Set<String> patterns) {
 		this.algorithm = patterns.stream()
-			.collect(toMap(pattern -> pattern, pattern -> create(pattern)));
+			.collect(toMap(pattern -> pattern, pattern -> preparePattern(pattern)));
+	}
+
+	private Searcher<SequenceMatcher> preparePattern(String pattern) {
+		Searcher<SequenceMatcher> searcher = create(pattern);
+		searcher.prepareForwards();
+		return searcher;
 	}
 
 	@Override

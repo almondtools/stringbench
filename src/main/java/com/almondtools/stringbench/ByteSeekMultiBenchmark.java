@@ -18,7 +18,13 @@ public abstract class ByteSeekMultiBenchmark extends MultiPatternMatcherBenchmar
 
 	@Override
 	public void preparePatterns(Set<String> patterns) {
-		this.searcher = create(patterns);
+		this.searcher = preparePattern(patterns);
+	}
+
+	private Searcher<SequenceMatcher> preparePattern(Set<String> patterns) {
+		Searcher<SequenceMatcher> searcher = create(patterns);
+		searcher.prepareForwards();
+		return searcher;
 	}
 
 	@Override
