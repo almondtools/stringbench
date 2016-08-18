@@ -2,6 +2,10 @@ package com.almondtools.stringbench.incubation;
 
 import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -39,12 +43,19 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepareText(String text) {
+	public List<Integer> find(String text) {
+		List<Integer> result = new ArrayList<>();
+		for (Emit emit : trie.parseText(text)) {
+			result.add(emit.getStart());
+		}
+		return result;
 	}
 
 	@Override
-	public List<Integer> find(String text) {
+	public List<Integer> find(File file) throws IOException {
 		List<Integer> result = new ArrayList<>();
+		String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
+
 		for (Emit emit : trie.parseText(text)) {
 			result.add(emit.getStart());
 		}

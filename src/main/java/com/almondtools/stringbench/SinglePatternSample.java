@@ -2,6 +2,7 @@ package com.almondtools.stringbench;
 
 import static java.util.stream.Collectors.joining;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +26,7 @@ public class SinglePatternSample {
 	private int patternSize;
 
 	private String sample;
+	private File file;
 	private Map<String, Integer> patterns;
 
 	public void setAlphabetSize(int alphabetSize) {
@@ -48,6 +50,7 @@ public class SinglePatternSample {
 	public void setup() throws IOException {
 		String sampleKey = GenerateSamples.computeKey(alphabetSize);
 		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize);
+		this.file = GenerateSamples.locateFile(sampleKey);
 		this.sample = GenerateSamples.readSample(sampleKey);
 		this.patterns = GenerateSamples.readPatterns(patternKey);
 	}
@@ -58,6 +61,10 @@ public class SinglePatternSample {
 
 	public String getSample() {
 		return sample;
+	}
+
+	public File getFile() {
+		return file;
 	}
 
 	public Set<String> getPattern() {

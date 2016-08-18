@@ -2,6 +2,10 @@ package com.almondtools.stringbench;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,7 +18,7 @@ import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
-	private static final String ID = "java.util.Pattern regex search for multiple strings (regex)";
+	private static final String ID = "java.util.Pattern regex search for multiple strings (Nondeterministic Regular Expression Search)";
 
 	private Pattern searchPattern;
 
@@ -31,10 +35,6 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public void preparePatterns(Set<String> pattern) {
 		searchPattern = Pattern.compile(pattern(pattern));
-	}
-
-	@Override
-	public void prepareText(String text) {
 	}
 
 	private String pattern(Set<String> pattern) {
@@ -57,6 +57,17 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public List<Integer> find(String text) {
 		List<Integer> result = new ArrayList<>();
+		Matcher matcher = searchPattern.matcher(text);
+		while (matcher.find()) {
+			result.add(matcher.start());
+		}
+		return result;
+	}
+
+	@Override
+	public List<Integer> find(File file) throws IOException {
+		List<Integer> result = new ArrayList<>();
+		String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
 		Matcher matcher = searchPattern.matcher(text);
 		while (matcher.find()) {
 			result.add(matcher.start());

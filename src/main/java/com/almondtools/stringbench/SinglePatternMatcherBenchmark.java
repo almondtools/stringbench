@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,9 +30,10 @@ public abstract class SinglePatternMatcherBenchmark {
 	private Map<String, List<Integer>> results;
 
 	public abstract void preparePatterns(Set<String> pattern);
-	public abstract void prepareText(String text);
 
 	public abstract List<Integer> find(String pattern, String text);
+
+	public abstract List<Integer> find(String pattern, File file) throws IOException;
 
 	public abstract String getId();
 
@@ -43,7 +46,6 @@ public abstract class SinglePatternMatcherBenchmark {
 		}
 		this.sample = sample;
 		preparePatterns(sample.getPattern());
-		prepareText(sample.getSample());
 		this.results = new HashMap<>();
 	}
 
@@ -53,9 +55,24 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Warmup(iterations = 5)
 	@Measurement(iterations = 5)
 	@Fork(1)
-	public void benchmarkFind() {
+	public void benchmarkFindInString() {
 		Set<String> patterns = sample.getPattern();
 		String text = sample.getSample();
+		for (String pattern : patterns) {
+			List<Integer> result = find(pattern, text);
+			results.put(pattern, result);
+		}
+	}
+
+	@Benchmark
+	@BenchmarkMode(Mode.AverageTime)
+	@OutputTimeUnit(TimeUnit.MILLISECONDS)
+	@Warmup(iterations = 5)
+	@Measurement(iterations = 5)
+	@Fork(1)
+	public void benchmarkFindInFile() throws IOException {
+		Set<String> patterns = sample.getPattern();
+		File text = sample.getFile();
 		for (String pattern : patterns) {
 			List<Integer> result = find(pattern, text);
 			results.put(pattern, result);

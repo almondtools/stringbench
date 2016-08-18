@@ -7,8 +7,10 @@ import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -224,6 +226,14 @@ public class GenerateSamples {
 			occurences.add(m.start());
 		}
 		return occurences;
+	}
+
+	public static File locateFile(String sampleKey) {
+		try {
+			return new File(GenerateSamples.class.getClassLoader().getResource(sampleKey + ".sample").toURI());
+		} catch (URISyntaxException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	private String generateSample(char[] alphabet, Supplier<Integer> distribution) {

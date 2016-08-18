@@ -7,11 +7,20 @@ import org.junit.Rule;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
+import org.junit.rules.Stopwatch;
+import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 
 @RunWith(Theories.class)
 public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 
+	@Rule
+	public Stopwatch watch = new Stopwatch() {
+		protected void succeeded(long nanos, Description description) {
+			System.out.println("time: " + (nanos / 1_000_000) + " milliseconds.");
+		};
+	};
+	
 	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 
@@ -38,10 +47,18 @@ public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 	public static MultiPatternSample[] sample = createSamples();
 
 	@Theory
-	public void testBenchmarkFind(MultiPatternMatcherBenchmark benchmark, MultiPatternSample sample) throws Exception {
-		System.out.println(benchmark.getId() + " for " + sample.toString());
+	public void testBenchmarkFindInString(MultiPatternMatcherBenchmark benchmark, MultiPatternSample sample) throws Exception {
+		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
-		benchmark.benchmarkFind();
+		benchmark.benchmarkFindInString();
+		benchmark.tearDown();
+	}
+
+	@Theory
+	public void testBenchmarkFindInFile(MultiPatternMatcherBenchmark benchmark, MultiPatternSample sample) throws Exception {
+		System.out.println("[Search in File] " + benchmark.getId() + " for " + sample.toString());
+		benchmark.setup(sample);
+		benchmark.benchmarkFindInFile();
 		benchmark.tearDown();
 	}
 

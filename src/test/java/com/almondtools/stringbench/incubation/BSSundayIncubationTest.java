@@ -1,35 +1,27 @@
 package com.almondtools.stringbench.incubation;
 
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
 import com.almondtools.stringbench.BSSundayBenchmark;
 import com.almondtools.stringbench.CompareResultNotAccepted;
-import com.almondtools.stringbench.SinglePatternMatcherBenchmark;
 import com.almondtools.stringbench.SinglePatternSample;
 import com.almondtools.stringbench.SinglePatternTest;
+import com.almondtools.stringbench.StringBenchIncubation;
 
 
 public class BSSundayIncubationTest extends SinglePatternTest {
 
 	@Rule
+	public StringBenchIncubation incubation = new StringBenchIncubation(new BSSundayBenchmark());
+	
+	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
-	public SinglePatternMatcherBenchmark benchmark;
-	
-	@Before
-	public void before() throws Exception {
-		benchmark = new BSSundayBenchmark();
-	}
-	
-	@Test (timeout=60_000)
+	@Test
 	public void test22() throws Exception {
 		SinglePatternSample sample = createSample(2, 2);
-		benchmark.setup(sample);
-		benchmark.benchmarkFind();
-		benchmark.validate();
-		benchmark.tearDown();
+		incubation.benchmarkFindInString(sample);
 	}
 
 }

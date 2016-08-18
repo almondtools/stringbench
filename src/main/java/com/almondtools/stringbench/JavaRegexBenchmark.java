@@ -3,6 +3,10 @@ package com.almondtools.stringbench;
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 import static java.util.stream.Collectors.toMap;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +18,7 @@ import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 
-	private static final String ID = "java.util.Pattern regex search (boyer-moore)";
+	private static final String ID = "java.util.Pattern regex search (Boyer-Moore)";
 
 	private Map<String, Pattern> searchPattern;
 
@@ -35,10 +39,6 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 	}
 
 	@Override
-	public void prepareText(String text) {
-	}
-
-	@Override
 	public List<Integer> find(String pattern, String text) {
 		List<Integer> result = new ArrayList<>();
 		Matcher matcher = searchPattern.get(pattern).matcher(text);
@@ -48,4 +48,15 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 		return result;
 	}
 
+	@Override
+	public List<Integer> find(String pattern, File file) throws IOException {
+		List<Integer> result = new ArrayList<>();
+		String text = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
+		Matcher matcher = searchPattern.get(pattern).matcher(text);
+		while (matcher.find()) {
+			result.add(matcher.start());
+		}
+		return result;
+	}
+	
 }

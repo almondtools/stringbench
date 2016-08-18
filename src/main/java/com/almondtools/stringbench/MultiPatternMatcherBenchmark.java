@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -27,9 +29,8 @@ public abstract class MultiPatternMatcherBenchmark {
 
 	public abstract void preparePatterns(Set<String> patterns);
 
-	public abstract void prepareText(String text);
-
 	public abstract List<Integer> find(String text);
+	public abstract List<Integer> find(File file) throws IOException;
 
 	public abstract String getId();
 
@@ -42,7 +43,6 @@ public abstract class MultiPatternMatcherBenchmark {
 		}
 		this.sample = sample;
 		preparePatterns(sample.getPattern());
-		prepareText(sample.getSample());
 	}
 
 	@Benchmark
@@ -51,8 +51,18 @@ public abstract class MultiPatternMatcherBenchmark {
 	@Warmup(iterations = 5)
 	@Measurement(iterations = 5)
 	@Fork(1)
-	public void benchmarkFind() {
+	public void benchmarkFindInString() {
 		result = find(sample.getSample());
+	}
+	
+	@Benchmark
+	@BenchmarkMode(Mode.AverageTime)
+	@OutputTimeUnit(TimeUnit.MILLISECONDS)
+	@Warmup(iterations = 5)
+	@Measurement(iterations = 5)
+	@Fork(1)
+	public void benchmarkFindInFile() throws IOException {
+		result = find(sample.getFile());
 	}
 	
 	@TearDown(Level.Iteration)

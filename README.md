@@ -10,15 +10,30 @@ Benchmark quality
 
 Subject of this Benchmark
 -------------------------
-The main subject of this benchmark is comparing different algorithms - not different implementations.
+This benchmark is designed for following objectives:
+ 
+### Comparing different algorithms
 
-Yet a wrong (or suboptimal) implementation is easier identified if compared with other implementations (that deviate strongly in performance).
+It is quite useful to know which algorithm to use in which scenario.
+
+### Comparing different implementation 
+
+Yet a flawed implementation is easier identified if compared with other implementations (that deviate strongly in performance).
 
 Minor deviations between the performance of different implementations of the same algorithm should be ignored
 * some are caused by the adaptor benchmark code
 * some frameworks use a sophisticated API and therefore do some more work
 
-Use this benchmark only to select the algorithm of your choice and then select the implementation that is most suiting your requirements.  
+The comparison also tests the deviations of the algorithms if applied to different text sources. At this time the benchmark contains
+* Searching in a string (of type `java.lang.String`) 
+* Searching in a text file (not necessarily converting it to `String` or `byte[]`)
+
+Some implementations strongly deviate in performance if compared in this way.
+
+### Recommendation
+
+Use this benchmark only to select the algorithm of your choice and then select the implementation that is most suiting your requirements.
+
 
 An Overview of libraries
 ------------------------
@@ -48,15 +63,15 @@ I am continuously improving the design and trying to keep the test coverage near
 ### <a name="byteseek"></a>[ByteSeek (BS)](https://github.com/nishihatapalmer/byteseek)
 byteseek is a library for efficiently mathcing patterns of bytes and search for those patterns, providing the algorithms:
 
-- Horspool
+- Horspool (and variants)
 - Sunday
-- Set Horspool
+- Set Horspool (and variants)
 - Wu-Manber
 
-byteseek provides a well designed api, is actively maintained and passes all tests of the benchmark.
+byteseek provides a well designed API, is actively maintained and passes all tests of the benchmark.
 
 ### <a name="stringsearch"></a>[StringSearch (SS)](http://johannburkard.de/software/stringsearch/)
-StringSearch is a very popular string searching library for single pattern search (and also wildcard search). It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting for a [maintainer statement](https://github.com/johannburkard/StringSearch/issues/4).
+StringSearch is a popular string searching library for single pattern search (and also wildcard search) claiming to do high performance string search. It does not pass the benchmark tests and is therefore excluded from the benchmark. String search for simple patterns takes minutes where if `String.indexOf` takes few seconds. The maintainer refused to clarify this [issue](https://github.com/johannburkard/StringSearch/issues/4).
  
 ### <a name="aho-corasick"></a>[AhoCorasick (AC)](https://github.com/robert-bor/aho-corasick)
 AhoCorasick is a popular one-algorithm library that implements the Aho-Corasick algorithm. It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting for a [maintainer statement](https://github.com/robert-bor/aho-corasick/issues/36).

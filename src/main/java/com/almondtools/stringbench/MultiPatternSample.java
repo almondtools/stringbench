@@ -3,6 +3,7 @@ package com.almondtools.stringbench;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toSet;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -28,6 +29,7 @@ public class MultiPatternSample {
 	private int patternSize;
 
 	private String sample;
+	private File file;
 	private Map<String, Integer> patterns;
 	private int all;
 
@@ -58,12 +60,17 @@ public class MultiPatternSample {
 		String sampleKey = GenerateSamples.computeKey(alphabetSize);
 		String patternKey = GenerateSamples.computeKey(alphabetSize, patternSize);
 		this.sample = GenerateSamples.readSample(sampleKey);
+		this.file = GenerateSamples.locateFile(sampleKey);
 		this.patterns = GenerateSamples.readPatterns(patternKey);
 		this.all = GenerateSamples.readAll(patternKey).getOrDefault(patternNumber, 0);
 	}
 
 	public String getSample() {
 		return sample;
+	}
+
+	public File getFile() {
+		return file;
 	}
 
 	public Set<String> getPattern() {
