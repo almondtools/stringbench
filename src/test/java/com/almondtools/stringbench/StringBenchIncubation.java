@@ -2,6 +2,8 @@ package com.almondtools.stringbench;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
+import java.io.IOException;
+
 import org.junit.internal.runners.statements.FailOnTimeout;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
@@ -23,7 +25,7 @@ public class StringBenchIncubation implements TestRule {
 	@Override
 	public Statement apply(Statement base, Description description) {
         return FailOnTimeout.builder()
-            .withTimeout(10, SECONDS)
+            .withTimeout(40, SECONDS)
             .withLookingForStuckThread(true)
             .build(base);
 	}
@@ -41,5 +43,20 @@ public class StringBenchIncubation implements TestRule {
 		mbenchmark.validate();
 		mbenchmark.tearDown();
 	}
+
+	public void benchmarkFindInFile(SinglePatternSample sample) throws IOException {
+		sbenchmark.setup(sample);
+		sbenchmark.benchmarkFindInFile();
+		sbenchmark.validate();
+		sbenchmark.tearDown();
+	}
+
+	public void benchmarkFindInFile(MultiPatternSample sample) throws IOException {
+		mbenchmark.setup(sample);
+		mbenchmark.benchmarkFindInFile();
+		mbenchmark.validate();
+		mbenchmark.tearDown();
+	}
+
 
 }
