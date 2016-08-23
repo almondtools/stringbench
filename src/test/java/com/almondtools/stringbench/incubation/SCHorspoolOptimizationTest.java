@@ -29,4 +29,16 @@ public class SCHorspoolOptimizationTest extends SinglePatternTest {
 		incubation.benchmarkFindInFile(sample);
 	}
 
+	@Test
+	public void test2256() throws Exception {
+		SinglePatternSample sample = createSample(2, 256);
+		incubation.benchmarkFindInString(sample);
+	}
+
+	@Test
+	public void testFile2256() throws Exception {
+		SinglePatternSample sample = createSample(2, 256);
+		incubation.benchmarkFindInFile(sample);
+	}
+
 }

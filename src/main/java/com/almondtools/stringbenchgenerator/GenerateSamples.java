@@ -2,6 +2,7 @@ package com.almondtools.stringbenchgenerator;
 
 import static com.almondtools.stringbenchgenerator.AlphabetOption.NORMAL_DISTRIBUTED;
 import static com.almondtools.stringbenchgenerator.AlphabetOption.SPARSE;
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
@@ -9,8 +10,8 @@ import static java.util.stream.Collectors.toSet;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -39,6 +40,8 @@ public class GenerateSamples {
 	private static final int[] PATTERN_NUMBERS = { 2, 8, 32, 128 };
 
 	private static final int CHAR_NUMBER = 3 * 1024 * 1024;
+	
+	private static Map<String, File> files = new LinkedHashMap<>();
 
 	private int alphabetSize;
 	private AlphabetOption[] options;
@@ -73,7 +76,7 @@ public class GenerateSamples {
 		}
 		int[] alphabetSizes = ALPHABET_SIZES;
 		if (args.length >= 2) {
-			alphabetSizes = new int[]{Integer.parseInt(args[1])};
+			alphabetSizes = new int[] { Integer.parseInt(args[1]) };
 		}
 		for (int alphabetSize : alphabetSizes) {
 			for (AlphabetOption[] options : OPTIONS) {
@@ -229,10 +232,20 @@ public class GenerateSamples {
 	}
 
 	public static File locateFile(String sampleKey) {
+		File file = files.computeIfAbsent(sampleKey, key -> createTempFile(key));
+		file.deleteOnExit();
+		return file;
+	}
+
+	private static File createTempFile(String sampleKey) {
 		try {
-			return new File(GenerateSamples.class.getClassLoader().getResource(sampleKey + ".sample").toURI());
-		} catch (URISyntaxException e) {
-			throw new RuntimeException(e);
+			InputStream resourceAsStream = GenerateSamples.class.getClassLoader().getResourceAsStream(sampleKey + ".sample");
+			Path tempFile = Files.createTempFile(sampleKey + ".sample", "");
+			Files.copy(resourceAsStream, tempFile, REPLACE_EXISTING);
+			File file = tempFile.toFile();
+			return file;
+		} catch (IOException e) {
+			return null;
 		}
 	}
 
@@ -407,7 +420,7 @@ public class GenerateSamples {
 			} else {
 				buffer.append(c);
 			}
-			
+
 		}
 		return buffer.toString();
 	}
