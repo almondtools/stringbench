@@ -1,12 +1,12 @@
 package com.almondtools.stringbench;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-import net.byteseek.matcher.sequence.ByteSequenceMatcher;
+
+import com.almondtools.stringbenchanalyzer.Family;
+
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.Searcher;
 import net.byteseek.searcher.sequence.sunday.SundayQuickSearcher;
-
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class BSSundayBenchmark extends ByteSeekBenchmark {
 
@@ -24,8 +24,7 @@ public class BSSundayBenchmark extends ByteSeekBenchmark {
 
 
 	@Override
-	public Searcher<SequenceMatcher> create(String pattern) {
-		SequenceMatcher matcher = new ByteSequenceMatcher(pattern);
+	public Searcher<SequenceMatcher> create(SequenceMatcher matcher) {
 		return new SundayQuickSearcher(matcher);
 	}
 

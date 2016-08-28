@@ -1,5 +1,7 @@
 package com.almondtools.stringbench;
 
+import static java.util.stream.Collectors.toList;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,6 +10,9 @@ import java.util.Set;
 
 import net.byteseek.io.reader.FileReader;
 import net.byteseek.io.reader.WindowReader;
+import net.byteseek.matcher.multisequence.ListMultiSequenceMatcher;
+import net.byteseek.matcher.multisequence.MultiSequenceMatcher;
+import net.byteseek.matcher.sequence.ByteSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.ForwardSearchIterator;
 import net.byteseek.searcher.SearchResult;
@@ -23,12 +28,16 @@ public abstract class ByteSeekMultiBenchmark extends MultiPatternMatcherBenchmar
 	}
 
 	private Searcher<SequenceMatcher> preparePattern(Set<String> patterns) {
-		Searcher<SequenceMatcher> searcher = create(patterns);
+		List<SequenceMatcher> matchers = patterns.stream()
+			.map(pattern -> new ByteSequenceMatcher(pattern))
+			.collect(toList());
+		MultiSequenceMatcher matcher = new ListMultiSequenceMatcher(matchers);
+		Searcher<SequenceMatcher> searcher = create(matcher);
 		searcher.prepareForwards();
 		return searcher;
 	}
 
-	public abstract Searcher<SequenceMatcher> create(Set<String> patterns);
+	public abstract Searcher<SequenceMatcher> create(MultiSequenceMatcher matcher);
 
 	@Override
 	public List<Integer> find(String text) {

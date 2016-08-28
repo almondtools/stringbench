@@ -4,6 +4,7 @@ import static java.util.stream.Collectors.toMap;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Set;
 
 import net.byteseek.io.reader.FileReader;
 import net.byteseek.io.reader.WindowReader;
+import net.byteseek.matcher.sequence.ByteSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.ForwardSearchIterator;
 import net.byteseek.searcher.SearchResult;
@@ -27,17 +29,17 @@ public abstract class ByteSeekBenchmark extends SinglePatternMatcherBenchmark {
 	}
 
 	private Searcher<SequenceMatcher> preparePattern(String pattern) {
-		Searcher<SequenceMatcher> searcher = create(pattern);
+		Searcher<SequenceMatcher> searcher = create(new ByteSequenceMatcher(pattern, StandardCharsets.UTF_8));
 		searcher.prepareForwards();
 		return searcher;
 	}
 
-	public abstract Searcher<SequenceMatcher> create(String pattern);
+	public abstract Searcher<SequenceMatcher> create(SequenceMatcher matcher);
 
 	@Override
 	public List<Integer> find(String pattern, String text) {
 		Searcher<SequenceMatcher> searcher = algorithm.get(pattern);
-		byte[] stringBytes = text.getBytes();
+		byte[] stringBytes = text.getBytes(StandardCharsets.UTF_8);
 
 		ForwardSearchIterator<SequenceMatcher> searchIterator = new ForwardSearchIterator<SequenceMatcher>(searcher, stringBytes, 0);
 

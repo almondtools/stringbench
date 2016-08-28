@@ -1,19 +1,13 @@
 package com.almondtools.stringbench;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-import static java.util.stream.Collectors.toList;
 
-import java.util.List;
-import java.util.Set;
+import com.almondtools.stringbenchanalyzer.Family;
 
-import net.byteseek.matcher.multisequence.ListMultiSequenceMatcher;
 import net.byteseek.matcher.multisequence.MultiSequenceMatcher;
-import net.byteseek.matcher.sequence.ByteSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.Searcher;
 import net.byteseek.searcher.multisequence.set_horspool.SetHorspoolSearcher;
-
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class BSWuManberBenchmark extends ByteSeekMultiBenchmark {
 
@@ -31,11 +25,7 @@ public class BSWuManberBenchmark extends ByteSeekMultiBenchmark {
 
 
 	@Override
-	public Searcher<SequenceMatcher> create(Set<String> patterns) {
-		List<SequenceMatcher> matchers = patterns.stream()
-			.map(pattern -> new ByteSequenceMatcher(pattern))
-			.collect(toList());
-		MultiSequenceMatcher matcher = new ListMultiSequenceMatcher(matchers);
+	public Searcher<SequenceMatcher> create(MultiSequenceMatcher matcher) {
 		return new SetHorspoolSearcher(matcher);
 	}
 
