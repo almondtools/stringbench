@@ -41,11 +41,11 @@ public class ProcessResults {
 	}
 
 	public void run() throws IOException {
-		Map<Integer, Map<String, Optional<BenchmarkRecord>>> grouped = allRecords().stream()
-			.collect(groupingBy(BenchmarkRecord::getNumber, groupingBy(BenchmarkRecord::getKey, minBy(benchmarkOrder()))));
-		for (Map.Entry<Integer, Map<String, Optional<BenchmarkRecord>>> entry : grouped.entrySet()) {
-			Integer key = entry.getKey();
-			Map<String, Optional<BenchmarkRecord>> benchmarks = entry.getValue();
+		Map<BenchmarkKey, Map<BenchmarkScenario, Optional<BenchmarkRecord>>> grouped = allRecords().stream()
+			.collect(groupingBy(benchmark -> new BenchmarkKey(benchmark), groupingBy(benchmark -> new BenchmarkScenario(benchmark), minBy(benchmarkOrder()))));
+		for (Map.Entry<BenchmarkKey, Map<BenchmarkScenario, Optional<BenchmarkRecord>>> entry : grouped.entrySet()) {
+			BenchmarkKey key = entry.getKey();
+			Map<BenchmarkScenario, Optional<BenchmarkRecord>> benchmarks = entry.getValue();
 			String csv = file.substring(0, file.length() - 4) + "_" + key + ".csv";
 			String html = file.substring(0, file.length() - 4) + "_" + key + ".html";
 			writeSCSV(key, benchmarks, csv);
@@ -54,7 +54,7 @@ public class ProcessResults {
 
 	}
 
-	private void writeSCSV(Integer key, Map<String, Optional<BenchmarkRecord>> benchmarks, String filename) throws IOException {
+	private void writeSCSV(BenchmarkKey key, Map<BenchmarkScenario, Optional<BenchmarkRecord>> benchmarks, String filename) throws IOException {
 		Files.write(Paths.get(filename), new Iterable<String>() {
 
 			@Override
@@ -69,13 +69,14 @@ public class ProcessResults {
 		}, StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
 	}
 
-	private void writeChart(Integer key, String name, String csv) throws IOException {
-		String fileName = csv.substring("benchmarkresults/".length());
+	private void writeChart(BenchmarkKey key, String name, String csv) throws IOException {
+		int pos = csv.lastIndexOf("benchmarkresults");
+		String fileName = csv.substring(pos + "benchmarkresults".length() + 1);
 		
 		String templateName = "benchmarkresults/result.html";
 		String template = Files.readAllLines(Paths.get(templateName)).stream().collect(joining("\n"));
 
-		String title = key <= 1 ? "Exact String Matching for single Patterns" : "Exact String Matching for " + key + " Patterns";
+		String title = key.getTitle();
 
 		String content = template.replace("${title}", title).replace("${file}", fileName);
 
@@ -104,6 +105,7 @@ public class ProcessResults {
 
 				String benchmark = stringLiteral(tokens);
 
+				String benchmarkName = benchmark(benchmark);
 				String name = name(benchmark);
 				Family family = family(benchmark);
 
@@ -123,7 +125,7 @@ public class ProcessResults {
 
 				int patternSize = intLiteral(tokens);
 
-				records.add(new BenchmarkRecord(patternNumber, alphabet, patternSize, time, name, family));
+				records.add(new BenchmarkRecord(benchmarkName, patternNumber, alphabet, patternSize, time, name, family));
 
 			}
 		}
@@ -171,6 +173,12 @@ public class ProcessResults {
 		StreamTokenizer tokenizer = new StreamTokenizer(new StringReader(line));
 		tokenizer.quoteChar('"');
 		return tokenizer;
+	}
+
+	private String benchmark(String string) {
+		int pos = string.lastIndexOf('.');
+		String benchmarkName = string.substring(pos + 1);
+		return benchmarkName;
 	}
 
 	private String name(String string) {

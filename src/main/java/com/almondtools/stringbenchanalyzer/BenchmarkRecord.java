@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 
 public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 
+	private String benchmarkName;
 	private int patternNumber;
 	private int alphabet;
 	private int patternSize;
@@ -13,13 +14,18 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 	private String name;
 	private Family family;
 
-	public BenchmarkRecord(int patternNumber, int alphabet, int patternSize, double time, String name, Family family) {
+	public BenchmarkRecord(String benchmarkName, int patternNumber, int alphabet, int patternSize, double time, String name, Family family) {
+		this.benchmarkName = benchmarkName;
 		this.patternNumber = patternNumber;
 		this.alphabet = alphabet;
 		this.patternSize = patternSize;
 		this.time = time;
 		this.name = name;
 		this.family = family;
+	}
+	
+	public String getBenchmarkName() {
+		return benchmarkName;
 	}
 
 	public int getNumber() {
@@ -34,14 +40,10 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 		return patternSize;
 	}
 
-	public String getKey() {
-		return alphabet + "-" + patternSize;
-	}
-
 	public String getName() {
 		return name;
 	}
-	
+
 	public Family getFamily() {
 		return family;
 	}
