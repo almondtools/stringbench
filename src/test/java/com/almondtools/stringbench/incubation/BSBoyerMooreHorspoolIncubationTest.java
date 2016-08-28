@@ -19,20 +19,20 @@ public class BSBoyerMooreHorspoolIncubationTest extends SinglePatternTest {
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
 	@Test
-	public void test22() throws Exception {
+	public void test_2_2() throws Exception {
 		SinglePatternSample sample = createSample(2, 2);
 		incubation.benchmarkFindInString(sample);
 	}
 
 	@Test
-	public void testFile22() throws Exception {
+	public void testFile_2_2() throws Exception {
 		SinglePatternSample sample = createSample(2, 2);
 		incubation.benchmarkFindInFile(sample);
 	}
 
 	@Test
-	public void testFile2256() throws Exception {
-		SinglePatternSample sample = createSample(2, 256);
+	public void testFile_256_2() throws Exception {
+		SinglePatternSample sample = createSample(256, 2);
 		incubation.benchmarkFindInFile(sample);
 	}
 

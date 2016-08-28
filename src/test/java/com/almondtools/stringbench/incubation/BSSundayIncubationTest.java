@@ -19,9 +19,16 @@ public class BSSundayIncubationTest extends SinglePatternTest {
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
 	@Test
-	public void test22() throws Exception {
+	public void test_2_2() throws Exception {
 		SinglePatternSample sample = createSample(2, 2);
 		incubation.benchmarkFindInString(sample);
 	}
+	
+	@Test
+	public void test_1024_16() throws Exception {
+		SinglePatternSample sample = createSample(1024, 16);
+		incubation.benchmarkFindInString(sample);
+	}
+	
 
 }
