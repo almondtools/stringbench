@@ -1,7 +1,7 @@
 package com.almondtools.stringbench;
 
-import static com.almondtools.stringsandchars.search.MatchOption.LONGEST_MATCH;
-import static com.almondtools.stringsandchars.search.MatchOption.NON_OVERLAP;
+import static net.amygdalum.stringsearchalgorithms.search.MatchOption.LONGEST_MATCH;
+import static net.amygdalum.stringsearchalgorithms.search.MatchOption.NON_OVERLAP;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,10 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import com.almondtools.stringsandchars.io.ReaderCharProvider;
-import com.almondtools.stringsandchars.io.StringCharProvider;
-import com.almondtools.stringsandchars.search.StringMatch;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.io.ReaderCharProvider;
+import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
+import net.amygdalum.stringsearchalgorithms.search.StringMatch;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
 public abstract class StringsAndCharsMultiBenchmark extends MultiPatternMatcherBenchmark {
 

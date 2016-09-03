@@ -15,7 +15,7 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
 import com.almondtools.stringbenchgenerator.GenerateSamples;
-import com.almondtools.util.text.CharUtils;
+import net.amygdalum.util.text.CharUtils;
 
 @State(Scope.Benchmark)
 public class SinglePatternSample {

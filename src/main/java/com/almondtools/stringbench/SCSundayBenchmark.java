@@ -6,8 +6,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbenchanalyzer.Family;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
-import com.almondtools.stringsandchars.search.Sunday;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.search.Sunday;
 
 @State(Scope.Thread)
 public class SCSundayBenchmark extends StringsAndCharsBenchmark {

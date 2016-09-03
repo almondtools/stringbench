@@ -6,8 +6,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbenchanalyzer.Family;
-import com.almondtools.stringsandchars.search.KnuthMorrisPratt;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.search.KnuthMorrisPratt;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
 @State(Scope.Thread)
 public class SCKnuthMorrisPrattBenchmark extends StringsAndCharsBenchmark {

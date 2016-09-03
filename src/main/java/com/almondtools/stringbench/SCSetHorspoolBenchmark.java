@@ -8,8 +8,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbenchanalyzer.Family;
-import com.almondtools.stringsandchars.search.SetHorspool;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.search.SetHorspool;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
 @State(Scope.Thread)
 public class SCSetHorspoolBenchmark extends StringsAndCharsMultiBenchmark {

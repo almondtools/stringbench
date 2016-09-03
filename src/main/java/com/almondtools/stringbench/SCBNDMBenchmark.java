@@ -6,8 +6,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbenchanalyzer.Family;
-import com.almondtools.stringsandchars.search.BNDM;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.search.BNDM;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
 @State(Scope.Thread)
 public class SCBNDMBenchmark extends StringsAndCharsBenchmark {

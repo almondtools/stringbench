@@ -8,8 +8,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 import com.almondtools.stringbenchanalyzer.Family;
-import com.almondtools.stringsandchars.search.StringSearchAlgorithm;
-import com.almondtools.stringsandchars.search.WuManber;
+import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
+import net.amygdalum.stringsearchalgorithms.search.WuManber;
 
 @State(Scope.Thread)
 public class SCWuManberBenchmark extends StringsAndCharsMultiBenchmark {
