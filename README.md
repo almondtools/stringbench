@@ -45,8 +45,8 @@ Java provides two ways to search for strings:
 
 Both algorithms are very stable, passing all benchmarks. The naive algorithm will not perform well on large texts/patterns. The boyer-moore is actively challenged by other implementations below. 
 
-### <a name="stringsandchars"></a>[StringsAndChars (SC)](https://github.com/almondtools/stringsandchars)
-My own library StringAndChars provides many algorithms for single and multiple patterns along with some experimental features (e.g. regex search), providing the algorithms:
+### <a name="stringsandchars"></a>[StringSearchAlgorithms (SC)](http://stringsearchalgorithms.amygdalum.net/)
+My own library StringSearchAlgorithms provides many algorithms for single and multiple patterns along with some experimental features (e.g. regex search), providing the algorithms:
 
 - BNDM
 - BOM
@@ -61,20 +61,20 @@ My own library StringAndChars provides many algorithms for single and multiple p
 I am continuously improving the design and trying to keep the test coverage near 100%. It is actively maintained and passes all tests of the benchmark.
  
 ### <a name="byteseek"></a>[ByteSeek (BS)](https://github.com/nishihatapalmer/byteseek)
-byteseek is a library for efficiently mathcing patterns of bytes and search for those patterns, providing the algorithms:
+byteseek is a library for efficiently matching patterns of bytes and search for those patterns, providing the algorithms:
 
 - Horspool (and variants)
 - Sunday
 - Set Horspool (and variants)
 - Wu-Manber
 
-byteseek provides a well designed API, is actively maintained and passes all tests of the benchmark.
+byteseek provides a well designed API, is actively maintained and passes all tests of the benchmark for single patterns. For multiple patterns tests do not pass yet, but the maintainer works on it.
 
 ### <a name="stringsearch"></a>[StringSearch (SS)](http://johannburkard.de/software/stringsearch/)
 StringSearch is a popular string searching library for single pattern search (and also wildcard search) claiming to do high performance string search. It does not pass the benchmark tests and is therefore excluded from the benchmark. String search for simple patterns takes minutes where if `String.indexOf` takes few seconds. The maintainer refused to clarify this [issue](https://github.com/johannburkard/StringSearch/issues/4).
  
 ### <a name="aho-corasick"></a>[AhoCorasick (AC)](https://github.com/robert-bor/aho-corasick)
-AhoCorasick is a popular one-algorithm library that implements the Aho-Corasick algorithm. It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting for a [maintainer statement](https://github.com/robert-bor/aho-corasick/issues/36).
+AhoCorasick is a popular one-algorithm library that implements the Aho-Corasick algorithm. It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting very long for a [maintainer statement](https://github.com/robert-bor/aho-corasick/issues/36).
  
 Participating
 -------------
