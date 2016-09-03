@@ -11,6 +11,10 @@ import org.junit.rules.Stopwatch;
 import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 
+import com.almondtools.stringbench.incubation.BSSetHorspoolBenchmark;
+import com.almondtools.stringbench.incubation.BSSetHorspoolFinalFlagBenchmark;
+import com.almondtools.stringbench.incubation.BSWuManberBenchmark;
+
 @RunWith(Theories.class)
 public class MultiPatternMatcherBenchmarkTest extends MultiPatternTest {
 

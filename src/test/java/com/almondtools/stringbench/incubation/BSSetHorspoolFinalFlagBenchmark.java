@@ -1,4 +1,4 @@
-package com.almondtools.stringbench;
+package com.almondtools.stringbench.incubation;
 
 import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 
@@ -7,11 +7,11 @@ import com.almondtools.stringbenchanalyzer.Family;
 import net.byteseek.matcher.multisequence.MultiSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.Searcher;
-import net.byteseek.searcher.multisequence.set_horspool.SetHorspoolSearcher;
+import net.byteseek.searcher.multisequence.set_horspool.SetHorspoolFinalFlagSearcher;
 
-public class BSSetHorspoolBenchmark extends ByteSeekMultiBenchmark {
+public class BSSetHorspoolFinalFlagBenchmark extends ByteSeekMultiBenchmark {
 
-	private static final String ID = "ByteSeek Set Horspool";
+	private static final String ID = "ByteSeek Set Horspool final flag";
 
 	@Override
 	public String getId() {
@@ -26,7 +26,7 @@ public class BSSetHorspoolBenchmark extends ByteSeekMultiBenchmark {
 
 	@Override
 	public Searcher<SequenceMatcher> create(MultiSequenceMatcher matcher) {
-		return new SetHorspoolSearcher(matcher);
+		return new SetHorspoolFinalFlagSearcher(matcher);
 	}
 
 }

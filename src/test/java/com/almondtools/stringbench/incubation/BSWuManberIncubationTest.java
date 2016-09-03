@@ -3,7 +3,6 @@ package com.almondtools.stringbench.incubation;
 import org.junit.Rule;
 import org.junit.Test;
 
-import com.almondtools.stringbench.BSWuManberBenchmark;
 import com.almondtools.stringbench.CompareResultNotAccepted;
 import com.almondtools.stringbench.MultiPatternSample;
 import com.almondtools.stringbench.MultiPatternTest;
