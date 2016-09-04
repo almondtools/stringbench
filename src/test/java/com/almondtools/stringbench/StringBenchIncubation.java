@@ -9,6 +9,11 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
+import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
+import com.almondtools.stringbench.multipattern.MultiPatternSample;
+import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmark;
+import com.almondtools.stringbench.singlepattern.SinglePatternSample;
+
 public class StringBenchIncubation implements TestRule {
 
 	private SinglePatternMatcherBenchmark sbenchmark;
