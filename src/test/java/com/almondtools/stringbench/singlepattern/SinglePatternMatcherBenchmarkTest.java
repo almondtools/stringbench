@@ -1,21 +1,15 @@
 package com.almondtools.stringbench.singlepattern;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.experimental.theories.DataPoints;
-import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
+import org.junit.Test;
 import org.junit.rules.Stopwatch;
 import org.junit.runner.Description;
-import org.junit.runner.RunWith;
 
 import com.almondtools.stringbench.CompareResultNotAccepted;
 
-@RunWith(Theories.class)
-public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
+public abstract class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 
 	@Rule
 	public Stopwatch watch = new Stopwatch() {
@@ -23,65 +17,157 @@ public class SinglePatternMatcherBenchmarkTest extends SinglePatternTest {
 			System.out.println("time: " + (nanos / 1_000_000) + " milliseconds.");
 		};
 	};
-	
+
 	@Rule
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
-	
-	private static final int[] ALPHABET = new int[] { 2, 4, 16, 128 };
-	private static final int[] SIZE = new int[] { 2, 8, 64 };
 
-	@DataPoints
-	public static SinglePatternMatcherBenchmark[] benchmark = {
-		new JavaIndexOfBenchmark(),
-		new JavaRegexBenchmark(),
-		
-		new SCHorspoolBenchmark(),
-		new SCKnuthMorrisPrattBenchmark(),
-		new SCSundayBenchmark(),
-		new SCShiftAndBenchmark(),
-		new SCBNDMBenchmark(),
-		
-		new BSBoyerMooreHorspoolBenchmark(),
-		new BSHorspoolFinalFlagBenchmark(),
-		new BSSundayBenchmark()
-		
-	};
+	private SinglePatternMatcherBenchmark benchmark;
 
-	@DataPoints
-	public static SinglePatternSample[] sample = createSamples();
+	protected abstract SinglePatternMatcherBenchmark getBenchmark();
 
 	@Before
 	public void before() throws Exception {
-		System.gc();
+		benchmark = getBenchmark();
 	}
-	
-	@Theory
-	public void testBenchmarkFindInString(SinglePatternMatcherBenchmark benchmark, SinglePatternSample sample) throws Exception {
+
+	@After
+	public void after() throws Exception {
+		benchmark.tearDown();
+		benchmark = null;
+	}
+
+	public void findInStringSample(int alphabet, int pattern) {
+		SinglePatternSample sample = createSample(alphabet, pattern);
 		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFindInString();
-		benchmark.tearDown();
 	}
 
-	@Theory
-	public void testBenchmarkFindInFile(SinglePatternMatcherBenchmark benchmark, SinglePatternSample sample) throws Exception {
-		System.out.println("[Search in File] " + benchmark.getId() + " for " + sample.toString());
+	public void findInFileSample(int alphabet, int pattern) throws Exception {
+		SinglePatternSample sample = createSample(alphabet, pattern);
+		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFindInFile();
-		benchmark.tearDown();
 	}
 
-	private static SinglePatternSample[] createSamples() {
-		List<SinglePatternSample> samples = new ArrayList<>();
-		for (int i = 0; i < ALPHABET.length; i++) {
-			for (int j = 0; j < SIZE.length; j++) {
-				SinglePatternSample sample = createSample(ALPHABET[i], SIZE[j]);
-				if (sample.isValid()) {
-					samples.add(sample);
-				}
-			}
-		}
-		return samples.toArray(new SinglePatternSample[0]);
+	@Test
+	public void testBenchmarkFindInString_2_2() throws Exception {
+		findInStringSample(2, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_2_2() throws Exception {
+		findInFileSample(2, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_4_2() throws Exception {
+		findInStringSample(4, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_4_2() throws Exception {
+		findInFileSample(4, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_16_2() throws Exception {
+		findInStringSample(16, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_16_2() throws Exception {
+		findInFileSample(16, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_128_2() throws Exception {
+		findInStringSample(128, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_128_2() throws Exception {
+		findInFileSample(128, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_2_8() throws Exception {
+		findInStringSample(2, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_2_8() throws Exception {
+		findInFileSample(2, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_4_8() throws Exception {
+		findInStringSample(4, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_4_8() throws Exception {
+		findInFileSample(4, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_16_8() throws Exception {
+		findInStringSample(16, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_16_8() throws Exception {
+		findInFileSample(16, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_128_8() throws Exception {
+		findInStringSample(128, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_128_8() throws Exception {
+		findInFileSample(128, 8);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_2_64() throws Exception {
+		findInStringSample(2, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_2_64() throws Exception {
+		findInFileSample(2, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_4_64() throws Exception {
+		findInStringSample(4, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_4_64() throws Exception {
+		findInFileSample(4, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_16_64() throws Exception {
+		findInStringSample(16, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_16_64() throws Exception {
+		findInFileSample(16, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_128_64() throws Exception {
+		findInStringSample(128, 64);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_128_64() throws Exception {
+		findInFileSample(128, 64);
 	}
 
 }

@@ -32,6 +32,7 @@ public abstract class MultiPatternMatcherBenchmark {
 
 	public abstract List<Integer> find(String text);
 	public abstract List<Integer> find(File file) throws IOException;
+	public abstract void free();
 
 	public abstract String getId();
 
@@ -74,6 +75,8 @@ public abstract class MultiPatternMatcherBenchmark {
 	@TearDown
 	public void tearDown() {
 		sample = null;
+		result.clear();
+		free();
 	}
 
 }

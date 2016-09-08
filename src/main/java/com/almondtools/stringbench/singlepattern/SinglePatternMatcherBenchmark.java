@@ -33,8 +33,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	public abstract void preparePatterns(Set<String> pattern);
 
 	public abstract List<Integer> find(String pattern, String text);
-
 	public abstract List<Integer> find(String pattern, File file) throws IOException;
+	public abstract void free();
 
 	public abstract String getId();
 
@@ -91,6 +91,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	@TearDown
 	public void tearDown() {
 		sample = null;
+		results.clear();
+		free();
 	}
-	
+
 }
