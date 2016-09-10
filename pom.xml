@@ -79,7 +79,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<excludes>
-						<exclude>**/incubation/*.java</exclude>
+						<exclude>**/incubation/**/*.java</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
