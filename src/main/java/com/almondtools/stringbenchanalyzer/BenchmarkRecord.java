@@ -63,6 +63,12 @@ public class BenchmarkRecord implements Comparable<BenchmarkRecord> {
 			.collect(joining(","));
 	}
 
+	public String benchmark() {
+		return Stream.of(name, family, patternNumber, alphabet, patternSize, time)
+			.map(value -> value.toString())
+			.collect(joining(","));
+	}
+
 	@Override
 	public String toString() {
 		return name + ":" + time;
