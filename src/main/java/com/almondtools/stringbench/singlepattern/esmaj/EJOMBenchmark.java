@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.OM;
 
-public class EJOMBenchmark extends EsmaJBenchmark {
+public class EJOMBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Optimal Mismatch";
 

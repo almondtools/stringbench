@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.HP;
 
-public class EJHPBenchmark extends EsmaJBenchmark {
+public class EJHPBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Horspool";
 

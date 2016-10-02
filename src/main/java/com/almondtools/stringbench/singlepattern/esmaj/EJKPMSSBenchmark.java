@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.KPMSS;
 
-public class EJKPMSSBenchmark extends EsmaJBenchmark {
+public class EJKPMSSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ KMP Skip Search";
 

@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.BNDM;
 
-public class EJBNDMBenchmark extends EsmaJBenchmark {
+public class EJBNDMBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Backward Non-Deterministic Dawg Matching";
 

@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.BMT;
 
-public class EJBMTBenchmark extends EsmaJBenchmark {
+public class EJBMTBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Tuned Boyer-Moore";
 

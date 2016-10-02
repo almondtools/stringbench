@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.ZT;
 
-public class EJZTBenchmark extends EsmaJBenchmark {
+public class EJZTBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Zhu-Takaoka";
 

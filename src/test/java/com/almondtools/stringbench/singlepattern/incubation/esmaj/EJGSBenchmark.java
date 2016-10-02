@@ -5,11 +5,11 @@ import static com.almondtools.stringbenchanalyzer.Family.SPECIAL;
 import java.util.List;
 import java.util.function.Function;
 
-import com.almondtools.stringbench.singlepattern.esmaj.EsmaJBenchmark;
+import com.almondtools.stringbench.singlepattern.esmaj.ESMAJBenchmark;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.GS;
 
-public class EJGSBenchmark extends EsmaJBenchmark {
+public class EJGSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Galil-Seiferas";
 

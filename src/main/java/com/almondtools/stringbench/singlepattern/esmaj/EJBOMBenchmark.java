@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.BOM;
 
-public class EJBOMBenchmark extends EsmaJBenchmark {
+public class EJBOMBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Backward Oracle Matching";
 

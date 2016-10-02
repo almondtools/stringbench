@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.MS;
 
-public class EJMSBenchmark extends EsmaJBenchmark {
+public class EJMSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Maximal Shift";
 

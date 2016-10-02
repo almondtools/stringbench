@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.BF;
 
-public class EJBFBenchmark extends EsmaJBenchmark {
+public class EJBFBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Brute Force";
 

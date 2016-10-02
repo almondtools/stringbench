@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.AC;
 
-public class EJACBenchmark extends EsmaJBenchmark {
+public class EJACBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Apostolico-Crochemore";
 

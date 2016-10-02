@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.BR;
 
-public class EJBRBenchmark extends EsmaJBenchmark {
+public class EJBRBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Berry-Ravindran";
 

@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -13,7 +14,7 @@ import java.util.function.Function;
 
 import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmark;
 
-public abstract class EsmaJBenchmark extends SinglePatternMatcherBenchmark {
+public abstract class ESMAJBenchmark extends SinglePatternMatcherBenchmark {
 
 	private Map<String, Function<String, List<Integer>>> algorithm;
 
@@ -30,7 +31,7 @@ public abstract class EsmaJBenchmark extends SinglePatternMatcherBenchmark {
 		Function<String, List<Integer>> searcher = algorithm.get(pattern);
 
 		List<Integer> indexes = searcher.apply(text);
-		return indexes;
+		return filterOverlapping(indexes, pattern.length());
 	}
 
 	@Override
@@ -39,7 +40,19 @@ public abstract class EsmaJBenchmark extends SinglePatternMatcherBenchmark {
 		Function<String, List<Integer>> searcher = algorithm.get(pattern);
 
 		List<Integer> indexes = searcher.apply(text);
-		return indexes;
+		return filterOverlapping(indexes, pattern.length());
+	}
+
+	private List<Integer> filterOverlapping(List<Integer> indexes, int length) {
+		List<Integer> result = new ArrayList<>(indexes.size());
+		int last = 0;
+		for (Integer index : indexes) {
+			if (index >= last) {
+				result.add(index);
+				last = index + length;
+			}
+		}
+		return result;
 	}
 
 	@Override

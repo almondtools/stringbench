@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.QS;
 
-public class EJQSBenchmark extends EsmaJBenchmark {
+public class EJQSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ QuickSearch";
 

@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.SS;
 
-public class EJSSBenchmark extends EsmaJBenchmark {
+public class EJSSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Skip Search";
 

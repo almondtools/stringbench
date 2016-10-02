@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.NSN;
 
-public class EJNSNBenchmark extends EsmaJBenchmark {
+public class EJNSNBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Not So Naive";
 

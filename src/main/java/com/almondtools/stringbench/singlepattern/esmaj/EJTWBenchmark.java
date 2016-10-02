@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.TW;
 
-public class EJTWBenchmark extends EsmaJBenchmark {
+public class EJTWBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Two Way";
 

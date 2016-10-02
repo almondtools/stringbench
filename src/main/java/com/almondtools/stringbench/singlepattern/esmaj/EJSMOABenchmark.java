@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.SMOA;
 
-public class EJSMOABenchmark extends EsmaJBenchmark {
+public class EJSMOABenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ String Matching on Ordered Alphabets";
 

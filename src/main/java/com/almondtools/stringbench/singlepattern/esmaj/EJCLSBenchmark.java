@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.SMN;
 
-public class EJCLSBenchmark extends EsmaJBenchmark {
+public class EJCLSBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Simon";
 

@@ -8,7 +8,7 @@ import java.util.function.Function;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.TBM;
 
-public class EJTBMBenchmark extends EsmaJBenchmark {
+public class EJTBMBenchmark extends ESMAJBenchmark {
 
 	private static final String ID = "EsmaJ Turbo-BM";
 
