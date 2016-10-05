@@ -1,11 +1,10 @@
-package com.almondtools.stringbench.singlepattern.incubation.esmaj;
+package com.almondtools.stringbench.singlepattern.esmaj;
 
 import static com.almondtools.stringbenchanalyzer.Family.SPECIAL;
 
 import java.util.List;
 import java.util.function.Function;
 
-import com.almondtools.stringbench.singlepattern.esmaj.ESMAJBenchmark;
 import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.GS;
 

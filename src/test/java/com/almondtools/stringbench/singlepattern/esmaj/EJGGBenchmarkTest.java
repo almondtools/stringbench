@@ -1,8 +1,8 @@
-package com.almondtools.stringbench.singlepattern.incubation.esmaj;
+package com.almondtools.stringbench.singlepattern.esmaj;
 
 import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmark;
 import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmarkTest;
-import com.almondtools.stringbench.singlepattern.incubation.esmaj.EJGGBenchmark;
+import com.almondtools.stringbench.singlepattern.esmaj.EJGGBenchmark;
 
 public class EJGGBenchmarkTest extends SinglePatternMatcherBenchmarkTest {
 
