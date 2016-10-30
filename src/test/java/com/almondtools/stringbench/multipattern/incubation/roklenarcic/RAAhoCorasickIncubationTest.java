@@ -17,8 +17,14 @@ public class RAAhoCorasickIncubationTest extends MultiPatternTest {
 	public CompareResultNotAccepted compare = CompareResultNotAccepted.compare();
 	
 	@Test
-	public void test228() throws Exception {
+	public void test512_2_32() throws Exception {
 		MultiPatternSample sample = createSample(512, 2, 32);
+		incubation.benchmarkFindInString(sample);
+	}
+
+	@Test
+	public void test512_4_32() throws Exception {
+		MultiPatternSample sample = createSample(512, 4, 32);
 		incubation.benchmarkFindInString(sample);
 	}
 
