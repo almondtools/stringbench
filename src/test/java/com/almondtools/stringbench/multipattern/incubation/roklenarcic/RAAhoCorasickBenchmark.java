@@ -1,4 +1,4 @@
-package com.almondtools.stringbench.multipattern.roklenarcic;
+package com.almondtools.stringbench.multipattern.incubation.roklenarcic;
 
 import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
 
