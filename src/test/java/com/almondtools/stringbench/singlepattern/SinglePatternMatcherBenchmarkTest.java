@@ -170,4 +170,14 @@ public abstract class SinglePatternMatcherBenchmarkTest extends SinglePatternTes
 		findInFileSample(128, 64);
 	}
 
+	@Test
+	public void testBenchmarkFindInString_1024_1024() throws Exception {
+		findInStringSample(1024, 1024);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_1024_1024() throws Exception {
+		findInFileSample(1024, 1024);
+	}
+
 }

@@ -290,4 +290,24 @@ public abstract class MultiPatternMatcherBenchmarkTest extends MultiPatternTest 
 		findInFileSample(128, 64, 32);
 	}
 
+	@Test
+	public void testBenchmarkFindInString_1024_1024_2() throws Exception {
+		findInStringSample(1024, 1024, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_1024_1024_2() throws Exception {
+		findInFileSample(1024, 1024, 2);
+	}
+
+	@Test
+	public void testBenchmarkFindInString_1024_1024_128() throws Exception {
+		findInStringSample(1024, 1024, 128);
+	}
+
+	@Test
+	public void testBenchmarkFindInFile_1024_1024_128() throws Exception {
+		findInFileSample(1024, 1024, 128);
+	}
+
 }
