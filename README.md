@@ -149,4 +149,26 @@ Interpretation of the [results of 2016-08-13](benchmarkresults/result-2016-08-13
   * few medium patterns and medium alphabets = SC Wu-Manber
   * many large patterns and large alphabets = SC Set BOM
   
+Interpretation of the [results of 2016-10-31](benchmarkresults/result-2016-10-31.txt?raw=true)
+---------------------------------------------
+* Participating: SDK, SC, BS
+* Excluded: AC, SS, RA (api problems)
+* Byteseek is better optimized for files and streams, StringSearchAlgorithms is better for strings
+* Finding Single Patterns in strings:
+  * small patterns or long alphabets => SDK indexOf
+  * small alphabets/small pattern size => SC ShiftAnd
+  * small alphabets/medium pattern size => SC BNDM
+  * small alphabets/large pattern size => SC BOM
+  * the region between => Boyer-Moore variants (SC Sunday (Relaxed), SC Horspool (Relaxed), SDK Regex)
+* Finding Single Patterns in files:
+  * very small patterns and small alphabets => SDK indexOf
+  * small alphabets/medium pattern size => SC BNDM
+  * small alphabets/large pattern size => SC BOM
+  * large alphabets => Boyer Moore variants (BS BoyerMooreHorspool, BS HorspoolfinalFlag, BS Sunday) 
+* Finding Multiple Patterns (either in strings and files):
+  * small patterns and small alphabets = SC Aho-Corasick
+  * small patterns and large alphabets = SC Set Horspool (Relaxed)
+  * few medium patterns and medium alphabets = SC Wu-Manber
+  * many large patterns and large alphabets = SC Set BOM
+  
  
