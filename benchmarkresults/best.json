@@ -1,0 +1,329 @@
+[ {
+		"key" : "JavaIndexOf",
+		"family":"NAIVE",
+		"values" : [ {
+			"alphabet" : 2,
+			"pattern" : 2
+		},{
+			"alphabet" : 2,
+			"pattern" : 4
+		},{
+			"alphabet" : 4,
+			"pattern" : 2
+		},{
+			"alphabet" : 8,
+			"pattern" : 2
+		},{
+			"alphabet" : 16,
+			"pattern" : 2
+		},{
+			"alphabet" : 32,
+			"pattern" : 2
+		},{
+			"alphabet" : 64,
+			"pattern" : 2
+		},{
+			"alphabet" : 128,
+			"pattern" : 2
+		} ]
+	},{
+		"key" : "JavaRegex",
+		"family":"SUFFIX",
+		"values" : [ {
+			"alphabet" : 2,
+			"pattern" : 8
+		} ]
+	}, {
+		"key" : "SCBNDM",
+		"family":"FACTOR",
+		"values" : [ {
+			"alphabet" : 2,
+			"pattern" : 16
+		},{
+			"alphabet" : 2,
+			"pattern" : 32
+		},{
+			"alphabet" : 2,
+			"pattern" : 64
+		},{
+			"alphabet" : 2,
+			"pattern" : 1024
+		},{
+			"alphabet" : 4,
+			"pattern" : 32
+		},{
+			"alphabet" : 4,
+			"pattern" : 64
+		},{
+			"alphabet" : 8,
+			"pattern" : 64
+		} ]
+	}, {
+		"key" : "SCBOM",
+		"family":"FACTOR",
+		"values" : [ {
+			"alphabet" : 2,
+			"pattern" : 128
+		},{
+			"alphabet" : 2,
+			"pattern" : 256
+		},{
+			"alphabet" : 2,
+			"pattern" : 512
+		},{
+			"alphabet" : 4,
+			"pattern" : 128
+		},{
+			"alphabet" : 4,
+			"pattern" : 256
+		},{
+			"alphabet" : 4,
+			"pattern" : 512
+		},{
+			"alphabet" : 4,
+			"pattern" : 1024
+		},{
+			"alphabet" : 8,
+			"pattern" : 128
+		},{
+			"alphabet" : 8,
+			"pattern" : 256
+		},{
+			"alphabet" : 8,
+			"pattern" : 512
+		},{
+			"alphabet" : 8,
+			"pattern" : 1024
+		},{
+			"alphabet" : 16,
+			"pattern" : 256
+		},{
+			"alphabet" : 16,
+			"pattern" : 512
+		},{
+			"alphabet" : 16,
+			"pattern" : 1024
+		} ]
+	}, {
+		"key" : "BSHorspoolFinalFlag",
+		"family":"SUFFIX",
+		"values" : [ {
+			"alphabet" : 4,
+			"pattern" : 4
+		},{
+			"alphabet" : 4,
+			"pattern" : 8
+		},{
+			"alphabet" : 4,
+			"pattern" : 16
+		},{
+			"alphabet" : 8,
+			"pattern" : 4
+		},{
+			"alphabet" : 8,
+			"pattern" : 8
+		},{
+			"alphabet" : 8,
+			"pattern" : 16
+		},{
+			"alphabet" : 8,
+			"pattern" : 32
+		},{
+			"alphabet" : 16,
+			"pattern" : 4
+		},{
+			"alphabet" : 16,
+			"pattern" : 8
+		},{
+			"alphabet" : 16,
+			"pattern" : 16
+		},{
+			"alphabet" : 16,
+			"pattern" : 32
+		},{
+			"alphabet" : 16,
+			"pattern" : 64
+		},{
+			"alphabet" : 32,
+			"pattern" : 4
+		},{
+			"alphabet" : 32,
+			"pattern" : 8
+		},{
+			"alphabet" : 32,
+			"pattern" : 16
+		},{
+			"alphabet" : 32,
+			"pattern" : 32
+		},{
+			"alphabet" : 32,
+			"pattern" : 1024
+		},{
+			"alphabet" : 64,
+			"pattern" : 4
+		},{
+			"alphabet" : 64,
+			"pattern" : 8
+		},{
+			"alphabet" : 64,
+			"pattern" : 128
+		},{
+			"alphabet" : 64,
+			"pattern" : 512
+		},{
+			"alphabet" : 128,
+			"pattern" : 4
+		},{
+			"alphabet" : 128,
+			"pattern" : 8
+		},{
+			"alphabet" : 128,
+			"pattern" : 16
+		},{
+			"alphabet" : 128,
+			"pattern" : 32
+		},{
+			"alphabet" : 128,
+			"pattern" : 64
+		},{
+			"alphabet" : 128,
+			"pattern" : 128
+		},{
+			"alphabet" : 128,
+			"pattern" : 1024
+		},{
+			"alphabet" : 256,
+			"pattern" : 2
+		},{
+			"alphabet" : 256,
+			"pattern" : 4
+		},{
+			"alphabet" : 256,
+			"pattern" : 8
+		},{
+			"alphabet" : 256,
+			"pattern" : 16
+		},{
+			"alphabet" : 256,
+			"pattern" : 64
+		},{
+			"alphabet" : 256,
+			"pattern" : 128
+		},{
+			"alphabet" : 256,
+			"pattern" : 512
+		},{
+			"alphabet" : 256,
+			"pattern" : 1024
+		},{
+			"alphabet" : 512,
+			"pattern" : 2
+		},{
+			"alphabet" : 512,
+			"pattern" : 4
+		},{
+			"alphabet" : 512,
+			"pattern" : 8
+		},{
+			"alphabet" : 512,
+			"pattern" : 16
+		},{
+			"alphabet" : 512,
+			"pattern" : 32
+		},{
+			"alphabet" : 512,
+			"pattern" : 64
+		},{
+			"alphabet" : 512,
+			"pattern" : 128
+		},{
+			"alphabet" : 512,
+			"pattern" : 1024
+		},{
+			"alphabet" : 1024,
+			"pattern" : 2
+		},{
+			"alphabet" : 1024,
+			"pattern" : 4
+		},{
+			"alphabet" : 1024,
+			"pattern" : 8
+		},{
+			"alphabet" : 1024,
+			"pattern" : 32
+		},{
+			"alphabet" : 1024,
+			"pattern" : 128
+		},{
+			"alphabet" : 1024,
+			"pattern" : 512
+		},{
+			"alphabet" : 1024,
+			"pattern" : 1024
+		} ]
+	}, {
+		"key" : "BSBoyerMooreHorspool",
+		"family":"SUFFIX",
+		"values" : [ {
+			"alphabet" : 16,
+			"pattern" : 128
+		},{
+			"alphabet" : 32,
+			"pattern" : 128
+		},{
+			"alphabet" : 32,
+			"pattern" : 256
+		},{
+			"alphabet" : 32,
+			"pattern" : 512
+		},{
+			"alphabet" : 64,
+			"pattern" : 16
+		},{
+			"alphabet" : 64,
+			"pattern" : 32
+		},{
+			"alphabet" : 64,
+			"pattern" : 64
+		},{
+			"alphabet" : 64,
+			"pattern" : 256
+		},{
+			"alphabet" : 64,
+			"pattern" : 1024
+		},{
+			"alphabet" : 128,
+			"pattern" : 256
+		},{
+			"alphabet" : 128,
+			"pattern" : 512
+		},{
+			"alphabet" : 256,
+			"pattern" : 32
+		},{
+			"alphabet" : 256,
+			"pattern" : 256
+		},{
+			"alphabet" : 512,
+			"pattern" : 256
+		},{
+			"alphabet" : 512,
+			"pattern" : 512
+		},{
+			"alphabet" : 1024,
+			"pattern" : 16
+		},{
+			"alphabet" : 1024,
+			"pattern" : 64
+		},{
+			"alphabet" : 1024,
+			"pattern" : 256
+		} ]
+	}, {
+		"key" : "BSSunday",
+		"family":"SUFFIX",
+		"values" : [ {
+			"alphabet" : 32,
+			"pattern" : 64
+		} ]
+	} ]
