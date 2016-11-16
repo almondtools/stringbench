@@ -1,0 +1,24 @@
+name,family
+Aho-Corasick (Aho-Corasick.org),PREFIX
+Sequence (byteseek),SUFFIX
+BNDM (StringSearch),FACTOR
+Boyer-Moore-Horspool (StringSearch),SUFFIX
+Boyer-Moore-Horspool-Raita (StringSearch),SUFFIX
+Naive (JDK),NAIVE
+"Boyer-Moore (regex, JDK)",SUFFIX
+Aho-Corasick (Stringsearchalgorithms),PREFIX
+Set-BOM (Stringsearchalgorithms),FACTOR
+Set-Horspool (Stringsearchalgorithms),SUFFIX
+"Set-Horspool (UC-variant, Stringsearchalgorithms)",SUFFIX
+Wu-Manber (Stringsearchalgorithms),SUFFIX
+Boyer-Moore-Horspool (byteseek),SUFFIX
+"Boyer-Moore-Horspool (FF-variant, byteseek)",SUFFIX
+Sunday (byteseek),SUFFIX
+BNDM (Stringsearchalgorithms),FACTOR
+BOM (Stringsearchalgorithms),FACTOR
+Horspool (Stringsearchalgorithms),SUFFIX
+"Horspool (UC-variant, Stringsearchalgorithms)",SUFFIX
+Knuth-Morris-Pratt (Stringsearchalgorithms),PREFIX
+Shift-And (Stringsearchalgorithms),PREFIX
+Sunday (Stringsearchalgorithms),SUFFIX
+"Sunday (UC-variant, Stringsearchalgorithms)",SUFFIX

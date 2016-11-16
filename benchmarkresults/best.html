@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="nv.d3.css"/>
 </head>
 <body ng-controller="DataController">
-   <nvd3 options="options" data="data"></nvd3>
+	<select ng-options="item for item in collections" ng-model="selectedKey" ng-change="select()">
+	</select>
+	
+	<h1>{{selectedKey}}</h1>
+	<nvd3 options="options" data="selectedData"></nvd3>
 </body>
 </html>

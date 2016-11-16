@@ -170,5 +170,8 @@ Interpretation of the [results of 2016-10-31](benchmarkresults/result-2016-10-31
   * small patterns and large alphabets = SC Set Horspool (Relaxed)
   * few medium patterns and medium alphabets = SC Wu-Manber
   * many large patterns and large alphabets = SC Set BOM
-  
+
+Switching Visualization Software
+--------------------------------
+We changed the visualization of best performing benchmarks. Yet we will only maintain the most current benchmarks. Older benchmarks will be available as csv, but not visualized.
  
