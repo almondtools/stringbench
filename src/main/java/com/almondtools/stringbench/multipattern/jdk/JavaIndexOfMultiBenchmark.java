@@ -1,7 +1,5 @@
 package com.almondtools.stringbench.multipattern.jdk;
 
-import static com.almondtools.stringbenchanalyzer.Family.NAIVE;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -12,22 +10,16 @@ import java.util.List;
 import java.util.Set;
 
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 
 	private static final String ID = "String.indexOf (naive)";
-	
+
 	private String[] searchPattern;
 
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return NAIVE;
 	}
 
 	@Override
@@ -51,7 +43,7 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 	}
 
 	private void find(String text, List<Integer> result) {
-		int next[] = new int[searchPattern.length]; 
+		int next[] = new int[searchPattern.length];
 		Arrays.fill(next, -1);
 		int pos = 0;
 		while (pos > -1 && pos < text.length()) {
@@ -61,7 +53,7 @@ public class JavaIndexOfMultiBenchmark extends MultiPatternMatcherBenchmark {
 				if (next[j] == Integer.MAX_VALUE) {
 					continue;
 				} else if (next[j] < pos) {
-					next[j] =  text.indexOf(searchPattern[j], pos);
+					next[j] = text.indexOf(searchPattern[j], pos);
 					if (next[j] < 0) {
 						next[j] = Integer.MAX_VALUE;
 					}

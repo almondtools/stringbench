@@ -1,7 +1,5 @@
 package com.almondtools.stringbench.multipattern.jdk;
 
-import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -15,7 +13,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 
@@ -26,11 +23,6 @@ public class JavaRegexMultiBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return SUFFIX;
 	}
 
 	@Override

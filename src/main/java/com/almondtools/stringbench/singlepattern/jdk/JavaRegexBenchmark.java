@@ -1,6 +1,5 @@
 package com.almondtools.stringbench.singlepattern.jdk;
 
-import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
 import static java.util.stream.Collectors.toMap;
 
 import java.io.File;
@@ -15,7 +14,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmark;
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 
@@ -26,11 +24,6 @@ public class JavaRegexBenchmark extends SinglePatternMatcherBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return SUFFIX;
 	}
 
 	@Override

@@ -1,11 +1,8 @@
 package com.almondtools.stringbench.singlepattern.stringsearchalgorithms;
 
-import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
-
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import com.almondtools.stringbenchanalyzer.Family;
 import net.amygdalum.stringsearchalgorithms.search.ShiftAnd;
 import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
@@ -17,11 +14,6 @@ public class SCShiftAndBenchmark extends StringSearchAlgorithmsBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-	
-	@Override
-	public Family getFamily() {
-		return PREFIX;
 	}
 	
 	@Override

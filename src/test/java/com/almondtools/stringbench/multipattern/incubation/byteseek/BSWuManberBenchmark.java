@@ -1,9 +1,5 @@
 package com.almondtools.stringbench.multipattern.incubation.byteseek;
 
-import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-
-import com.almondtools.stringbenchanalyzer.Family;
-
 import net.byteseek.matcher.multisequence.MultiSequenceMatcher;
 import net.byteseek.matcher.sequence.SequenceMatcher;
 import net.byteseek.searcher.Searcher;
@@ -17,12 +13,6 @@ public class BSWuManberBenchmark extends ByteSeekMultiBenchmark {
 	public String getId() {
 		return ID;
 	}
-
-	@Override
-	public Family getFamily() {
-		return SUFFIX;
-	}
-
 
 	@Override
 	public Searcher<SequenceMatcher> create(MultiSequenceMatcher matcher) {

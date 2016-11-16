@@ -1,7 +1,5 @@
 package com.almondtools.stringbench.singlepattern.jdk;
 
-import static com.almondtools.stringbenchanalyzer.Family.NAIVE;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -11,7 +9,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.almondtools.stringbench.singlepattern.SinglePatternMatcherBenchmark;
-import com.almondtools.stringbenchanalyzer.Family;
 
 public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 
@@ -20,11 +17,6 @@ public class JavaIndexOfBenchmark extends SinglePatternMatcherBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-	
-	@Override
-	public Family getFamily() {
-		return NAIVE;
 	}
 
 	@Override

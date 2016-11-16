@@ -1,13 +1,10 @@
 package com.almondtools.stringbench.multipattern.stringsearchalgorithms;
 
-import static com.almondtools.stringbenchanalyzer.Family.FACTOR;
-
 import java.util.List;
 
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import com.almondtools.stringbenchanalyzer.Family;
 import net.amygdalum.stringsearchalgorithms.search.SetBackwardOracleMatching;
 import net.amygdalum.stringsearchalgorithms.search.StringSearchAlgorithm;
 
@@ -20,12 +17,7 @@ public class SCSetBackwardOracleMatchingBenchmark extends StringSearchAlgorithms
 	public String getId() {
 		return ID;
 	}
-	
-	@Override
-	public Family getFamily() {
-		return FACTOR;
-	}
-	
+
 	@Override
 	public StringSearchAlgorithm create(List<String> pattern) {
 		return new SetBackwardOracleMatching(pattern);

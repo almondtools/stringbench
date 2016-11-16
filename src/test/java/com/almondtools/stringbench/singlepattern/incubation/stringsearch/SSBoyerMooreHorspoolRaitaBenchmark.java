@@ -1,8 +1,5 @@
 package com.almondtools.stringbench.singlepattern.incubation.stringsearch;
 
-import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-
-import com.almondtools.stringbenchanalyzer.Family;
 import com.eaio.stringsearch.BoyerMooreHorspoolRaita;
 import com.eaio.stringsearch.StringSearch;
 
@@ -15,11 +12,6 @@ public class SSBoyerMooreHorspoolRaitaBenchmark extends StringSearchBenchmark {
 		return ID;
 	}
 	
-	@Override
-	public Family getFamily() {
-		return SUFFIX;
-	}
-
 	@Override
 	public StringSearch create() {
 		return new BoyerMooreHorspoolRaita();

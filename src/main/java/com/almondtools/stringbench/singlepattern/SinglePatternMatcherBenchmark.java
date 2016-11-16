@@ -22,7 +22,6 @@ import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
 import com.almondtools.stringbench.SampleNotQualifiedException;
-import com.almondtools.stringbenchanalyzer.Family;
 
 @State(Scope.Thread)
 public abstract class SinglePatternMatcherBenchmark {
@@ -37,8 +36,6 @@ public abstract class SinglePatternMatcherBenchmark {
 	public abstract void free();
 
 	public abstract String getId();
-
-	public abstract Family getFamily();
 
 	@Setup
 	public void setup(SinglePatternSample sample) {

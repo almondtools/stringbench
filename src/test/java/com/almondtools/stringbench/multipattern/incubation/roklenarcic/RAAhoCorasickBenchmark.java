@@ -1,7 +1,5 @@
 package com.almondtools.stringbench.multipattern.incubation.roklenarcic;
 
-import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -11,7 +9,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
-import com.almondtools.stringbenchanalyzer.Family;
 import com.roklenarcic.util.strings.LongestMatchSet;
 import com.roklenarcic.util.strings.SetMatchListener;
 
@@ -24,11 +21,6 @@ public class RAAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return PREFIX;
 	}
 
 	@Override
