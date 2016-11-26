@@ -41,6 +41,7 @@ public abstract class SinglePatternMatcherBenchmarkTest extends SinglePatternTes
 		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFindInString();
+		benchmark.validate();
 	}
 
 	public void findInFileSample(int alphabet, int pattern) throws Exception {
@@ -48,6 +49,7 @@ public abstract class SinglePatternMatcherBenchmarkTest extends SinglePatternTes
 		System.out.println("[Search in String] " + benchmark.getId() + " for " + sample.toString());
 		benchmark.setup(sample);
 		benchmark.benchmarkFindInFile();
+		benchmark.validate();
 	}
 
 	@Test
