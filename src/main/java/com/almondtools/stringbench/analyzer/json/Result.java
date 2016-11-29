@@ -14,7 +14,7 @@ public class Result {
 	@JsonProperty
 	public double score;
 	@JsonProperty
-	@JsonFormat(pattern="yyyy-MM-dd")
+	@JsonFormat(pattern="yyyy-MM-dd", timezone="CET")
 	public Date date;
 	
 
