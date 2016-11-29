@@ -133,7 +133,7 @@ public class UpdateBenchmarks {
 
 	private List<Result> toResult(List<BenchmarkRecord> records) {
 		return records.stream()
-			.map(record -> new Result(record.getAlphabet(), record.getPattern(), record.getScore()))
+			.map(record -> new Result(record.getAlphabet(), record.getPattern(), record.getScore(), record.getDate()))
 			.collect(toList());
 	}
 
