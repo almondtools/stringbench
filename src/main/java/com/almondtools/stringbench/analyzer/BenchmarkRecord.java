@@ -105,5 +105,10 @@ public class BenchmarkRecord {
 	public void setScore(double score) {
 		this.score = score;
 	}
+	
+	@Override
+	public String toString() {
+		return algorithm + '(' + alphabet + ", " + pattern + ", " + number + ')';
+	}
 
 }

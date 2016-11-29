@@ -23,7 +23,7 @@ public class BenchmarkRecords {
 		if (last == null || last.before(date)) {
 			latest.put(name, date);
 			records.add(record);
-			records.removeIf(element -> element.getDate().before(date));
+			records.removeIf(element -> name.equals(element.getAlgorithm()) && element.getDate().before(date));
 		} else if (last.equals(date)) {
 			records.add(record);
 		}

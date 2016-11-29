@@ -24,23 +24,45 @@ com.almondtools.stringbench.multipattern.jdk.JavaRegexMultiBenchmark,"Boyer-Moor
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolRelaxedBenchmark,"Horspool (UC-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickCharBenchmark,Aho-Corasick (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickByteBenchmark,"Aho-Corasick (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCBNDMBenchmark,BNDM (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBNDMBenchmark,BNDM (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBNDMCharBenchmark,BNDM (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBNDMByteBenchmark,"BNDM (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCBOMBenchmark,BOM (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBOMBenchmark,BOM (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBOMCharBenchmark,BOM (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCBOMByteBenchmark,"BOM (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCHorspoolBenchmark,Horspool (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolBenchmark,Horspool (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolCharBenchmark,Horspool (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolByteBenchmark,"Horspool (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCKnuthMorrisPrattBenchmark,Knuth-Morris-Pratt (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCKnuthMorrisPrattBenchmark,Knuth-Morris-Pratt (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCKnuthMorrisPrattCharBenchmark,Knuth-Morris-Pratt (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCKnuthMorrisPrattByteBenchmark,"Knuth-Morris-Pratt (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCSetBackwardOracleMatchingBenchmark,Set-BOM (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetBackwardOracleMatchingBenchmark,Set-BOM (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetBackwardOracleMatchingCharBenchmark,Set-BOM (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetBackwardOracleMatchingByteBenchmark,"Set-BOM (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCSetHorspoolBenchmark,Set-Horspool (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolBenchmark,Set-Horspool (Stringsearchalgorithms)
-com.almondtools.stringbench.SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolCharBenchmark,Set-Horspool (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolByteBenchmark,"Set-Horspool (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolRelaxedBenchmark,"Set-Horspool (UC-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolRelaxedCharBenchmark,"Set-Horspool (UC-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndCharBenchmark,Shift-And (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndByteBenchmark,"Shift-And (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCSundayBenchmark,Sunday (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCSundayBenchmark,Sunday (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCSundayCharBenchmark,Sunday (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCSundayByteBenchmark,"Sunday (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCSundayRelaxedBenchmark,"Sunday (UC-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCSundayRelaxedCharBenchmark,"Sunday (UC-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCWuManberBenchmark,Wu-Manber (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberBenchmark,Wu-Manber (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberCharBenchmark,Wu-Manber (Stringsearchalgorithms)
+com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberByteBenchmark,"Wu-Manber (byte-variant, Stringsearchalgorithms)"

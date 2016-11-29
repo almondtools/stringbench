@@ -7,18 +7,28 @@ Boyer-Moore-Horspool-Raita (StringSearch),SUFFIX
 Naive (JDK),NAIVE
 "Boyer-Moore (regex, JDK)",SUFFIX
 Aho-Corasick (Stringsearchalgorithms),PREFIX
+"Aho-Corasick (byte-variant, Stringsearchalgorithms)",PREFIX
 Set-BOM (Stringsearchalgorithms),FACTOR
+"Set-BOM (byte-variant, Stringsearchalgorithms)",FACTOR
 Set-Horspool (Stringsearchalgorithms),SUFFIX
 "Set-Horspool (UC-variant, Stringsearchalgorithms)",SUFFIX
+"Set-Horspool (byte-variant, Stringsearchalgorithms)",SUFFIX
 Wu-Manber (Stringsearchalgorithms),SUFFIX
+"Wu-Manber (byte-variant, Stringsearchalgorithms)",SUFFIX
 Boyer-Moore-Horspool (byteseek),SUFFIX
 "Boyer-Moore-Horspool (FF-variant, byteseek)",SUFFIX
 Sunday (byteseek),SUFFIX
 BNDM (Stringsearchalgorithms),FACTOR
+"BNDM (byte-variant, Stringsearchalgorithms)",FACTOR
 BOM (Stringsearchalgorithms),FACTOR
+"BOM (byte-variant, Stringsearchalgorithms)",FACTOR
 Horspool (Stringsearchalgorithms),SUFFIX
 "Horspool (UC-variant, Stringsearchalgorithms)",SUFFIX
+"Horspool (byte-variant, Stringsearchalgorithms)",SUFFIX
 Knuth-Morris-Pratt (Stringsearchalgorithms),PREFIX
+"Knuth-Morris-Pratt (byte-variant, Stringsearchalgorithms)",PREFIX
 Shift-And (Stringsearchalgorithms),PREFIX
+"Shift-And (byte-variant, Stringsearchalgorithms)",PREFIX
 Sunday (Stringsearchalgorithms),SUFFIX
+"Sunday (byte-variant, Stringsearchalgorithms)",SUFFIX
 "Sunday (UC-variant, Stringsearchalgorithms)",SUFFIX

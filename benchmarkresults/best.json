@@ -857,10 +857,6 @@
     "algorithm" : "Naive (JDK)",
     "family" : "NAIVE",
     "results" : [ {
-      "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 28.419089
-    }, {
       "alphabet" : 4,
       "pattern" : 2,
       "score" : 42.979601
@@ -881,37 +877,17 @@
       "pattern" : 2,
       "score" : 68.196972
     }, {
-      "alphabet" : 1024,
-      "pattern" : 8,
-      "score" : 25.967096
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 28.392718
-    }, {
       "alphabet" : 512,
       "pattern" : 2,
       "score" : 28.90402
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 30.977039
     }, {
       "alphabet" : 256,
       "pattern" : 2,
       "score" : 31.316943
     }, {
       "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 25.75842
-    }, {
-      "alphabet" : 1024,
       "pattern" : 2,
       "score" : 25.550416
-    }, {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 31.409335
     }, {
       "alphabet" : 64,
       "pattern" : 4,
@@ -920,10 +896,6 @@
       "alphabet" : 64,
       "pattern" : 2,
       "score" : 9.171426
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 9.243664
     }, {
       "alphabet" : 16,
       "pattern" : 8,
@@ -954,16 +926,8 @@
       "score" : 17.874005
     }, {
       "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 10.559955
-    }, {
-      "alphabet" : 32,
       "pattern" : 4,
       "score" : 10.947983
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 19.434572
     }, {
       "alphabet" : 32,
       "pattern" : 2,
@@ -982,296 +946,324 @@
       "score" : 8.24982
     } ]
   }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
+    "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 23.299743
+      "score" : 7.280305
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 14.835065
+    }, {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 4.776875
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 25.086234
+      "score" : 9.943035
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 22.714866
+      "score" : 5.995401
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 20.076027
+      "score" : 6.293509
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 21.288242
+      "score" : 7.87848
     }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 21.67813
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 5.161322
+    }, {
+      "alphabet" : 128,
+      "pattern" : 128,
+      "score" : 3.197991
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 8,
+      "score" : 12.504462
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 23.320826
+      "score" : 9.227813
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 20.52823
+      "score" : 6.404611
     }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 19.594081
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 17.819428
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 18.320783
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 4.150203
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 6.067421
+      "score" : 4.306857
     }, {
       "alphabet" : 256,
       "pattern" : 32,
-      "score" : 27.795283
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 22.174722
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 10.916643
-    }, {
-      "alphabet" : 32,
-      "pattern" : 32,
-      "score" : 8.84364
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 22.001149
-    } ]
-  }, {
-    "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 9.99161
-    }, {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 7.181596
-    }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 7.302308
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 25.828637
+      "score" : 5.854595
     }, {
       "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 19.334004
+      "pattern" : 4,
+      "score" : 16.274404
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 3.559196
     }, {
       "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 26.687455
-    }, {
-      "alphabet" : 128,
-      "pattern" : 128,
-      "score" : 4.840402
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 6.428284
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 5.262085
+      "pattern" : 8,
+      "score" : 14.102993
     }, {
       "alphabet" : 256,
       "pattern" : 16,
-      "score" : 29.929225
+      "score" : 9.86404
     }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 26.275426
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 8.107101
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 8.11886
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 11.617526
+      "score" : 9.601258
     }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 19.447944
-    }, {
-      "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 25.85927
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 9.510582
     }, {
       "alphabet" : 128,
       "pattern" : 16,
-      "score" : 8.579211
+      "score" : 5.970099
+    }, {
+      "alphabet" : 32,
+      "pattern" : 32,
+      "score" : 6.841248
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 8.452039
+      "score" : 6.17949
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 7.470064
+      "score" : 5.492436
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 5.808483
     } ]
   }, {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
+    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 4.246093
+      "score" : 2.703877
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 5.499406
+      "score" : 3.814157
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 5.06639
+      "score" : 3.345083
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 26.328197
+      "score" : 4.051879
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 5.979318
+      "score" : 4.141346
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 4.384274
+      "score" : 2.803458
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 4.355347
+      "score" : 2.710095
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 4.701831
+      "score" : 3.074207
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 4.995382
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 4.8107
+      "score" : 3.15514
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 4.690808
+      "score" : 3.284072
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 4.186228
+      "score" : 2.636877
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 4.244552
+      "score" : 2.629463
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 5.125379
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 4.23656
+      "score" : 2.591339
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 5.587612
+      "score" : 3.888836
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 4.231944
+      "score" : 2.642644
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 4.715902
+      "score" : 3.063848
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 4.583449
+      "score" : 2.881589
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 5.393666
+      "score" : 3.418113
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 4.124944
+      "score" : 2.538555
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 5.390485
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 5.744662
+      "score" : 4.006561
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 6.069451
+      "score" : 4.219054
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 4.414695
+      "score" : 2.789147
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 4.24736
+      "score" : 2.658315
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 4.81407
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 7.716506
+      "score" : 2.981555
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 6.764439
+      "score" : 4.959474
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 6.26687
+      "score" : 4.490033
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 7.985062
+      "score" : 5.985202
     }, {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 19.981688
+      "score" : 17.426396
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 9.434701
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 4.155958
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 15.084904
+      "score" : 12.166869
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 12.925526
+      "score" : 10.484065
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 27.171294
+      "score" : 21.602597
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 4.798518
+      "score" : 3.080031
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 17.941445
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 34.056929
+      "score" : 30.112614
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 9.417134
+      "score" : 7.276393
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 8.548599
+      "score" : 6.475477
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 11.392064
+      "score" : 9.189865
+    }, {
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 5.65701
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 4.997115
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 22.144104
+      "score" : 4.733041
+    }, {
+      "alphabet" : 256,
+      "pattern" : 256,
+      "score" : 4.540285
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 5.951543
     } ]
   } ]
 }, {
@@ -1709,18 +1701,6 @@
       "pattern" : 2,
       "score" : 35.25643
     }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 36.497264
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 33.248959
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 33.726578
-    }, {
       "alphabet" : 256,
       "pattern" : 2,
       "score" : 38.673366
@@ -1748,166 +1728,118 @@
       "alphabet" : 128,
       "pattern" : 2,
       "score" : 16.816128
+    } ]
+  }, {
+    "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 10.759662
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 18.7567
+    }, {
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 26.476149
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 10.484002
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 16,
+      "score" : 12.146278
+    }, {
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 7.033683
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 31.738235
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 7.570439
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 8,
+      "score" : 14.61778
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 4,
+      "score" : 23.217641
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 10.643498
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 5.543548
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 7.418056
+    }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 8.967141
+    }, {
+      "alphabet" : 256,
+      "pattern" : 8,
+      "score" : 14.99469
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 25.036583
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 16.612468
+    }, {
+      "alphabet" : 32,
+      "pattern" : 4,
+      "score" : 22.621554
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 32.211804
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 9.858509
     }, {
       "alphabet" : 128,
       "pattern" : 4,
-      "score" : 18.453123
+      "score" : 15.906012
+    }, {
+      "alphabet" : 64,
+      "pattern" : 32,
+      "score" : 8.910813
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 11.155148
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 20.593821
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 27.205301
+      "score" : 17.684623
     }, {
-      "alphabet" : 512,
+      "alphabet" : 64,
       "pattern" : 16,
-      "score" : 27.623665
-    }, {
-      "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 31.802801
-    }, {
-      "alphabet" : 512,
-      "pattern" : 64,
-      "score" : 23.834842
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 25.133716
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 23.76667
-    }, {
-      "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 27.332555
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 23.270566
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 8,
-      "score" : 30.12448
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 23.246217
-    }, {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 35.129316
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 39.62967
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 18.623614
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 20.145769
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 12.928774
-    } ]
-  }, {
-    "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 34.19446
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 18.502442
-    }, {
-      "alphabet" : 16,
-      "pattern" : 16,
-      "score" : 20.088447
+      "score" : 8.608917
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 1024,
-      "pattern" : 128,
-      "score" : 20.519911
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 28.402402
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 21.604152
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 22.539315
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 8.079444
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 20.11521
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 23.378169
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 10.358577
-    }, {
-      "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 30.048921
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 20.183606
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 7.571494
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 24.9388
-    }, {
       "alphabet" : 8,
       "pattern" : 4,
       "score" : 56.156225
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 23.276586
-    }, {
-      "alphabet" : 64,
-      "pattern" : 32,
-      "score" : 11.518369
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 15.383426
-    }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 11.199166
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
@@ -1926,192 +1858,248 @@
       "score" : 64.06219
     } ]
   }, {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
+    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 5.957651
+    }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 4.837514
+      "score" : 3.179422
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 4.806135
+      "score" : 3.176884
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 5.240593
+      "score" : 3.47404
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 5.001579
+      "score" : 3.321487
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 5.589492
+      "score" : 3.937101
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 4.910109
+      "score" : 3.230686
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 6.692042
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 4.686533
+      "score" : 3.02229
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 5.002036
+      "score" : 3.558805
+    }, {
+      "alphabet" : 512,
+      "pattern" : 64,
+      "score" : 8.537931
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 5.036773
+      "score" : 3.373794
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 5.738641
+      "score" : 4.295779
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 5.494839
+      "score" : 3.675389
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 27.268091
+      "score" : 5.200223
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 6.697717
+      "score" : 4.825394
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 5.170522
+      "score" : 3.419119
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 5.051966
+      "score" : 3.528931
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 5.045647
+      "score" : 3.553606
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 5.276347
+      "score" : 3.72573
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 5.298627
+      "score" : 3.490428
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 5.523343
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 5.299764
+      "score" : 3.709816
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 6.247248
+      "score" : 4.416535
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 5.857442
+      "score" : 4.034364
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 5.016134
+      "score" : 3.481837
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 4.784821
+      "score" : 3.196425
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 8.383497
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 5.57767
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 5.777614
+      "score" : 3.931763
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 7.609554
+      "score" : 5.719612
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 6.1224
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 6.039266
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 26.936403
+      "score" : 4.947702
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 8.330612
+      "score" : 6.533791
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 8.126832
+      "score" : 6.1348
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 7.573574
+      "score" : 5.53593
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 6.781241
+      "score" : 4.927074
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 8.859059
+      "score" : 6.99518
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 6.389436
+      "score" : 4.461146
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 5.874038
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 5.689124
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 30.512994
+      "score" : 24.079154
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 4.780677
+      "score" : 3.247025
     }, {
       "alphabet" : 8,
       "pattern" : 16,
-      "score" : 24.641623
+      "score" : 19.709898
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 44.794214
+      "score" : 40.785361
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 16.956844
+    }, {
+      "alphabet" : 16,
+      "pattern" : 16,
+      "score" : 18.116738
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 6.265588
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 52.776184
+      "score" : 44.816182
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 6.71427
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 10.510063
+      "score" : 8.267563
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 9.269188
+      "score" : 7.055471
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 12.37682
+      "score" : 11.30729
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 13.035174
+      "score" : 10.730695
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 27.044531
+      "score" : 4.700901
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 16.487592
+      "score" : 13.934423
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 14.086364
+      "score" : 11.828423
     }, {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 23.13897
+      "score" : 18.460874
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 11.831018
+      "score" : 9.709985
     } ]
   }, {
     "algorithm" : "Boyer-Moore (regex, JDK)",
@@ -2469,13 +2457,13 @@
       "pattern" : 256,
       "score" : 58.210945
     }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 38.217604
-    }, {
       "alphabet" : 256,
       "pattern" : 256,
       "score" : 61.719879
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 38.217604
     }, {
       "alphabet" : 256,
       "pattern" : 512,
@@ -2614,32 +2602,12 @@
     "family" : "SUFFIX",
     "results" : [ {
       "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 826.618217
-    }, {
-      "alphabet" : 64,
-      "pattern" : 512,
-      "score" : 444.85194
-    }, {
-      "alphabet" : 256,
-      "pattern" : 1024,
-      "score" : 650.517751
-    }, {
-      "alphabet" : 512,
       "pattern" : 16,
       "score" : 878.806241
     }, {
       "alphabet" : 512,
       "pattern" : 8,
       "score" : 987.892991
-    }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 659.084165
-    }, {
-      "alphabet" : 512,
-      "pattern" : 64,
-      "score" : 788.551524
     }, {
       "alphabet" : 4,
       "pattern" : 4,
@@ -2650,36 +2618,8 @@
       "score" : 1057.763073
     }, {
       "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 816.800816
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 128,
-      "score" : 821.871673
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 871.363909
-    }, {
-      "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 675.599905
-    }, {
-      "alphabet" : 128,
-      "pattern" : 128,
-      "score" : 427.532616
-    }, {
-      "alphabet" : 32,
-      "pattern" : 1024,
-      "score" : 500.12667
-    }, {
-      "alphabet" : 1024,
       "pattern" : 8,
       "score" : 1016.811119
-    }, {
-      "alphabet" : 64,
-      "pattern" : 128,
-      "score" : 442.126915
     }, {
       "alphabet" : 512,
       "pattern" : 4,
@@ -2689,10 +2629,6 @@
       "pattern" : 2,
       "score" : 1621.122233
     }, {
-      "alphabet" : 128,
-      "pattern" : 1024,
-      "score" : 425.521031
-    }, {
       "alphabet" : 256,
       "pattern" : 4,
       "score" : 1098.180952
@@ -2700,10 +2636,6 @@
       "alphabet" : 256,
       "pattern" : 2,
       "score" : 1541.309147
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 460.633254
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
@@ -2721,10 +2653,6 @@
       "pattern" : 8,
       "score" : 875.169133
     }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 442.020864
-    }, {
       "alphabet" : 64,
       "pattern" : 4,
       "score" : 826.845031
@@ -2733,21 +2661,9 @@
       "pattern" : 16,
       "score" : 546.466135
     }, {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 554.95218
-    }, {
       "alphabet" : 64,
       "pattern" : 8,
       "score" : 624.183742
-    }, {
-      "alphabet" : 8,
-      "pattern" : 32,
-      "score" : 712.807541
-    }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 663.091887
     }, {
       "alphabet" : 16,
       "pattern" : 8,
@@ -2781,29 +2697,13 @@
       "pattern" : 4,
       "score" : 843.389547
     }, {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 1120.34157
-    }, {
       "alphabet" : 128,
       "pattern" : 16,
       "score" : 518.618561
     }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 542.500727
-    }, {
       "alphabet" : 128,
       "pattern" : 8,
       "score" : 605.243947
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 823.464381
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 786.08397
     }, {
       "alphabet" : 32,
       "pattern" : 32,
@@ -2812,186 +2712,226 @@
       "alphabet" : 128,
       "pattern" : 4,
       "score" : 812.186982
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 781.265427
-    } ]
-  }, {
-    "algorithm" : "Sunday (byteseek)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 506.421159
-    } ]
-  }, {
-    "algorithm" : "BNDM (Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 1024,
-      "score" : 665.382798
-    }, {
-      "alphabet" : 4,
-      "pattern" : 32,
-      "score" : 947.35677
-    }, {
-      "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 1213.812886
-    }, {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 1911.388003
-    }, {
-      "alphabet" : 8,
-      "pattern" : 64,
-      "score" : 659.832065
-    }, {
-      "alphabet" : 4,
-      "pattern" : 64,
-      "score" : 704.631322
-    }, {
-      "alphabet" : 2,
-      "pattern" : 64,
-      "score" : 875.785469
     } ]
   }, {
     "algorithm" : "Boyer-Moore-Horspool (byteseek)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 32,
-      "pattern" : 512,
-      "score" : 491.373627
-    }, {
-      "alphabet" : 64,
-      "pattern" : 256,
-      "score" : 435.882742
-    }, {
-      "alphabet" : 32,
-      "pattern" : 256,
-      "score" : 494.733145
-    }, {
-      "alphabet" : 128,
-      "pattern" : 512,
-      "score" : 426.335259
-    }, {
-      "alphabet" : 64,
-      "pattern" : 1024,
-      "score" : 457.307288
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 772.938853
-    }, {
       "alphabet" : 1024,
       "pattern" : 16,
       "score" : 910.680523
     }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 848.356076
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 818.937861
-    }, {
-      "alphabet" : 64,
-      "pattern" : 64,
-      "score" : 454.866997
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 704.468494
-    }, {
-      "alphabet" : 32,
-      "pattern" : 128,
-      "score" : 510.1447
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 770.750691
-    }, {
-      "alphabet" : 16,
-      "pattern" : 128,
-      "score" : 544.470326
-    }, {
       "alphabet" : 64,
       "pattern" : 16,
       "score" : 522.01429
+    } ]
+  }, {
+    "algorithm" : "BOM (byte-variant, Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 64,
+      "pattern" : 512,
+      "score" : 305.231334
+    }, {
+      "alphabet" : 16,
+      "pattern" : 256,
+      "score" : 333.125997
+    }, {
+      "alphabet" : 8,
+      "pattern" : 256,
+      "score" : 342.272868
+    }, {
+      "alphabet" : 4,
+      "pattern" : 256,
+      "score" : 374.079399
+    }, {
+      "alphabet" : 256,
+      "pattern" : 1024,
+      "score" : 474.022479
+    }, {
+      "alphabet" : 2,
+      "pattern" : 256,
+      "score" : 417.398977
+    }, {
+      "alphabet" : 32,
+      "pattern" : 512,
+      "score" : 306.400021
+    }, {
+      "alphabet" : 64,
+      "pattern" : 256,
+      "score" : 316.079668
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 574.949455
+    }, {
+      "alphabet" : 32,
+      "pattern" : 256,
+      "score" : 317.31017
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 620.268588
+    }, {
+      "alphabet" : 128,
+      "pattern" : 512,
+      "score" : 295.1554
+    }, {
+      "alphabet" : 64,
+      "pattern" : 1024,
+      "score" : 295.831666
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 571.045292
+    }, {
+      "alphabet" : 32,
+      "pattern" : 1024,
+      "score" : 310.565415
+    }, {
+      "alphabet" : 64,
+      "pattern" : 128,
+      "score" : 358.546058
+    }, {
+      "alphabet" : 16,
+      "pattern" : 512,
+      "score" : 317.375714
+    }, {
+      "alphabet" : 8,
+      "pattern" : 512,
+      "score" : 322.514623
+    }, {
+      "alphabet" : 4,
+      "pattern" : 512,
+      "score" : 352.342295
+    }, {
+      "alphabet" : 2,
+      "pattern" : 512,
+      "score" : 368.044974
+    }, {
+      "alphabet" : 128,
+      "pattern" : 1024,
+      "score" : 290.509288
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 586.4827
+    }, {
+      "alphabet" : 32,
+      "pattern" : 128,
+      "score" : 349.004512
+    }, {
+      "alphabet" : 16,
+      "pattern" : 1024,
+      "score" : 306.644909
+    }, {
+      "alphabet" : 8,
+      "pattern" : 1024,
+      "score" : 321.028101
+    }, {
+      "alphabet" : 4,
+      "pattern" : 1024,
+      "score" : 331.651185
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 545.500825
+    }, {
+      "alphabet" : 2,
+      "pattern" : 1024,
+      "score" : 337.620461
+    }, {
+      "alphabet" : 16,
+      "pattern" : 128,
+      "score" : 376.551941
+    }, {
+      "alphabet" : 8,
+      "pattern" : 128,
+      "score" : 400.023973
+    }, {
+      "alphabet" : 4,
+      "pattern" : 128,
+      "score" : 423.918232
+    }, {
+      "alphabet" : 2,
+      "pattern" : 128,
+      "score" : 508.038611
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 427.123778
+      "score" : 315.095792
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 573.462599
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 559.11732
+    } ]
+  }, {
+    "algorithm" : "BNDM (byte-variant, Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 816.914081
+    }, {
+      "alphabet" : 64,
+      "pattern" : 64,
+      "score" : 380.141112
     }, {
       "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 656.191326
+      "pattern" : 32,
+      "score" : 693.764935
+    }, {
+      "alphabet" : 4,
+      "pattern" : 32,
+      "score" : 682.869845
+    }, {
+      "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 928.551771
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 489.15725
+    }, {
+      "alphabet" : 8,
+      "pattern" : 32,
+      "score" : 581.526985
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 1626.617768
+    }, {
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 971.122737
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 400.63351
+    }, {
+      "alphabet" : 8,
+      "pattern" : 64,
+      "score" : 413.792648
+    }, {
+      "alphabet" : 4,
+      "pattern" : 64,
+      "score" : 469.976108
+    }, {
+      "alphabet" : 2,
+      "pattern" : 64,
+      "score" : 618.359689
+    }, {
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 384.029487
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 495.221641
-    } ]
-  }, {
-    "algorithm" : "BOM (Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 16,
-      "pattern" : 256,
-      "score" : 550.479067
-    }, {
-      "alphabet" : 8,
-      "pattern" : 256,
-      "score" : 548.691322
-    }, {
-      "alphabet" : 4,
-      "pattern" : 256,
-      "score" : 576.371529
-    }, {
-      "alphabet" : 2,
-      "pattern" : 256,
-      "score" : 630.842925
-    }, {
-      "alphabet" : 16,
-      "pattern" : 512,
-      "score" : 525.085746
-    }, {
-      "alphabet" : 8,
-      "pattern" : 512,
-      "score" : 535.340392
-    }, {
-      "alphabet" : 4,
-      "pattern" : 512,
-      "score" : 560.139483
-    }, {
-      "alphabet" : 2,
-      "pattern" : 512,
-      "score" : 675.17012
-    }, {
-      "alphabet" : 16,
-      "pattern" : 1024,
-      "score" : 522.818479
-    }, {
-      "alphabet" : 8,
-      "pattern" : 1024,
-      "score" : 536.528893
-    }, {
-      "alphabet" : 4,
-      "pattern" : 1024,
-      "score" : 575.808679
-    }, {
-      "alphabet" : 8,
-      "pattern" : 128,
-      "score" : 605.761126
-    }, {
-      "alphabet" : 4,
-      "pattern" : 128,
-      "score" : 637.505423
-    }, {
-      "alphabet" : 2,
-      "pattern" : 128,
-      "score" : 722.230722
+      "score" : 478.700623
     } ]
   }, {
     "algorithm" : "Boyer-Moore (regex, JDK)",
@@ -3000,6 +2940,54 @@
       "alphabet" : 2,
       "pattern" : 8,
       "score" : 2253.11833
+    } ]
+  }, {
+    "algorithm" : "Horspool (byte-variant, Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 523.006807
+    }, {
+      "alphabet" : 512,
+      "pattern" : 64,
+      "score" : 670.257259
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 776.376314
+    }, {
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 556.599279
+    }, {
+      "alphabet" : 128,
+      "pattern" : 128,
+      "score" : 344.321
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 715.264518
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 458.088807
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 391.233934
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 478.182083
+    }, {
+      "alphabet" : 256,
+      "pattern" : 256,
+      "score" : 490.875154
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 613.236491
     } ]
   } ]
 }, {
@@ -3450,92 +3438,64 @@
       "score" : 60.186737
     } ]
   }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
+    "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 38.984244
-    }, {
-      "alphabet" : 512,
-      "pattern" : 16,
-      "score" : 32.605193
+      "score" : 27.561402
     }, {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 48.652985
+      "score" : 36.539087
+    }, {
+      "alphabet" : 256,
+      "pattern" : 8,
+      "score" : 21.658872
+    }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 17.462769
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 32.638403
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 33.802184
+      "score" : 30.185704
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 49.166438
+      "score" : 40.147396
+    }, {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 23.211202
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 39.347401
+      "score" : 36.050763
+    }, {
+      "alphabet" : 64,
+      "pattern" : 2,
+      "score" : 56.232379
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 30.134307
     }, {
       "alphabet" : 128,
       "pattern" : 8,
-      "score" : 19.252291
-    } ]
-  }, {
-    "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
+      "score" : 17.162194
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 13.170367
+    }, {
       "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 44.908838
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 49.494848
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 25.654367
-    }, {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 35.343716
-    }, {
-      "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 32.974419
-    }, {
-      "alphabet" : 256,
       "pattern" : 4,
-      "score" : 43.502123
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 30.763105
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 32.432317
-    }, {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 28.328693
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 33.987503
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 17.284524
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 30.590968
+      "score" : 56.71289
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
@@ -3548,10 +3508,6 @@
       "alphabet" : 128,
       "pattern" : 2,
       "score" : 39.910251
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 57.889861
     }, {
       "alphabet" : 4,
       "pattern" : 8,
@@ -3586,268 +3542,292 @@
       "score" : 48.042808
     }, {
       "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 58.528374
-    }, {
-      "alphabet" : 32,
       "pattern" : 2,
       "score" : 66.784497
     } ]
   }, {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
+    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 7.633603
+      "score" : 5.97867
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 13.81972
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 29.55496
+      "score" : 9.019693
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 8.046566
+      "score" : 6.511146
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 23.654954
+      "score" : 7.190021
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 6.306674
+      "score" : 4.463124
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 6.417631
+      "score" : 4.68118
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 6.618124
+      "score" : 5.039805
     }, {
       "alphabet" : 256,
       "pattern" : 128,
-      "score" : 27.981322
+      "score" : 6.766522
+    }, {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 21.687315
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 24.21839
+      "score" : 9.738676
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 6.784227
+      "score" : 5.051126
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 7.423996
+      "score" : 5.761165
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 7.174956
+      "score" : 5.318451
     }, {
       "alphabet" : 128,
       "pattern" : 64,
-      "score" : 7.800972
+      "score" : 5.984974
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 7.775984
+      "score" : 5.856772
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 11.263614
+      "score" : 9.200157
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 8.386089
+      "score" : 6.673203
     }, {
       "alphabet" : 1024,
       "pattern" : 256,
-      "score" : 21.478294
+      "score" : 7.48551
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 8.201132
+      "score" : 6.667216
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 7.068968
+      "score" : 4.914095
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 7.945403
+      "score" : 6.645762
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 16,
+      "score" : 21.820039
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 14.039727
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 6.568888
+      "score" : 4.865767
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 6.919869
+      "score" : 5.315699
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 8.171125
+      "score" : 6.646423
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 7.741337
+      "score" : 6.049234
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 8.075114
+      "score" : 6.611385
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 24.44302
+      "score" : 8.008795
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 13.560686
+      "score" : 10.385113
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 20.719446
+      "score" : 16.903626
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 11.994378
+      "score" : 9.927671
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 24.238537
+      "score" : 7.651858
     }, {
       "alphabet" : 32,
       "pattern" : 16,
-      "score" : 22.719467
+      "score" : 18.323448
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 14.000759
+      "score" : 11.42554
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 15.910138
+      "score" : 13.192638
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 28.24512
+      "score" : 7.062659
     }, {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 29.733228
+      "score" : 27.495181
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 19.90059
+      "score" : 15.016781
     }, {
       "alphabet" : 128,
       "pattern" : 32,
-      "score" : 11.806468
+      "score" : 9.458931
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 8.618178
+      "score" : 6.593692
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 10.317197
+      "score" : 8.125654
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 17.165454
+      "score" : 15.000753
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 12.377517
+      "score" : 9.93001
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 8.825607
+      "score" : 6.949013
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 21.426537
+      "score" : 8.260737
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 25.738029
+      "score" : 11.11229
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 28.655649
+      "score" : 6.203812
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 8.996411
+      "score" : 7.201663
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 6.019485
+      "score" : 4.291715
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 6.287535
+      "score" : 4.599106
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 22.9656
+      "score" : 7.734373
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 6.055917
+      "score" : 4.357739
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 13.938915
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 6.507815
+      "score" : 4.972856
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 6.83408
+      "score" : 5.078775
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 8.453818
+      "score" : 6.166845
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 7.587858
+      "score" : 5.251361
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 29.817415
+      "score" : 9.545392
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 58.552758
+      "score" : 52.298968
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 37.911468
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 23.124979
+      "score" : 20.065735
     }, {
       "alphabet" : 8,
       "pattern" : 16,
-      "score" : 28.99276
+      "score" : 22.976611
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 36.950604
+      "score" : 29.297796
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 5.693448
+      "score" : 4.028197
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 43.684832
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 26.169027
+      "score" : 9.541268
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 6.21287
+      "score" : 4.435973
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 22.732443
+      "score" : 12.021517
     } ]
   }, {
     "algorithm" : "Boyer-Moore (regex, JDK)",
@@ -3877,14 +3857,6 @@
       "pattern" : 4,
       "score" : 63.995539
     }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 81.992679
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 83.730428
-    }, {
       "alphabet" : 256,
       "pattern" : 8,
       "score" : 54.622907
@@ -3894,24 +3866,20 @@
       "score" : 76.70667
     } ]
   }, {
+    "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 53.547287
+    } ]
+  }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
       "alphabet" : 8,
       "pattern" : 2,
       "score" : 258.860647
-    }, {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 55.695297
-    }, {
-      "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 55.550933
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 37.140204
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
@@ -3924,298 +3892,6 @@
       "alphabet" : 256,
       "pattern" : 4,
       "score" : 60.929884
-    } ]
-  }, {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 43.221296
-    }, {
-      "alphabet" : 128,
-      "pattern" : 256,
-      "score" : 8.902159
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 56.461581
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 49.742293
-    }, {
-      "alphabet" : 16,
-      "pattern" : 16,
-      "score" : 26.358923
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 31.79648
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 31.74028
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 26.250282
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 40.241779
-    }, {
-      "alphabet" : 64,
-      "pattern" : 32,
-      "score" : 15.195195
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 42.916766
-    }, {
-      "alphabet" : 8,
-      "pattern" : 32,
-      "score" : 19.25189
-    }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 34.4895
-    }, {
-      "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 36.565753
-    }, {
-      "alphabet" : 4,
-      "pattern" : 32,
-      "score" : 22.672316
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 24.224986
-    }, {
-      "alphabet" : 32,
-      "pattern" : 32,
-      "score" : 14.896859
-    }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 22.402626
-    }, {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 16.445465
-    }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 30.265203
-    }, {
-      "alphabet" : 512,
-      "pattern" : 16,
-      "score" : 41.181328
-    }, {
-      "alphabet" : 32,
-      "pattern" : 512,
-      "score" : 12.822305
-    }, {
-      "alphabet" : 64,
-      "pattern" : 512,
-      "score" : 12.070654
-    }, {
-      "alphabet" : 16,
-      "pattern" : 512,
-      "score" : 11.976968
-    }, {
-      "alphabet" : 8,
-      "pattern" : 512,
-      "score" : 13.495173
-    }, {
-      "alphabet" : 2,
-      "pattern" : 512,
-      "score" : 12.664684
-    }, {
-      "alphabet" : 4,
-      "pattern" : 512,
-      "score" : 13.668561
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 128,
-      "score" : 23.986956
-    }, {
-      "alphabet" : 128,
-      "pattern" : 512,
-      "score" : 11.29031
-    }, {
-      "alphabet" : 32,
-      "pattern" : 256,
-      "score" : 9.537085
-    }, {
-      "alphabet" : 512,
-      "pattern" : 64,
-      "score" : 27.164537
-    }, {
-      "alphabet" : 64,
-      "pattern" : 256,
-      "score" : 9.342846
-    }, {
-      "alphabet" : 256,
-      "pattern" : 1024,
-      "score" : 41.892284
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 31.942186
-    }, {
-      "alphabet" : 16,
-      "pattern" : 256,
-      "score" : 10.015774
-    }, {
-      "alphabet" : 8,
-      "pattern" : 256,
-      "score" : 10.701715
-    }, {
-      "alphabet" : 2,
-      "pattern" : 256,
-      "score" : 12.574042
-    }, {
-      "alphabet" : 4,
-      "pattern" : 256,
-      "score" : 11.974553
-    }, {
-      "alphabet" : 32,
-      "pattern" : 1024,
-      "score" : 20.06458
-    }, {
-      "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 31.073202
-    }, {
-      "alphabet" : 64,
-      "pattern" : 1024,
-      "score" : 18.905778
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 30.548442
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 34.876993
-    }, {
-      "alphabet" : 32,
-      "pattern" : 128,
-      "score" : 8.625563
-    }, {
-      "alphabet" : 64,
-      "pattern" : 128,
-      "score" : 9.188043
-    }, {
-      "alphabet" : 16,
-      "pattern" : 1024,
-      "score" : 19.976635
-    }, {
-      "alphabet" : 8,
-      "pattern" : 1024,
-      "score" : 20.144464
-    }, {
-      "alphabet" : 2,
-      "pattern" : 1024,
-      "score" : 16.37614
-    }, {
-      "alphabet" : 4,
-      "pattern" : 1024,
-      "score" : 19.624515
-    }, {
-      "alphabet" : 128,
-      "pattern" : 1024,
-      "score" : 16.696925
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 25.403089
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 27.039276
-    }, {
-      "alphabet" : 128,
-      "pattern" : 128,
-      "score" : 8.915888
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 29.614346
-    }, {
-      "alphabet" : 64,
-      "pattern" : 64,
-      "score" : 10.409552
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 12.98745
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 27.806976
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 36.817952
-    }, {
-      "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 31.037886
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 20.20438
-    }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 10.933271
-    }, {
-      "alphabet" : 8,
-      "pattern" : 64,
-      "score" : 13.220741
-    }, {
-      "alphabet" : 2,
-      "pattern" : 64,
-      "score" : 21.341029
-    }, {
-      "alphabet" : 4,
-      "pattern" : 64,
-      "score" : 14.776336
-    }, {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 10.056488
-    }, {
-      "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 42.213079
-    }, {
-      "alphabet" : 16,
-      "pattern" : 128,
-      "score" : 9.206411
-    }, {
-      "alphabet" : 8,
-      "pattern" : 128,
-      "score" : 11.090651
-    }, {
-      "alphabet" : 2,
-      "pattern" : 128,
-      "score" : 14.767114
-    }, {
-      "alphabet" : 4,
-      "pattern" : 128,
-      "score" : 13.007273
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 24.783532
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 9.421254
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
@@ -4240,10 +3916,6 @@
       "alphabet" : 16,
       "pattern" : 4,
       "score" : 57.120777
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 68.029132
     }, {
       "alphabet" : 8,
       "pattern" : 4,
@@ -4274,6 +3946,310 @@
       "score" : 60.334576
     } ]
   }, {
+    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 38.333308
+    }, {
+      "alphabet" : 128,
+      "pattern" : 256,
+      "score" : 7.443189
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 48.558659
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 66.433176
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 43.293293
+    }, {
+      "alphabet" : 16,
+      "pattern" : 16,
+      "score" : 22.513511
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 26.794792
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 31.072776
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 11.132518
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 34.649957
+    }, {
+      "alphabet" : 64,
+      "pattern" : 32,
+      "score" : 11.795443
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 36.676875
+    }, {
+      "alphabet" : 8,
+      "pattern" : 32,
+      "score" : 16.39038
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 14.036359
+    }, {
+      "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 34.805743
+    }, {
+      "alphabet" : 4,
+      "pattern" : 32,
+      "score" : 19.42327
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 20.629552
+    }, {
+      "alphabet" : 32,
+      "pattern" : 32,
+      "score" : 12.000016
+    }, {
+      "alphabet" : 64,
+      "pattern" : 16,
+      "score" : 18.610028
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 13.613949
+    }, {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 9.78268
+    }, {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 25.042292
+    }, {
+      "alphabet" : 32,
+      "pattern" : 512,
+      "score" : 11.264566
+    }, {
+      "alphabet" : 64,
+      "pattern" : 512,
+      "score" : 10.299151
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 54.164116
+    }, {
+      "alphabet" : 16,
+      "pattern" : 512,
+      "score" : 11.214705
+    }, {
+      "alphabet" : 8,
+      "pattern" : 512,
+      "score" : 11.52681
+    }, {
+      "alphabet" : 2,
+      "pattern" : 512,
+      "score" : 11.445456
+    }, {
+      "alphabet" : 4,
+      "pattern" : 512,
+      "score" : 12.357531
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 11.258577
+    }, {
+      "alphabet" : 128,
+      "pattern" : 512,
+      "score" : 9.40323
+    }, {
+      "alphabet" : 32,
+      "pattern" : 256,
+      "score" : 8.102511
+    }, {
+      "alphabet" : 512,
+      "pattern" : 64,
+      "score" : 12.053622
+    }, {
+      "alphabet" : 64,
+      "pattern" : 256,
+      "score" : 7.879515
+    }, {
+      "alphabet" : 256,
+      "pattern" : 1024,
+      "score" : 24.876387
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 16.17423
+    }, {
+      "alphabet" : 16,
+      "pattern" : 256,
+      "score" : 8.502154
+    }, {
+      "alphabet" : 8,
+      "pattern" : 256,
+      "score" : 9.007831
+    }, {
+      "alphabet" : 2,
+      "pattern" : 256,
+      "score" : 11.559293
+    }, {
+      "alphabet" : 4,
+      "pattern" : 256,
+      "score" : 10.140916
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 16,
+      "score" : 25.339832
+    }, {
+      "alphabet" : 32,
+      "pattern" : 1024,
+      "score" : 18.211623
+    }, {
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 10.931548
+    }, {
+      "alphabet" : 64,
+      "pattern" : 1024,
+      "score" : 17.291978
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 17.848365
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 15.410913
+    }, {
+      "alphabet" : 32,
+      "pattern" : 128,
+      "score" : 7.131265
+    }, {
+      "alphabet" : 64,
+      "pattern" : 128,
+      "score" : 6.818635
+    }, {
+      "alphabet" : 16,
+      "pattern" : 1024,
+      "score" : 17.805728
+    }, {
+      "alphabet" : 8,
+      "pattern" : 1024,
+      "score" : 17.908686
+    }, {
+      "alphabet" : 2,
+      "pattern" : 1024,
+      "score" : 14.018926
+    }, {
+      "alphabet" : 4,
+      "pattern" : 1024,
+      "score" : 17.60318
+    }, {
+      "alphabet" : 128,
+      "pattern" : 1024,
+      "score" : 14.745746
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 11.74531
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 13.008513
+    }, {
+      "alphabet" : 128,
+      "pattern" : 128,
+      "score" : 6.728779
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 15.84176
+    }, {
+      "alphabet" : 64,
+      "pattern" : 64,
+      "score" : 8.216109
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 10.565288
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 19.018534
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 27.566691
+    }, {
+      "alphabet" : 256,
+      "pattern" : 256,
+      "score" : 10.840768
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 17.025461
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 8.49841
+    }, {
+      "alphabet" : 8,
+      "pattern" : 64,
+      "score" : 10.677677
+    }, {
+      "alphabet" : 2,
+      "pattern" : 64,
+      "score" : 17.536705
+    }, {
+      "alphabet" : 4,
+      "pattern" : 64,
+      "score" : 12.167943
+    }, {
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 7.704498
+    }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 28.003322
+    }, {
+      "alphabet" : 16,
+      "pattern" : 128,
+      "score" : 7.209542
+    }, {
+      "alphabet" : 8,
+      "pattern" : 128,
+      "score" : 8.808691
+    }, {
+      "alphabet" : 2,
+      "pattern" : 128,
+      "score" : 13.648507
+    }, {
+      "alphabet" : 4,
+      "pattern" : 128,
+      "score" : 10.227466
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 13.229685
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 7.305116
+    } ]
+  }, {
     "algorithm" : "Boyer-Moore (regex, JDK)",
     "family" : "SUFFIX",
     "results" : [ {
@@ -4288,6 +4264,18 @@
       "alphabet" : 2,
       "pattern" : 4,
       "score" : 91.445998
+    } ]
+  }, {
+    "algorithm" : "Aho-Corasick (byte-variant, Stringsearchalgorithms)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 77.247765
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 83.70709
     } ]
   } ]
 } ]
