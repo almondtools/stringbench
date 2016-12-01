@@ -2724,11 +2724,6 @@
       "score" : 299.007089,
       "date" : "2016-10-31"
     }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 399.591952,
-      "date" : "2016-10-31"
-    }, {
       "alphabet" : 8,
       "pattern" : 2,
       "score" : 505.024212,
@@ -2773,24 +2768,9 @@
     "algorithm" : "Shift-And (Stringsearchalgorithms)",
     "family" : "PREFIX",
     "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 765.439245,
-      "date" : "2016-10-31"
-    }, {
       "alphabet" : 4,
       "pattern" : 4,
       "score" : 1058.217963,
-      "date" : "2016-10-31"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 720.518647,
-      "date" : "2016-10-31"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 1006.912246,
       "date" : "2016-10-31"
     } ]
   }, {
@@ -3160,6 +3140,30 @@
       "pattern" : 4,
       "score" : 925.617056,
       "date" : "2016-10-31"
+    } ]
+  }, {
+    "algorithm" : "Shift-Or (Stringsearchalgorithms)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 760.757974,
+      "date" : "2016-12-01"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 382.93033,
+      "date" : "2016-12-01"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 714.490039,
+      "date" : "2016-12-01"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 956.342392,
+      "date" : "2016-12-01"
     } ]
   } ]
 }, {

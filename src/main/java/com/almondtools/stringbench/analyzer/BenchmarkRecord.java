@@ -36,6 +36,13 @@ public class BenchmarkRecord {
 		return this;
 	}
 
+	public BenchmarkRecord withDefaultPatternNumber(int number) {
+		if (this.number == 0) {
+			this.number = number;
+		}
+		return this;
+	}
+
 	public Date getDate() {
 		return date;
 	}

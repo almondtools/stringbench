@@ -29,6 +29,7 @@ import java.util.regex.Pattern;
 import org.simpleflatmapper.csv.CellValueReader;
 import org.simpleflatmapper.csv.CsvColumnDefinition;
 import org.simpleflatmapper.csv.CsvParser;
+import org.simpleflatmapper.csv.CsvParser.StaticMapToDSL;
 import org.simpleflatmapper.csv.ParsingContext;
 
 import com.almondtools.stringbench.analyzer.json.BenchmarkCollection;
@@ -39,7 +40,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class UpdateBenchmarks {
 
-	private static final Pattern BENCHMARK_FILE = Pattern.compile("result-(\\d{4}-\\d{2}-\\d{2})\\.csv");
+	private static final Pattern BENCHMARK_FILE = Pattern.compile("result(-[ans]*)?-(\\d{4}-\\d{2}-\\d{2})\\.csv");
 
 	private Map<String, String> names;
 	private Map<String, String> families;
@@ -59,41 +60,52 @@ public class UpdateBenchmarks {
 	public void run() throws IOException {
 		Path root = Paths.get("benchmarkresults");
 		List<File> csvFiles = Files.list(root)
-			.filter(path -> BENCHMARK_FILE.matcher(path.getFileName().toString()).matches())
-			.map(path -> path.toFile())
-			.collect(toList());
+				.filter(path -> BENCHMARK_FILE.matcher(path.getFileName().toString()).matches())
+				.map(path -> path.toFile())
+				.collect(toList());
 
 		File namesFile = root.resolve("names.csv").toFile();
 		CsvParser
-			.mapTo(Mapping.class)
-			.addMapping("name", renameDefinition("from"))
-			.addMapping("normalization", renameDefinition("to"))
-			.forEach(namesFile, mapping -> names.put(mapping.from, mapping.to));
+				.mapTo(Mapping.class)
+				.addMapping("name", renameDefinition("from"))
+				.addMapping("normalization", renameDefinition("to"))
+				.forEach(namesFile, mapping -> names.put(mapping.from, mapping.to));
 
 		File familiesFile = root.resolve("families.csv").toFile();
 		CsvParser
-			.mapTo(Mapping.class)
-			.addMapping("name", renameDefinition("from"))
-			.addMapping("family", renameDefinition("to"))
-			.forEach(familiesFile, mapping -> families.put(mapping.from, mapping.to));
+				.mapTo(Mapping.class)
+				.addMapping("name", renameDefinition("from"))
+				.addMapping("family", renameDefinition("to"))
+				.forEach(familiesFile, mapping -> families.put(mapping.from, mapping.to));
 
 		for (File file : csvFiles) {
 			Matcher matcher = BENCHMARK_FILE.matcher(file.getName());
-			Date date = matcher.matches() ? parseDate(matcher.group(1)) : null;
-			CsvParser
-				.skip(1)
-				.mapTo(BenchmarkRecord.class)
-				.addMapping("Benchmark", identity())
-				.addMapping("Mode", ignoreDefinition())
-				.addMapping("Threads", ignoreDefinition())
-				.addMapping("Samples", ignoreDefinition())
-				.addMapping("Score", doubleReader())
-				.addMapping("Score Error (99,9%)", ignoreDefinition())
-				.addMapping("Unit", ignoreDefinition())
-				.addMapping("Param: alphabetSize", renameDefinition("alphabet"))
-				.addMapping("Param: patternNumber", intReader(1).addRename("number"))
-				.addMapping("Param: patternSize", renameDefinition("pattern"))
-				.forEach(file, benchmark -> benchmarks.add(benchmark
+			boolean matches = matcher.matches();
+			String format = matches ? matcher.group(1) != null ? matcher.group(1)  : "ans" : "ans";
+			Date date = matches ? parseDate(matcher.group(2)) : null;
+
+			StaticMapToDSL<BenchmarkRecord> parser = CsvParser
+					.skip(1)
+					.mapTo(BenchmarkRecord.class)
+					.addMapping("Benchmark", identity())
+					.addMapping("Mode", ignoreDefinition())
+					.addMapping("Threads", ignoreDefinition())
+					.addMapping("Samples", ignoreDefinition())
+					.addMapping("Score", doubleReader())
+					.addMapping("Score Error (99,9%)", ignoreDefinition())
+					.addMapping("Unit", ignoreDefinition());
+
+			if (format.contains("a")) {
+				parser = parser.addMapping("Param: alphabetSize", renameDefinition("alphabet"));
+			}
+			if (format.contains("n")) {
+				parser = parser.addMapping("Param: patternNumber", intReader().addRename("number"));
+			}
+			if (format.contains("s")) {
+				parser = parser.addMapping("Param: patternSize", renameDefinition("pattern"));
+			}
+
+			parser.forEach(file, benchmark -> benchmarks.add(benchmark.withDefaultPatternNumber(1)
 					.withDate(date)
 					.withAlgorithm(names.getOrDefault(benchmark.getAlgorithm(), benchmark.getAlgorithm()))
 					.withType(names.getOrDefault(benchmark.getType(), benchmark.getType()))
@@ -102,47 +114,42 @@ public class UpdateBenchmarks {
 
 		List<BenchmarkCollection> bestscenarios = toCollection(benchmarks.getRecords());
 
-		new ObjectMapper()
-			.enable(SerializationFeature.INDENT_OUTPUT)
-			.writeValue(root.resolve("best.json").toFile(), bestscenarios);
+		new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValue(root.resolve("best.json").toFile(),
+				bestscenarios);
 	}
 
 	private List<BenchmarkCollection> toCollection(List<BenchmarkRecord> records) {
 		List<BenchmarkRecord> maxrecords = records.stream()
-			.collect(groupingBy(record -> new BenchmarkKey(record.getNumber(), record.getType(), record.getPattern(), record.getAlphabet()),
-				maxBy(new BenchmarkScore())))
-			.values().stream()
-			.map(record -> record.orElse(null))
-			.filter(Objects::nonNull)
-			.collect(toList());
+				.collect(groupingBy(record -> new BenchmarkKey(record.getNumber(), record.getType(),
+						record.getPattern(), record.getAlphabet()), maxBy(new BenchmarkScore())))
+				.values().stream().map(record -> record.orElse(null)).filter(Objects::nonNull).collect(toList());
 
 		return maxrecords.stream()
-			.collect(groupingBy(record -> new CollectionKey(record.getNumber(), record.getType())))
-			.entrySet().stream()
-			.map(entry -> new BenchmarkCollection(entry.getKey().number, entry.getKey().type, toCandidate(entry.getValue())))
-			.collect(toList());
+				.collect(groupingBy(record -> new CollectionKey(record.getNumber(), record.getType()))).entrySet()
+				.stream().map(entry -> new BenchmarkCollection(entry.getKey().number, entry.getKey().type,
+						toCandidate(entry.getValue())))
+				.collect(toList());
 	}
 
 	private List<Candidate> toCandidate(List<BenchmarkRecord> records) {
-		return records.stream()
-			.collect(groupingBy(record -> new Algorithm(record.getAlgorithm(), record.getFamily())))
-			.entrySet().stream()
-			.map(entry -> new Candidate(entry.getKey().algorithm, entry.getKey().family, toResult(entry.getValue())))
-			.collect(toList());
+		return records.stream().collect(groupingBy(record -> new Algorithm(record.getAlgorithm(), record.getFamily())))
+				.entrySet().stream().map(entry -> new Candidate(entry.getKey().algorithm, entry.getKey().family,
+						toResult(entry.getValue())))
+				.collect(toList());
 	}
 
 	private List<Result> toResult(List<BenchmarkRecord> records) {
-		return records.stream()
-			.map(record -> new Result(record.getAlphabet(), record.getPattern(), record.getScore(), record.getDate()))
-			.collect(toList());
+		return records.stream().map(
+				record -> new Result(record.getAlphabet(), record.getPattern(), record.getScore(), record.getDate()))
+				.collect(toList());
 	}
 
 	public CsvColumnDefinition doubleReader() {
 		return customReaderDefinition(new DoubleReader(Double.NaN));
 	}
 
-	public CsvColumnDefinition intReader(int value) {
-		return customReaderDefinition(new IntReader(value));
+	public CsvColumnDefinition intReader() {
+		return customReaderDefinition(new IntReader(0));
 	}
 
 	public Date parseDate(String group) {
@@ -173,7 +180,7 @@ public class UpdateBenchmarks {
 	}
 
 	private static class IntReader implements CellValueReader<Integer> {
-		
+
 		private int defaultValue;
 
 		public IntReader(int defaultValue) {
@@ -249,8 +256,7 @@ public class UpdateBenchmarks {
 				return false;
 			}
 			CollectionKey that = (CollectionKey) obj;
-			return this.number == that.number
-				&& this.type.equals(that.type);
+			return this.number == that.number && this.type.equals(that.type);
 		}
 
 	}
@@ -285,10 +291,8 @@ public class UpdateBenchmarks {
 				return false;
 			}
 			BenchmarkKey that = (BenchmarkKey) obj;
-			return this.number == that.number
-				&& this.type.equals(that.type)
-				&& this.pattern == that.pattern
-				&& this.alphabet == that.alphabet;
+			return this.number == that.number && this.type.equals(that.type) && this.pattern == that.pattern
+					&& this.alphabet == that.alphabet;
 		}
 
 	}

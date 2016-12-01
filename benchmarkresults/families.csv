@@ -29,6 +29,8 @@ Knuth-Morris-Pratt (Stringsearchalgorithms),PREFIX
 "Knuth-Morris-Pratt (byte-variant, Stringsearchalgorithms)",PREFIX
 Shift-And (Stringsearchalgorithms),PREFIX
 "Shift-And (byte-variant, Stringsearchalgorithms)",PREFIX
+Shift-Or (Stringsearchalgorithms),PREFIX
+"Shift-Or (byte-variant, Stringsearchalgorithms)",PREFIX
 Sunday (Stringsearchalgorithms),SUFFIX
 "Sunday (byte-variant, Stringsearchalgorithms)",SUFFIX
 "Sunday (UC-variant, Stringsearchalgorithms)",SUFFIX

@@ -66,3 +66,5 @@ com.almondtools.stringbench.SCWuManberBenchmark,Wu-Manber (Stringsearchalgorithm
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberBenchmark,Wu-Manber (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberCharBenchmark,Wu-Manber (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberByteBenchmark,"Wu-Manber (byte-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftOrCharBenchmark,Shift-Or (Stringsearchalgorithms)
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftOrByteBenchmark,"Shift-Or (byte-variant, Stringsearchalgorithms)"
