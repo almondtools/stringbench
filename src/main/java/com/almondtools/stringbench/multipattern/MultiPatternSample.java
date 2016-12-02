@@ -16,7 +16,8 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 
 import com.almondtools.stringbench.ResultSizeNotAcceptedException;
-import com.almondtools.stringbenchgenerator.GenerateSamples;
+import com.almondtools.stringbench.generator.GenerateSamples;
+
 import net.amygdalum.util.text.CharUtils;
 
 @State(Scope.Benchmark)

@@ -7,6 +7,6 @@ public class SCSundayCharBenchmarkTest extends SinglePatternMatcherBenchmarkTest
 
 	@Override
 	protected SinglePatternMatcherBenchmark getBenchmark() {
-		return new SCSundayCharBenchmark();
+		return new SCSundayRelaxedCharBenchmark();
 	}
 }
