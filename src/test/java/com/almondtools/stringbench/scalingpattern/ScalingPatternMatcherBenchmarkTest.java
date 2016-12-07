@@ -8,8 +8,6 @@ import org.junit.rules.Stopwatch;
 import org.junit.runner.Description;
 
 import com.almondtools.stringbench.CompareResultNotAccepted;
-import com.almondtools.stringbench.scalingpattern.ScalingPatternMatcherBenchmark;
-import com.almondtools.stringbench.scalingpattern.ScalingPatternSample;
 
 public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternTest {
 
@@ -103,6 +101,7 @@ public abstract class ScalingPatternMatcherBenchmarkTest extends ScalingPatternT
 	public void testBenchmarkFindInString_humanprotein_20000() {
 		findInStringSample("human-protein", 20000);
 	}
+	
 	@Test
 	public void testBenchmarkFindInString_kjb_1250() {
 		findInStringSample("kjb", 1250);
