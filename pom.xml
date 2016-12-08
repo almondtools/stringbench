@@ -138,7 +138,6 @@
 									<artifact>*:*</artifact>
 									<excludes>
 										<exclude>com/almondtools/stringbench/analyzer/**</exclude>
-										<exclude>com/almondtools/stringbench/generator/**</exclude>
 									</excludes>
 								</filter>
 								<filter>
