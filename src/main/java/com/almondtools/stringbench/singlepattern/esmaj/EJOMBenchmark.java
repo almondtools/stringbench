@@ -1,11 +1,8 @@
 package com.almondtools.stringbench.singlepattern.esmaj;
 
-import static com.almondtools.stringbenchanalyzer.Family.SUFFIX;
-
 import java.util.List;
 import java.util.function.Function;
 
-import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.OM;
 
 public class EJOMBenchmark extends ESMAJBenchmark {
@@ -15,11 +12,6 @@ public class EJOMBenchmark extends ESMAJBenchmark {
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return SUFFIX;
 	}
 
 	@Override

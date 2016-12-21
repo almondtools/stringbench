@@ -1,25 +1,17 @@
 package com.almondtools.stringbench.singlepattern.esmaj;
 
-import static com.almondtools.stringbenchanalyzer.Family.PREFIX;
-
 import java.util.List;
 import java.util.function.Function;
 
-import com.almondtools.stringbenchanalyzer.Family;
 import com.javacodegeeks.stringsearch.KMP;
 
 public class EJKMPBenchmark extends ESMAJBenchmark {
 
-	private static final String ID = "EsmaJ Morris-Pratt";
+	private static final String ID = "EsmaJ Knuth-Morris-Pratt";
 
 	@Override
 	public String getId() {
 		return ID;
-	}
-
-	@Override
-	public Family getFamily() {
-		return PREFIX;
 	}
 
 	@Override
