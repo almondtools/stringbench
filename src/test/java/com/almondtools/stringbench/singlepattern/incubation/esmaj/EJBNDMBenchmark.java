@@ -1,8 +1,9 @@
-package com.almondtools.stringbench.singlepattern.esmaj;
+package com.almondtools.stringbench.singlepattern.incubation.esmaj;
 
 import java.util.List;
 import java.util.function.Function;
 
+import com.almondtools.stringbench.singlepattern.esmaj.ESMAJBenchmark;
 import com.javacodegeeks.stringsearch.BNDM;
 
 public class EJBNDMBenchmark extends ESMAJBenchmark {
