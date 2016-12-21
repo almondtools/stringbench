@@ -34,3 +34,37 @@ Shift-Or (Stringsearchalgorithms),PREFIX
 Sunday (Stringsearchalgorithms),SUFFIX
 "Sunday (byte-variant, Stringsearchalgorithms)",SUFFIX
 "Sunday (UC-variant, Stringsearchalgorithms)",SUFFIX
+"Zhu-Takaoka (ESMAJ)", SUFFIX
+"Two Way (ESMAJ)", SPECIAL
+"Turbo-BM (ESMAJ)", SUFFIX
+"Skip Search (ESMAJ)", SPECIAL
+"Smith (ESMAJ)", SUFFIX
+"String Matching on Ordered Alphabets (ESMAJ)", SPECIAL
+"Raita (ESMAJ)", SUFFIX
+"QuickSearch (ESMAJ)", SUFFIX
+"Optimal Mismatch (ESMAJ)", SUFFIX
+"Not So Naive (ESMAJ)", SUFFIX
+"Maximal Shift (ESMAJ)", SUFFIX
+"Morris-Pratt (ESMAJ)", PREFIX
+"Karp-Rabin (ESMAJ)", HASHING
+"KMP Skip Search (ESMAJ)", SPECIAL
+"Knuth-Morris-Pratt (ESMAJ)", PREFIX
+"Horspool (ESMAJ)", SUFFIX
+"Galil-Seiferas (ESMAJ)", SPECIAL
+"Galil-Giancarlo (ESMAJ)", PREFIX
+"Simon (ESMAJ)", PREFIX
+"Berry-Ravindran (ESMAJ)", SUFFIX
+"Backward Oracle Matching (ESMAJ)", FACTOR
+"Backward Non-Deterministic Dawg Matching (ESMAJ)", FACTOR
+"Tuned Boyer-Moore (ESMAJ)", SUFFIX
+"Boyer-Moore (ESMAJ)", SUFFIX
+"Brute Force (ESMAJ)", NAIVE
+"Apostolico-Giancarlo (ESMAJ)", SUFFIX
+"Apostolico-Crochemore (ESMAJ)", PREFIX
+"DFA (ESMAJ)", PREFIX
+"Turbo Reverse Factor (ESMAJ)", FACTOR
+"Shift-Or (ESMAJ)", PREFIX
+"Colussi (ESMAJ)", PREFIX
+"Reverse Factor (ESMAJ)", FACTOR
+"Reverse Colussi (ESMAJ)", SUFFIX
+"Forward Dawg Matching (ESMAJ)", FACTOR
