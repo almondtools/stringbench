@@ -40,7 +40,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class UpdateBenchmarks {
 
-	private static final Pattern BENCHMARK_FILE = Pattern.compile("result(-[ans]*)?-(\\d{4}-\\d{2}-\\d{2})\\.csv");
+	private static final Pattern BENCHMARK_FILE = Pattern.compile("result(-[ans]*)?-(\\d{4}-\\d{2}-\\d{2})(-\\d+)?\\.csv");
 
 	private Map<String, String> names;
 	private Map<String, String> families;
