@@ -2626,6 +2626,20 @@
   "number" : 1,
   "type" : "in strings",
   "candidates" : [ {
+    "algorithm" : "Karp-Rabin (ESMAJ)",
+    "family" : " HASHING",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 718.455744,
+      "date" : "2016-12-23"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 343.288753,
+      "date" : "2016-12-23"
+    } ]
+  }, {
     "algorithm" : "Naive (JDK)",
     "family" : "NAIVE",
     "results" : [ {
@@ -2737,11 +2751,6 @@
       "alphabet" : 16,
       "pattern" : 4,
       "score" : 614.754087,
-      "date" : "2016-10-31"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 527.778495,
       "date" : "2016-10-31"
     }, {
       "alphabet" : 512,
@@ -2887,11 +2896,6 @@
       "alphabet" : 1024,
       "pattern" : 1024,
       "score" : 28.000811,
-      "date" : "2016-10-31"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 760.048379,
       "date" : "2016-10-31"
     } ]
   }, {
@@ -3113,6 +3117,25 @@
       "date" : "2016-11-29"
     } ]
   }, {
+    "algorithm" : "Raita (ESMAJ)",
+    "family" : " SUFFIX",
+    "results" : [ {
+      "alphabet" : 8,
+      "pattern" : 4,
+      "score" : 869.574065,
+      "date" : "2016-12-24"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 621.812687,
+      "date" : "2016-12-24"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 510.602508,
+      "date" : "2016-12-24"
+    } ]
+  }, {
     "algorithm" : "Boyer-Moore (regex, JDK)",
     "family" : "SUFFIX",
     "results" : [ {
@@ -3135,26 +3158,11 @@
       "pattern" : 16,
       "score" : 245.022435,
       "date" : "2016-10-31"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 4,
-      "score" : 925.617056,
-      "date" : "2016-10-31"
     } ]
   }, {
     "algorithm" : "Shift-Or (Stringsearchalgorithms)",
     "family" : "PREFIX",
     "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 760.757974,
-      "date" : "2016-12-01"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 382.93033,
-      "date" : "2016-12-01"
-    }, {
       "alphabet" : 2,
       "pattern" : 8,
       "score" : 714.490039,
@@ -3170,17 +3178,31 @@
   "number" : 1,
   "type" : "in files",
   "candidates" : [ {
+    "algorithm" : "Karp-Rabin (ESMAJ)",
+    "family" : " HASHING",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 466.440942,
+      "date" : "2016-12-23"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 1397.56318,
+      "date" : "2016-12-23"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 1771.585015,
+      "date" : "2016-12-23"
+    } ]
+  }, {
     "algorithm" : "Naive (JDK)",
     "family" : "NAIVE",
     "results" : [ {
       "alphabet" : 4,
       "pattern" : 2,
       "score" : 437.521673,
-      "date" : "2016-10-31"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 527.561208,
       "date" : "2016-10-31"
     }, {
       "alphabet" : 8,
@@ -3589,11 +3611,6 @@
       "score" : 581.526985,
       "date" : "2016-11-28"
     }, {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 1626.617768,
-      "date" : "2016-11-28"
-    }, {
       "alphabet" : 4,
       "pattern" : 16,
       "score" : 971.122737,
@@ -3628,15 +3645,6 @@
       "pattern" : 32,
       "score" : 478.700623,
       "date" : "2016-11-28"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 2253.11833,
-      "date" : "2016-10-31"
     } ]
   }, {
     "algorithm" : "Horspool (byte-variant, Stringsearchalgorithms)",
