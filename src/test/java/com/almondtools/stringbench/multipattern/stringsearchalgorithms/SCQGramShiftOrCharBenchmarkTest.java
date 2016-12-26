@@ -8,5 +8,4 @@ public class SCQGramShiftOrCharBenchmarkTest extends MultiPatternMatcherBenchmar
 	protected MultiPatternMatcherBenchmark getBenchmark() {
 		return new SCQGramShiftOrCharBenchmark();
 	}
-
 }

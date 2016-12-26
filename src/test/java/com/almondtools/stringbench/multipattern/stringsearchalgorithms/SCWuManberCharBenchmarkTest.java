@@ -8,5 +8,4 @@ public class SCWuManberCharBenchmarkTest extends MultiPatternMatcherBenchmarkTes
 	protected MultiPatternMatcherBenchmark getBenchmark() {
 		return new SCWuManberCharBenchmark();
 	}
-
 }
