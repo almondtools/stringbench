@@ -128,6 +128,7 @@ public class UpdateBenchmarks {
 				.collect(groupingBy(record -> new CollectionKey(record.getNumber(), record.getType()))).entrySet()
 				.stream().map(entry -> new BenchmarkCollection(entry.getKey().number, entry.getKey().type,
 						toCandidate(entry.getValue())))
+				.sorted()
 				.collect(toList());
 	}
 

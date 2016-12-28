@@ -5,7 +5,9 @@ BNDM (StringSearch),FACTOR
 Boyer-Moore-Horspool (StringSearch),SUFFIX
 Boyer-Moore-Horspool-Raita (StringSearch),SUFFIX
 Naive (JDK),NAIVE
+Naive Multi Pattern (JDK),NAIVE
 "Boyer-Moore (regex, JDK)",SUFFIX
+"Boyer-Moore Multi Pattern (regex, JDK)",SUFFIX
 Aho-Corasick (Stringsearchalgorithms),PREFIX
 "Aho-Corasick (byte-variant, Stringsearchalgorithms)",PREFIX
 Set-BOM (Stringsearchalgorithms),FACTOR

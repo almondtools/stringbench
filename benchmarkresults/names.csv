@@ -13,14 +13,14 @@ com.almondtools.stringbench.BSHorspoolFinalFlagBenchmark,"Boyer-Moore-Horspool (
 com.almondtools.stringbench.singlepattern.byteseek.BSHorspoolFinalFlagBenchmark,"Boyer-Moore-Horspool (FF-variant, byteseek)"
 com.almondtools.stringbench.BSSundayBenchmark,Sunday (byteseek)
 com.almondtools.stringbench.singlepattern.byteseek.BSSundayBenchmark,Sunday (byteseek)
-com.almondtools.stringbench.JavaIndexOfMultiBenchmark,Naive (JDK)
-com.almondtools.stringbench.multipattern.jdk.JavaIndexOfMultiBenchmark,Naive (JDK)
+com.almondtools.stringbench.JavaIndexOfMultiBenchmark,Naive Multi Pattern (JDK)
+com.almondtools.stringbench.multipattern.jdk.JavaIndexOfMultiBenchmark,Naive Multi Pattern (JDK)
 com.almondtools.stringbench.JavaRegexBenchmark,"Boyer-Moore (regex, JDK)"
 com.almondtools.stringbench.singlepattern.jdk.JavaRegexBenchmark,"Boyer-Moore (regex, JDK)"
 com.almondtools.stringbench.JavaIndexOfBenchmark,Naive (JDK)
 com.almondtools.stringbench.singlepattern.jdk.JavaIndexOfBenchmark,Naive (JDK)
-com.almondtools.stringbench.JavaRegexMultiBenchmark,"Boyer-Moore (regex, JDK)"
-com.almondtools.stringbench.multipattern.jdk.JavaRegexMultiBenchmark,"Boyer-Moore (regex, JDK)"
+com.almondtools.stringbench.JavaRegexMultiBenchmark,"Boyer-Moore Multi Pattern (regex, JDK)"
+com.almondtools.stringbench.multipattern.jdk.JavaRegexMultiBenchmark,"Boyer-Moore Multi Pattern (regex, JDK)"
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolRelaxedBenchmark,"Horspool (UC-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
