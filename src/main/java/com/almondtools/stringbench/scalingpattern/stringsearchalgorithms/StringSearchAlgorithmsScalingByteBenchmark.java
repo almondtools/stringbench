@@ -11,8 +11,8 @@ import java.util.Set;
 
 import com.almondtools.stringbench.scalingpattern.ScalingPatternMatcherBenchmark;
 
-import net.amygdalum.stringsearchalgorithms.io.StreamByteProvider;
-import net.amygdalum.stringsearchalgorithms.io.StringByteProvider;
+import net.amygdalum.util.io.StreamByteProvider;
+import net.amygdalum.util.io.StringByteProvider;
 import net.amygdalum.stringsearchalgorithms.search.StringMatch;
 import net.amygdalum.stringsearchalgorithms.search.bytes.StringSearchAlgorithm;
 

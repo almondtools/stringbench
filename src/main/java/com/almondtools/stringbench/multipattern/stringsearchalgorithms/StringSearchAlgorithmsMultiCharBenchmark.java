@@ -15,8 +15,8 @@ import java.util.Set;
 
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
 
-import net.amygdalum.stringsearchalgorithms.io.ReaderCharProvider;
-import net.amygdalum.stringsearchalgorithms.io.StringCharProvider;
+import net.amygdalum.util.io.ReaderCharProvider;
+import net.amygdalum.util.io.StringCharProvider;
 import net.amygdalum.stringsearchalgorithms.search.StringMatch;
 import net.amygdalum.stringsearchalgorithms.search.chars.StringSearchAlgorithm;
 
