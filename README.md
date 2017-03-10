@@ -176,4 +176,3 @@ Interpretation of the [results of 2016-10-31](benchmarkresults/result-2016-10-31
 Switching Visualization Software
 --------------------------------
 We changed the visualization of best performing benchmarks. Yet we will only maintain the most current benchmarks. Older benchmarks will be available as csv, but not visualized.
- 
