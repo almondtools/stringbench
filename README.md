@@ -1,5 +1,7 @@
 StringBench
 ===============
+[![Build Status](https://api.travis-ci.org/almondtools/stringbench.svg)](https://travis-ci.org/almondtools/stringbench)
+
 This project compares different java string matching implementations with a performance test.
 
 Benchmark quality
