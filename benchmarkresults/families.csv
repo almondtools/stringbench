@@ -1,5 +1,6 @@
 name,family
 Aho-Corasick (Aho-Corasick.org),PREFIX
+Aho-Corasick (Hankcs),PREFIX
 Sequence (byteseek),SUFFIX
 BNDM (StringSearch),FACTOR
 Boyer-Moore-Horspool (StringSearch),SUFFIX

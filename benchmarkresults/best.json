@@ -1310,16 +1310,6 @@
       "score" : 67.174094,
       "date" : "2016-12-27"
     }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 49.721842,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 46.903285,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 4,
       "pattern" : 2,
       "score" : 41.395509,
@@ -1394,6 +1384,20 @@
       "pattern" : 2,
       "score" : 29.46915,
       "date" : "2016-12-27"
+    } ]
+  }, {
+    "algorithm" : "Aho-Corasick (Hankcs)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 45.640268,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 38.99307,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
@@ -1811,16 +1815,6 @@
       "score" : 61.745928,
       "date" : "2016-12-27"
     }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 45.343573,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 42.275979,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 4,
       "pattern" : 2,
       "score" : 35.944622,
@@ -1940,6 +1934,20 @@
       "pattern" : 8,
       "score" : 2.390356,
       "date" : "2016-12-27"
+    } ]
+  }, {
+    "algorithm" : "Aho-Corasick (Hankcs)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 39.020037,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 33.627021,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
@@ -2124,11 +2132,6 @@
       "alphabet" : 2,
       "pattern" : 16,
       "score" : 37.415368,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 50.056827,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 8,
@@ -2434,16 +2437,6 @@
     "algorithm" : "Naive Multi Pattern (JDK)",
     "family" : "NAIVE",
     "results" : [ {
-      "alphabet" : 8,
-      "pattern" : 2,
-      "score" : 83.586146,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 2,
-      "score" : 43.04949,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 16,
       "pattern" : 4,
       "score" : 36.099417,
@@ -2475,46 +2468,53 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 80.649559,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 63.938998,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 78.954429,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 4,
-      "score" : 81.574402,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 109.355716,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 86.137954,
-      "date" : "2016-12-27"
+      "score" : 46.335954,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 135.013109,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
+      "score" : 74.391909,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 4,
+      "score" : 46.995812,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 47.539465,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 49.30031,
+      "date" : "2017-04-04"
+    }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 57.630385,
-      "date" : "2016-12-27"
+      "score" : 42.222666,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 2,
+      "score" : 38.151215,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
@@ -2937,16 +2937,6 @@
     "algorithm" : "Naive Multi Pattern (JDK)",
     "family" : "NAIVE",
     "results" : [ {
-      "alphabet" : 8,
-      "pattern" : 2,
-      "score" : 74.852881,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 2,
-      "score" : 39.068649,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 32,
       "pattern" : 2,
       "score" : 21.897948,
@@ -2983,37 +2973,48 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 70.940146,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 55.742737,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 59.262546,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 4,
-      "score" : 62.397978,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 94.911461,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 79.86386,
-      "date" : "2016-12-27"
+      "score" : 39.214966,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 131.304283,
-      "date" : "2016-12-27"
+      "score" : 67.442482,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 4,
+      "score" : 40.333704,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 40.599776,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 4,
+      "score" : 38.329825,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 2,
+      "score" : 32.911001,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
@@ -3078,11 +3079,6 @@
     "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 8,
-      "pattern" : 4,
-      "score" : 39.010563,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 16,
       "pattern" : 4,
       "score" : 27.052937,
@@ -3186,28 +3182,8 @@
     "family" : "FACTOR",
     "results" : [ {
       "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 52.770862,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
       "pattern" : 32,
       "score" : 23.265299,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 61.649586,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 43.816102,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 38.519645,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 16,
@@ -3550,99 +3526,118 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Naive Multi Pattern (JDK)",
-    "family" : "NAIVE",
-    "results" : [ {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 64.034757,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 79.795716,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 57.122866,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 94.797189,
-      "date" : "2016-12-27"
+      "score" : 50.908271,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 40.974173,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 80.138327,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 114.876035,
-      "date" : "2016-12-27"
+      "score" : 54.137212,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 44.187025,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 74.217107,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 69.941531,
-      "date" : "2016-12-27"
+      "score" : 45.389653,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 40.031256,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 115.009719,
-      "date" : "2016-12-27"
+      "score" : 45.820997,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 4,
+      "score" : 34.777535,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 31.512404,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 74.083786,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (byte-variant, Stringsearchalgorithms)",
-    "family" : "PREFIX",
-    "results" : [ {
-      "alphabet" : 16,
+      "score" : 41.703798,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
       "pattern" : 4,
-      "score" : 53.997992,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 103.816742,
-      "date" : "2016-12-27"
+      "score" : 38.947978,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 90.042761,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
+      "alphabet" : 64,
       "pattern" : 2,
-      "score" : 175.425043,
-      "date" : "2016-12-27"
+      "score" : 39.230591,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 8,
-      "pattern" : 2,
-      "score" : 306.045199,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 41.759151,
-      "date" : "2016-12-27"
+      "score" : 28.199085,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 46.206256,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 43.171727,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 36.156236,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 4,
+      "score" : 36.086897,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 55.801579,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 56.299157,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 64,
       "pattern" : 4,
       "score" : 34.329827,
@@ -3666,11 +3661,6 @@
       "alphabet" : 128,
       "pattern" : 16,
       "score" : 13.960073,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 62.699248,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 256,
@@ -3699,16 +3689,6 @@
       "date" : "2016-12-27"
     }, {
       "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 54.957986,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 37.700147,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
       "pattern" : 8,
       "score" : 28.024072,
       "date" : "2016-12-27"
@@ -3721,11 +3701,6 @@
     "algorithm" : "Set-BOM (Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 37.429923,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 2,
       "pattern" : 32,
       "score" : 15.68174,
@@ -3754,11 +3729,6 @@
       "alphabet" : 2,
       "pattern" : 1024,
       "score" : 1.502951,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 42.56072,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 4,
@@ -4077,81 +4047,118 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Naive Multi Pattern (JDK)",
-    "family" : "NAIVE",
-    "results" : [ {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 41.069459,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 72.776198,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 51.359498,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 69.625754,
-      "date" : "2016-12-27"
+      "score" : 46.283421,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 35.960787,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 70.468538,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 84.703292,
-      "date" : "2016-12-27"
+      "score" : 49.749046,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 39.983562,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 70.814295,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 55.994409,
-      "date" : "2016-12-27"
+      "score" : 39.949453,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 2,
+      "score" : 40.324019,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 42.331265,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 99.547724,
-      "date" : "2016-12-27"
+      "score" : 30.3908,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 2,
+      "alphabet" : 32,
+      "pattern" : 2,
+      "score" : 36.346159,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
       "pattern" : 4,
-      "score" : 82.572618,
-      "date" : "2016-12-27"
+      "score" : 34.329682,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 4,
+      "alphabet" : 64,
       "pattern" : 2,
-      "score" : 162.34071,
-      "date" : "2016-12-27"
+      "score" : 34.272799,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 8,
+      "alphabet" : 128,
       "pattern" : 2,
-      "score" : 303.024751,
-      "date" : "2016-12-27"
+      "score" : 23.667583,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 18.457875,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 17.709491,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 15.999882,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 15.354767,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 13.291808,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 4,
+      "score" : 15.135751,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 16,
-      "pattern" : 2,
-      "score" : 76.33227,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 37.749226,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 2,
-      "score" : 25.289109,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 256,
       "pattern" : 16,
       "score" : 10.10417,
@@ -4166,16 +4173,6 @@
     "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 32,
-      "pattern" : 2,
-      "score" : 53.353282,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 39.596962,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 64,
       "pattern" : 4,
       "score" : 23.3015,
@@ -4192,23 +4189,8 @@
       "date" : "2016-12-27"
     }, {
       "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 20.233321,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
       "pattern" : 8,
       "score" : 11.95525,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 35.803905,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 20.5669,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 512,
@@ -4219,16 +4201,6 @@
       "alphabet" : 512,
       "pattern" : 16,
       "score" : 10.160553,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 36.099983,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 21.996445,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 1024,
@@ -4265,33 +4237,13 @@
       "date" : "2016-12-27"
     }, {
       "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 50.801694,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
       "pattern" : 16,
       "score" : 23.953074,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 41.291312,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 37.186413,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
       "score" : 8.105026,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 32.040068,
       "date" : "2016-12-27"
     }, {
       "alphabet" : 64,
@@ -4554,11 +4506,6 @@
       "date" : "2016-12-27"
     }, {
       "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 50.518949,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
       "pattern" : 16,
       "score" : 24.617517,
       "date" : "2016-12-27"
@@ -4629,149 +4576,158 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 81.912386,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 57.025712,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 106.309253,
-      "date" : "2016-12-27"
+      "score" : 61.164663,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 64.994805,
-      "date" : "2016-12-27"
+      "score" : 42.03644,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 88.797302,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 160.076484,
-      "date" : "2016-12-27"
+      "score" : 69.013595,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 48.835381,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 85.721104,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 76.321873,
-      "date" : "2016-12-27"
+      "score" : 40.461312,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 32,
-      "pattern" : 2,
-      "score" : 104.47122,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 48.966911,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 67.155916,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (byte-variant, Stringsearchalgorithms)",
-    "family" : "PREFIX",
-    "results" : [ {
-      "alphabet" : 4,
+      "alphabet" : 8,
       "pattern" : 8,
-      "score" : 69.876289,
-      "date" : "2016-12-27"
+      "score" : 41.336191,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 543.477481,
-      "date" : "2016-12-27"
+      "score" : 68.138413,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 60.361995,
-      "date" : "2016-12-27"
+      "score" : 40.291273,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 40.098203,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 2,
+      "score" : 35.98847,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 4,
+      "score" : 29.884879,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 28.363193,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 2,
+      "score" : 32.628229,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 49.252237,
-      "date" : "2016-12-27"
+      "score" : 28.052854,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 28.00123,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 59.648246,
-      "date" : "2016-12-27"
+      "score" : 37.445375,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 38.031026,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 256,
       "pattern" : 2,
-      "score" : 85.03454,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 103.946806,
-      "date" : "2016-12-27"
+      "score" : 62.179148,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 2,
+      "alphabet" : 256,
       "pattern" : 4,
-      "score" : 89.778424,
-      "date" : "2016-12-27"
+      "score" : 60.684843,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 4,
+      "alphabet" : 512,
       "pattern" : 2,
-      "score" : 174.246706,
-      "date" : "2016-12-27"
+      "score" : 49.330459,
+      "date" : "2017-04-04"
     }, {
-      "alphabet" : 8,
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 47.3933,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 47.82722,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
       "pattern" : 2,
-      "score" : 369.715503,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
+      "score" : 42.967538,
+      "date" : "2017-04-04"
+    }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 56.918765,
-      "date" : "2016-12-27"
+      "score" : 41.239439,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 43.295265,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 82.379545,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 63.701458,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 82.179998,
-      "date" : "2016-12-27"
+      "score" : 40.376532,
+      "date" : "2017-04-04"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 49.864504,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 67.394441,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 256,
       "pattern" : 8,
       "score" : 56.310818,
@@ -5091,11 +5047,6 @@
       "date" : "2016-12-27"
     }, {
       "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 23.552605,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
       "pattern" : 16,
       "score" : 10.975289,
       "date" : "2016-12-27"
@@ -5166,140 +5117,133 @@
       "date" : "2016-12-27"
     } ]
   }, {
-    "algorithm" : "Aho-Corasick (Stringsearchalgorithms)",
+    "algorithm" : "Aho-Corasick (Hankcs)",
     "family" : "PREFIX",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 72.863579,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 51.308598,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 2,
       "pattern" : 8,
-      "score" : 79.050039,
-      "date" : "2016-12-27"
+      "score" : 55.837861,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 55.467093,
-      "date" : "2016-12-27"
+      "score" : 37.286715,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 71.297996,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 119.059185,
-      "date" : "2016-12-27"
+      "score" : 59.20164,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 56.947722,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 4,
-      "score" : 57.908563,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 4,
-      "score" : 55.803995,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 2,
-      "score" : 74.17718,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 38.292529,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 49.327364,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 4,
-      "score" : 35.840496,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 2,
-      "score" : 46.577016,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Boyer-Moore Multi Pattern (regex, JDK)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 98.692826,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 82.781422,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 2,
-      "score" : 163.827827,
-      "date" : "2016-12-27"
+      "score" : 41.824144,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 375.381731,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
+      "score" : 75.768987,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 4,
+      "score" : 37.000759,
+      "date" : "2017-04-04"
+    }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 356.276594,
-      "date" : "2016-12-27"
+      "score" : 61.213548,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 4,
+      "score" : 35.117817,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 2,
+      "score" : 30.857832,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 4,
+      "score" : 25.611033,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 2,
+      "score" : 28.016226,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 4,
+      "score" : 23.515137,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 2,
+      "score" : 32.900728,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 128,
       "pattern" : 4,
-      "score" : 34.112431,
-      "date" : "2016-12-27"
+      "score" : 33.084301,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 33.787688,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 256,
       "pattern" : 4,
-      "score" : 35.33043,
-      "date" : "2016-12-27"
+      "score" : 32.03747,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 23.744651,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 21.841039,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 22.181363,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 18.49557,
+      "date" : "2017-04-04"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 4,
+      "score" : 17.239359,
+      "date" : "2017-04-04"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 21.172318,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 52.750146,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 45.92096,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 31.599102,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 46.137662,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 28.898526,
-      "date" : "2016-12-27"
+      "score" : 18.820815,
+      "date" : "2017-04-04"
     } ]
   } ]
 } ]

@@ -68,3 +68,4 @@ com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberCharBe
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCWuManberByteBenchmark,"Wu-Manber (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftOrCharBenchmark,Shift-Or (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftOrByteBenchmark,"Shift-Or (byte-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.multipattern.hankcs.HankcsAhoCorasickBenchmark,Aho-Corasick (Hankcs)
