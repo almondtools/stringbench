@@ -1,12 +1,12 @@
 import { Input, Component, OnInit, Inject } from '@angular/core';
 import { Http } from '@angular/http';
-import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { Sample } from './app.core'
 declare let d3: any;
 
 @Component( {
     selector: "chart",
-    providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
+    providers: [Location, { provide: LocationStrategy, useClass: PathLocationStrategy }],
     template: `<div>
         <h1>Benchmarks ({{selected}})</h1>
         <div class="form-group">
@@ -42,8 +42,12 @@ export class Chart implements OnInit {
     benchmarks = {};
 
     constructor( http: Http, location: Location ) {
-        var fileName = location.path() ? location.path(): "latest";
-        http.request( "/assets/" + fileName + ".json" )
+        var path = location.path(true);
+        var key = /.*#(.*)/.exec(path);
+        var fileName = key && key[1] ? key[1] + ".json" : "latest.json";
+        console.log(fileName)
+        var path = location.prepareExternalUrl("/assets/" + fileName);
+        http.request( path )
             .subscribe( response => this.buildData( response.json() ) );
     }
     update( selected ) {
