@@ -4,6 +4,12 @@ StringBench
 
 This project compares different java string matching implementations with a performance test.
 
+Latest Benchmarks
+-----------------
+
+* [Link to the latest Benchmark](https://almondtools.github.io/stringbench/chart.html#latest) 
+* [Link to the list of Benchmarks since 2017](https://almondtools.github.io/stringbench) 
+
 Benchmark quality
 -----------------
 * We use jmh benchmarking.
@@ -77,6 +83,8 @@ StringSearch is a popular string searching library for single pattern search (an
  
 ### <a name="aho-corasick"></a>[AhoCorasick (AC)](https://github.com/robert-bor/aho-corasick)
 AhoCorasick is a popular one-algorithm library that implements the Aho-Corasick algorithm. It does not pass the benchmark tests and is therefore excluded from the benchmark. Yet waiting very long for a [maintainer statement](https://github.com/robert-bor/aho-corasick/issues/36).
+### <a name="aho-corasick-double-array-trie"></a>[AhoCorasickDoubleArrayTrie (ACDA)](https://github.com/hankcs/AhoCorasickDoubleArrayTrie)
+AhoCorasick is a very fast implementation of the Aho-Corasick algorithm. It passed the benchmark without modification. The memory consumption does not exceed the memory given by the incubation tests, yet we cannot say how it does compare to the other implementations. 
  
 Participating
 -------------
@@ -177,5 +185,10 @@ Switching Visualization Software
 --------------------------------
 We changed the visualization of best performing benchmarks. Yet we will only maintain the most current benchmarks. Older benchmarks will be available as csv, but not visualized.
 
-* [Link to the latest Benchmark](https://almondtools.github.io/stringbench/chart.html#latest) 
-* [Link to the list of Benchmarks since 2017](https://almondtools.github.io/stringbench) 
+Interpretation of the [results of 2017-04-04](benchmarkresults/result-2017-04-04.csv?raw=true)
+----------------------------------------------------------------------------------------------
+* Participating: SDK, SC, BS, ACDA
+* Excluded: AC, SS, RA (api problems)
+* The most important result of this benchmark is the newcomer AhoCorasickDoubleArrayTrie. Its basic characteristics are that of the Aho-Corasick-Algorithm, but among all correct implementations it is the most performant. So we have a new winner for smaller alphabets and small patterns.
+
+
