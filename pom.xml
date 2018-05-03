@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>org.ahocorasick</groupId>
 			<artifactId>ahocorasick</artifactId>
-			<version>0.3.0</version>
+			<version>0.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.roklenarcic</groupId>
@@ -68,13 +68,15 @@
 		<dependency>
 			<groupId>net.amygdalum</groupId>
 			<artifactId>stringsearchalgorithms</artifactId>
-			<version>0.3.17</version>
+			<version>0.3.18</version>
 		</dependency>
 		<dependency>
 			<groupId>com.hankcs</groupId>
 			<artifactId>aho-corasick-double-array-trie</artifactId>
-			<version>1.0.1</version>
+			<version>1.2.0</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-core</artifactId>

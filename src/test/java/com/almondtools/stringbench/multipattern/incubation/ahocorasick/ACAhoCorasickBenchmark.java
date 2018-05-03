@@ -27,7 +27,7 @@ public class ACAhoCorasickBenchmark extends MultiPatternMatcherBenchmark {
 
 	@Override
 	public void preparePatterns(Set<String> patterns) {
-		TrieBuilder builder = Trie.builder().removeOverlaps();
+		TrieBuilder builder = Trie.builder().ignoreOverlaps();
 		for (String pattern : patterns) {
 			builder.addKeyword(pattern);
 		}
