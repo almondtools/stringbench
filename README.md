@@ -46,7 +46,7 @@ Use this benchmark only to select the algorithm of your choice and then select t
 An Overview of libraries
 ------------------------
 
-###[Java API](http://docs.oracle.com/javase/7/docs/api)
+### [Java API](http://docs.oracle.com/javase/7/docs/api)
 Java provides two ways to search for strings:
 - naive search with [String.indexOf](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 - Boyer-Moore algorithm with [Pattern.compile/Matcher.find](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
