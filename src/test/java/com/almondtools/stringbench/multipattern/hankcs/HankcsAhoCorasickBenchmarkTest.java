@@ -1,4 +1,4 @@
-package com.almondtools.stringbench.multipattern.incubation.hankcs;
+package com.almondtools.stringbench.multipattern.hankcs;
 
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmark;
 import com.almondtools.stringbench.multipattern.MultiPatternMatcherBenchmarkTest;
