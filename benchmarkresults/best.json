@@ -1079,227 +1079,237 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 30.076502,
-      "date" : "2016-12-27"
+      "score" : 23.799678,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 13.759184,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
       "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 16.323929,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
       "pattern" : 64,
-      "score" : 9.387589,
-      "date" : "2016-12-27"
+      "score" : 7.234274,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 5.982633,
-      "date" : "2016-12-27"
+      "score" : 4.899703,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 4.047667,
-      "date" : "2016-12-27"
+      "score" : 3.721292,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 3.32899,
-      "date" : "2016-12-27"
+      "score" : 3.069031,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 2.861382,
-      "date" : "2016-12-27"
+      "score" : 2.676689,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 21.737675,
-      "date" : "2016-12-27"
+      "score" : 16.871206,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 11.909526,
-      "date" : "2016-12-27"
+      "score" : 9.390057,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 7.08543,
-      "date" : "2016-12-27"
+      "score" : 5.846372,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 4.739719,
-      "date" : "2016-12-27"
+      "score" : 4.069255,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 3.701671,
-      "date" : "2016-12-27"
+      "score" : 3.222735,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 2.905491,
-      "date" : "2016-12-27"
+      "score" : 2.801774,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 2.609564,
-      "date" : "2016-12-27"
+      "score" : 2.509677,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 13.275973,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 10.211289,
-      "date" : "2016-12-27"
+      "score" : 8.055892,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 6.093049,
-      "date" : "2016-12-27"
+      "score" : 5.07747,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 4.413903,
-      "date" : "2016-12-27"
+      "score" : 3.712572,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 3.341506,
-      "date" : "2016-12-27"
+      "score" : 2.998829,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 2.728007,
-      "date" : "2016-12-27"
+      "score" : 2.640781,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 2.486387,
-      "date" : "2016-12-27"
+      "score" : 2.419071,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 7.133578,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 5.686627,
-      "date" : "2016-12-27"
+      "score" : 4.775543,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 4.092271,
-      "date" : "2016-12-27"
+      "score" : 3.546808,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 3.051746,
-      "date" : "2016-12-27"
+      "score" : 2.848199,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 2.632276,
-      "date" : "2016-12-27"
+      "score" : 2.525327,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 2.453088,
-      "date" : "2016-12-27"
+      "score" : 2.369795,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 5.324799,
-      "date" : "2016-12-27"
+      "score" : 4.487012,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 3.82645,
-      "date" : "2016-12-27"
+      "score" : 3.383963,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 3.081974,
-      "date" : "2016-12-27"
+      "score" : 2.839334,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 2.647568,
-      "date" : "2016-12-27"
+      "score" : 2.542853,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 2.423018,
-      "date" : "2016-12-27"
+      "score" : 2.333338,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 2.920056,
-      "date" : "2016-12-27"
+      "score" : 2.713536,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 2.571448,
-      "date" : "2016-12-27"
+      "score" : 2.459687,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 2.382294,
-      "date" : "2016-12-27"
+      "score" : 2.323769,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 2.918185,
-      "date" : "2016-12-27"
+      "score" : 2.726971,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 2.598517,
-      "date" : "2016-12-27"
+      "score" : 2.444997,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 2.381348,
-      "date" : "2016-12-27"
+      "score" : 2.350495,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 3.903733,
-      "date" : "2016-12-27"
+      "score" : 3.790493,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 3.69056,
-      "date" : "2016-12-27"
+      "score" : 3.604295,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 4.418104,
-      "date" : "2016-12-27"
+      "score" : 4.424216,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 4.329609,
-      "date" : "2016-12-27"
+      "score" : 4.236584,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 5.893087,
-      "date" : "2016-12-27"
+      "score" : 5.521393,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 256,
-      "score" : 5.133253,
-      "date" : "2016-12-27"
+      "score" : 5.025704,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 4.666132,
-      "date" : "2016-12-27"
+      "score" : 4.661459,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 4.627065,
-      "date" : "2016-12-27"
+      "score" : 4.504352,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Naive Multi Pattern (JDK)",
@@ -1307,83 +1317,113 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 67.174094,
-      "date" : "2016-12-27"
+      "score" : 45.654793,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 41.395509,
-      "date" : "2016-12-27"
+      "score" : 31.586224,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 31.056017,
-      "date" : "2016-12-27"
+      "score" : 23.543167,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 30.830122,
-      "date" : "2016-12-27"
+      "score" : 24.19011,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 20.888458,
-      "date" : "2016-12-27"
+      "score" : 15.719083,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 18.012797,
-      "date" : "2016-12-27"
+      "score" : 14.359419,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 18.955186,
-      "date" : "2016-12-27"
+      "score" : 14.449882,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 13.643537,
-      "date" : "2016-12-27"
+      "score" : 9.451131,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 13.012585,
-      "date" : "2016-12-27"
+      "score" : 8.790393,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 9.225505,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 10.41209,
-      "date" : "2016-12-27"
+      "score" : 6.604045,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 11.164103,
-      "date" : "2016-12-27"
+      "score" : 6.687793,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 6.996837,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 9.13551,
-      "date" : "2016-12-27"
+      "score" : 5.549404,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 9.245549,
-      "date" : "2016-12-27"
+      "score" : 5.474799,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 5.458674,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 8.216848,
-      "date" : "2016-12-27"
+      "score" : 4.977701,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 4,
-      "score" : 8.57941,
-      "date" : "2016-12-27"
+      "score" : 5.402551,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 5.430889,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 23.015922,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 2,
-      "score" : 29.46915,
-      "date" : "2016-12-27"
+      "score" : 19.550188,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 17.61998,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -1391,207 +1431,167 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 45.640268,
-      "date" : "2017-04-04"
+      "score" : 33.38341,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 38.99307,
-      "date" : "2017-04-04"
+      "score" : 35.019205,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 15.181604,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 11.748898,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 8.15419,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 9.094105,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 9.137936,
-      "date" : "2016-12-27"
+      "score" : 6.822384,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 16,
-      "score" : 7.223407,
-      "date" : "2016-12-27"
+      "score" : 5.382779,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 5.971919,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 8.308818,
-      "date" : "2016-12-27"
+      "score" : 4.819788,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 5.78091,
-      "date" : "2016-12-27"
+      "score" : 4.617699,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 4.418748,
-      "date" : "2016-12-27"
+      "score" : 3.671422,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 3.78482,
-      "date" : "2016-12-27"
+      "score" : 3.246815,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 3.640359,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 7.800578,
-      "date" : "2016-12-27"
+      "score" : 3.122758,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 16,
-      "score" : 5.26517,
-      "date" : "2016-12-27"
+      "score" : 4.276405,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 32,
-      "score" : 3.930806,
-      "date" : "2016-12-27"
+      "score" : 3.334702,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 64,
-      "score" : 3.445151,
-      "date" : "2016-12-27"
+      "score" : 2.861308,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 3.165254,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 28.726489,
-      "date" : "2016-12-27"
+      "score" : 2.809251,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 4,
-      "score" : 15.496737,
-      "date" : "2016-12-27"
+      "score" : 12.76409,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 8,
-      "score" : 10.669824,
-      "date" : "2016-12-27"
+      "score" : 8.904176,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 16,
-      "score" : 7.701323,
-      "date" : "2016-12-27"
+      "score" : 6.179146,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 32,
-      "score" : 6.165947,
-      "date" : "2016-12-27"
+      "score" : 4.835823,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 4.728657,
-      "date" : "2016-12-27"
+      "score" : 4.235128,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 128,
-      "score" : 4.344916,
-      "date" : "2016-12-27"
+      "score" : 3.980346,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 4.126849,
-      "date" : "2016-12-27"
+      "score" : 3.789065,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 16.508762,
-      "date" : "2016-12-27"
+      "score" : 13.525856,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 11.9203,
-      "date" : "2016-12-27"
+      "score" : 9.932324,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 8.189866,
-      "date" : "2016-12-27"
+      "score" : 6.75295,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 6.619558,
-      "date" : "2016-12-27"
+      "score" : 5.70486,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 6.243571,
-      "date" : "2016-12-27"
+      "score" : 5.161077,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 5.491602,
-      "date" : "2016-12-27"
+      "score" : 4.98381,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 4.978217,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 25.813323,
-      "date" : "2016-12-27"
+      "score" : 4.602195,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 15.297593,
-      "date" : "2016-12-27"
+      "score" : 13.024601,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 10.870475,
-      "date" : "2016-12-27"
+      "score" : 9.332393,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 8.255934,
-      "date" : "2016-12-27"
+      "score" : 7.158096,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 6.987953,
-      "date" : "2016-12-27"
+      "score" : 6.327301,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 6.688191,
-      "date" : "2016-12-27"
+      "score" : 5.641289,
+      "date" : "2018-12-30"
     } ]
   } ]
 }, {
@@ -1603,208 +1603,178 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 20.776039,
-      "date" : "2016-12-27"
+      "score" : 16.396802,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 10.371712,
-      "date" : "2016-12-27"
+      "score" : 8.637032,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 4.881398,
-      "date" : "2016-12-27"
+      "score" : 3.965342,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 2.772189,
-      "date" : "2016-12-27"
+      "score" : 2.164014,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 1.624713,
-      "date" : "2016-12-27"
+      "score" : 1.190368,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 0.87366,
-      "date" : "2016-12-27"
+      "score" : 0.684201,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 0.458414,
-      "date" : "2016-12-27"
+      "score" : 0.391833,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 12.244542,
-      "date" : "2016-12-27"
+      "score" : 10.031453,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 6.282623,
-      "date" : "2016-12-27"
+      "score" : 5.162381,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 3.330724,
-      "date" : "2016-12-27"
+      "score" : 2.66686,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 1.820662,
-      "date" : "2016-12-27"
+      "score" : 1.428646,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 1.134057,
-      "date" : "2016-12-27"
+      "score" : 0.787522,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 0.53912,
-      "date" : "2016-12-27"
+      "score" : 0.449988,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 0.316732,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 9.642868,
-      "date" : "2016-12-27"
+      "score" : 0.271643,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 5.087148,
-      "date" : "2016-12-27"
+      "score" : 4.050183,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 2.575617,
-      "date" : "2016-12-27"
+      "score" : 2.069624,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 1.464444,
-      "date" : "2016-12-27"
+      "score" : 1.109413,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 0.902659,
-      "date" : "2016-12-27"
+      "score" : 0.614964,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 0.418931,
-      "date" : "2016-12-27"
+      "score" : 0.369694,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 0.238752,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 2.357179,
-      "date" : "2016-12-27"
+      "score" : 0.203617,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 1.413273,
-      "date" : "2016-12-27"
+      "score" : 0.98806,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 0.735618,
-      "date" : "2016-12-27"
+      "score" : 0.500009,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 0.329735,
-      "date" : "2016-12-27"
+      "score" : 0.277504,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 0.206293,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 2.136617,
-      "date" : "2016-12-27"
+      "score" : 0.17718,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 1.171703,
-      "date" : "2016-12-27"
+      "score" : 0.855211,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 0.579136,
-      "date" : "2016-12-27"
+      "score" : 0.517904,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 0.319974,
-      "date" : "2016-12-27"
+      "score" : 0.2824,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 0.193619,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 128,
-      "score" : 1.112819,
-      "date" : "2016-12-27"
+      "score" : 0.17329,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 0.507978,
-      "date" : "2016-12-27"
+      "score" : 0.415042,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 0.273745,
-      "date" : "2016-12-27"
+      "score" : 0.236574,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 0.186695,
-      "date" : "2016-12-27"
+      "score" : 0.155088,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 0.490351,
-      "date" : "2016-12-27"
+      "score" : 0.408234,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 0.258,
-      "date" : "2016-12-27"
+      "score" : 0.224087,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 0.168238,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 0.367234,
-      "date" : "2016-12-27"
+      "score" : 0.139389,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 0.23453,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 0.216359,
-      "date" : "2016-12-27"
+      "score" : 0.195907,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Naive Multi Pattern (JDK)",
@@ -1812,128 +1782,128 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 61.745928,
-      "date" : "2016-12-27"
+      "score" : 42.844308,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 35.944622,
-      "date" : "2016-12-27"
+      "score" : 28.490366,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 25.44317,
-      "date" : "2016-12-27"
+      "score" : 20.623645,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 24.158477,
-      "date" : "2016-12-27"
+      "score" : 20.401462,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 15.819883,
-      "date" : "2016-12-27"
+      "score" : 12.63978,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 13.272516,
-      "date" : "2016-12-27"
+      "score" : 11.224177,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 8.505883,
-      "date" : "2016-12-27"
+      "score" : 6.693194,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 7.871392,
-      "date" : "2016-12-27"
+      "score" : 5.931293,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 5.228374,
-      "date" : "2016-12-27"
+      "score" : 3.922069,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 5.116683,
-      "date" : "2016-12-27"
+      "score" : 3.713605,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 3.836696,
-      "date" : "2016-12-27"
+      "score" : 2.73678,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 3.856038,
-      "date" : "2016-12-27"
+      "score" : 2.767979,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 8,
-      "score" : 3.908621,
-      "date" : "2016-12-27"
+      "score" : 2.639888,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 2.956534,
-      "date" : "2016-12-27"
+      "score" : 2.152146,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 4,
-      "score" : 3.091573,
-      "date" : "2016-12-27"
+      "score" : 2.151127,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 8,
-      "score" : 3.087238,
-      "date" : "2016-12-27"
+      "score" : 2.114793,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 2,
-      "score" : 2.596584,
-      "date" : "2016-12-27"
+      "score" : 1.898211,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 4,
-      "score" : 2.687707,
-      "date" : "2016-12-27"
+      "score" : 1.991496,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 8,
-      "score" : 2.669374,
-      "date" : "2016-12-27"
+      "score" : 1.878122,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 2,
-      "score" : 2.466131,
-      "date" : "2016-12-27"
+      "score" : 1.780054,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 2.477917,
-      "date" : "2016-12-27"
+      "score" : 1.77262,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 2.494426,
-      "date" : "2016-12-27"
+      "score" : 1.78448,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 2,
-      "score" : 2.364994,
-      "date" : "2016-12-27"
+      "score" : 1.73478,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 2.400895,
-      "date" : "2016-12-27"
+      "score" : 1.837268,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 2.390356,
-      "date" : "2016-12-27"
+      "score" : 1.71875,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -1941,176 +1911,201 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 39.020037,
-      "date" : "2017-04-04"
+      "score" : 30.874196,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 33.627021,
-      "date" : "2017-04-04"
+      "score" : 26.789685,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 13.515018,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 16,
       "pattern" : 8,
-      "score" : 7.362141,
-      "date" : "2016-12-27"
+      "score" : 4.875471,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 16,
+      "score" : 2.728254,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 3.065739,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 16,
-      "score" : 3.229137,
-      "date" : "2016-12-27"
+      "score" : 1.95775,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 32,
-      "pattern" : 32,
-      "score" : 2.74921,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 1.359191,
-      "date" : "2016-12-27"
+      "alphabet" : 64,
+      "pattern" : 16,
+      "score" : 1.503246,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 0.989759,
-      "date" : "2016-12-27"
+      "pattern" : 32,
+      "score" : 0.825739,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 1.073657,
-      "date" : "2016-12-27"
+      "score" : 0.495503,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 1.159359,
-      "date" : "2016-12-27"
+      "pattern" : 16,
+      "score" : 1.404053,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 0.810353,
-      "date" : "2016-12-27"
+      "score" : 0.46862,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 1024,
+      "alphabet" : 256,
       "pattern" : 128,
-      "score" : 0.800415,
-      "date" : "2016-12-27"
+      "score" : 0.379836,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 1024,
+      "alphabet" : 256,
       "pattern" : 256,
-      "score" : 0.410588,
-      "date" : "2016-12-27"
+      "score" : 0.297481,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 0.281391,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 0.179025,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 0.165762,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 0.168739,
-      "date" : "2016-12-27"
+      "score" : 0.141901,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 16,
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 9.563984,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
       "pattern" : 16,
-      "score" : 4.396745,
-      "date" : "2016-12-27"
+      "score" : 6.949721,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 4.989456,
-      "date" : "2016-12-27"
+      "pattern" : 32,
+      "score" : 1.720334,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 2.461784,
-      "date" : "2016-12-27"
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 1.444183,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 1.737487,
-      "date" : "2016-12-27"
+      "score" : 1.058147,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 1.343182,
-      "date" : "2016-12-27"
+      "score" : 0.779168,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 128,
+      "score" : 0.685336,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 16,
-      "score" : 2.202194,
-      "date" : "2016-12-27"
+      "score" : 1.32372,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 0.596796,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 2.037636,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 0.928864,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 0.667551,
-      "date" : "2016-12-27"
+      "pattern" : 32,
+      "score" : 0.801668,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 1.808726,
-      "date" : "2016-12-27"
+      "score" : 1.176342,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 1.05551,
-      "date" : "2016-12-27"
+      "score" : 0.67287,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 0.786112,
-      "date" : "2016-12-27"
+      "score" : 0.427244,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 0.883923,
-      "date" : "2016-12-27"
+      "score" : 0.355914,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 0.386504,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 0.236459,
-      "date" : "2016-12-27"
+      "score" : 0.219239,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 1.782806,
-      "date" : "2016-12-27"
+      "score" : 1.275123,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 1.039826,
-      "date" : "2016-12-27"
+      "score" : 0.714067,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 0.778597,
-      "date" : "2016-12-27"
+      "score" : 0.446457,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 0.366422,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 0.293327,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 0.135495,
-      "date" : "2016-12-27"
+      "score" : 0.106165,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
@@ -2118,8 +2113,13 @@
     "results" : [ {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 4.216449,
-      "date" : "2016-12-27"
+      "score" : 2.921169,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 1.735632,
+      "date" : "2018-12-30"
     } ]
   } ]
 }, {
@@ -2131,13 +2131,28 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 37.415368,
-      "date" : "2016-12-27"
+      "score" : 30.730466,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 19.293337,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 40.385517,
-      "date" : "2016-12-27"
+      "score" : 29.619261,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 14.881608,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 11.985727,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
@@ -2145,293 +2160,278 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 19.06581,
-      "date" : "2016-12-27"
+      "score" : 15.829832,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 11.04274,
-      "date" : "2016-12-27"
+      "score" : 8.701488,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 6.854534,
-      "date" : "2016-12-27"
+      "score" : 5.583134,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 4.649443,
-      "date" : "2016-12-27"
+      "score" : 4.161284,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 3.740202,
-      "date" : "2016-12-27"
+      "score" : 3.375308,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 3.207283,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 24.527873,
-      "date" : "2016-12-27"
+      "score" : 2.897276,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 13.389295,
-      "date" : "2016-12-27"
+      "score" : 10.371802,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 7.836366,
-      "date" : "2016-12-27"
+      "score" : 6.538566,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 5.158245,
-      "date" : "2016-12-27"
+      "score" : 4.437315,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 3.862741,
-      "date" : "2016-12-27"
+      "score" : 3.679513,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 3.124603,
-      "date" : "2016-12-27"
+      "score" : 3.085918,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 2.890586,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 19.637454,
-      "date" : "2016-12-27"
+      "score" : 2.796462,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 11.097019,
-      "date" : "2016-12-27"
+      "score" : 8.552148,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 6.674233,
-      "date" : "2016-12-27"
+      "score" : 5.52163,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 4.47041,
-      "date" : "2016-12-27"
+      "score" : 3.938087,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 3.458975,
-      "date" : "2016-12-27"
+      "score" : 3.180164,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 2.97385,
-      "date" : "2016-12-27"
+      "score" : 2.807609,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 2.801676,
-      "date" : "2016-12-27"
+      "score" : 2.577494,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 17.928234,
-      "date" : "2016-12-27"
+      "score" : 13.479975,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 10.245865,
-      "date" : "2016-12-27"
+      "score" : 7.922858,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 5.969087,
-      "date" : "2016-12-27"
+      "score" : 5.033292,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 4.120398,
-      "date" : "2016-12-27"
+      "score" : 3.623134,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 3.305407,
-      "date" : "2016-12-27"
+      "score" : 3.035075,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 2.820017,
-      "date" : "2016-12-27"
+      "score" : 2.717249,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 2.776306,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 16.270342,
-      "date" : "2016-12-27"
+      "score" : 2.54566,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 9.375411,
-      "date" : "2016-12-27"
+      "score" : 7.063524,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 5.921324,
-      "date" : "2016-12-27"
+      "score" : 4.876044,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 4.060859,
-      "date" : "2016-12-27"
+      "score" : 3.6085,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 3.217022,
-      "date" : "2016-12-27"
+      "score" : 2.9293,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 2.760935,
-      "date" : "2016-12-27"
+      "score" : 2.628879,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 2.693913,
-      "date" : "2016-12-27"
+      "score" : 2.543157,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 5.456206,
-      "date" : "2016-12-27"
+      "score" : 4.554562,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 3.891127,
-      "date" : "2016-12-27"
+      "score" : 3.418831,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 3.108917,
-      "date" : "2016-12-27"
+      "score" : 2.908003,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 2.785662,
-      "date" : "2016-12-27"
+      "score" : 2.590193,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 2.716839,
-      "date" : "2016-12-27"
+      "score" : 2.469167,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 64,
-      "score" : 5.375216,
-      "date" : "2016-12-27"
+      "score" : 4.481794,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 3.791751,
-      "date" : "2016-12-27"
+      "score" : 3.429712,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 3.077192,
-      "date" : "2016-12-27"
+      "score" : 2.808151,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 2.67266,
-      "date" : "2016-12-27"
+      "score" : 2.544179,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 2.638563,
-      "date" : "2016-12-27"
+      "score" : 2.472271,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 128,
-      "score" : 5.449487,
-      "date" : "2016-12-27"
+      "score" : 5.074629,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 4.570389,
-      "date" : "2016-12-27"
+      "score" : 4.342999,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 4.164475,
-      "date" : "2016-12-27"
+      "score" : 3.976202,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 4.248374,
-      "date" : "2016-12-27"
+      "score" : 3.904498,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 7.963387,
-      "date" : "2016-12-27"
+      "score" : 7.020454,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 6.020588,
-      "date" : "2016-12-27"
+      "score" : 5.666333,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 5.090084,
-      "date" : "2016-12-27"
+      "score" : 4.962703,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 4.961603,
-      "date" : "2016-12-27"
+      "score" : 4.63852,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 4.915163,
-      "date" : "2016-12-27"
+      "score" : 4.60534,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 8.007223,
-      "date" : "2016-12-27"
+      "score" : 7.072427,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 6.222403,
-      "date" : "2016-12-27"
+      "score" : 5.822834,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 256,
-      "score" : 5.381477,
-      "date" : "2016-12-27"
+      "score" : 5.202549,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 5.084623,
-      "date" : "2016-12-27"
+      "score" : 4.834926,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 5.198847,
-      "date" : "2016-12-27"
+      "score" : 4.827311,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Naive Multi Pattern (JDK)",
@@ -2439,33 +2439,38 @@
     "results" : [ {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 36.099417,
-      "date" : "2016-12-27"
+      "score" : 27.503015,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 26.121156,
-      "date" : "2016-12-27"
+      "score" : 19.341002,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 19.984854,
-      "date" : "2016-12-27"
+      "score" : 14.450623,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 16.503913,
-      "date" : "2016-12-27"
+      "score" : 11.609937,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 38.017993,
-      "date" : "2016-12-27"
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 11.345438,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 2,
-      "score" : 35.007102,
-      "date" : "2016-12-27"
+      "score" : 24.698818,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 23.177331,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -2473,177 +2478,176 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 80.649559,
-      "date" : "2017-04-04"
+      "score" : 59.85743,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 63.938998,
-      "date" : "2017-04-04"
+      "score" : 56.119425,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 46.335954,
-      "date" : "2017-04-04"
+      "score" : 46.60651,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 74.391909,
-      "date" : "2017-04-04"
+      "score" : 49.932235,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 46.995812,
-      "date" : "2017-04-04"
+      "score" : 36.334176,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 47.539465,
-      "date" : "2017-04-04"
+      "score" : 37.228495,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 49.30031,
-      "date" : "2017-04-04"
+      "score" : 35.003221,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 42.222666,
-      "date" : "2017-04-04"
+      "score" : 33.852413,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 38.151215,
-      "date" : "2017-04-04"
+      "score" : 29.384216,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 31.630781,
-      "date" : "2016-12-27"
-    }, {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 22.706149,
-      "date" : "2016-12-27"
+      "score" : 17.817043,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 8,
-      "score" : 16.084072,
-      "date" : "2016-12-27"
+      "score" : 12.833604,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 17.163449,
-      "date" : "2016-12-27"
+      "score" : 13.1795,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 8,
-      "score" : 11.287914,
-      "date" : "2016-12-27"
+      "score" : 9.149023,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 8.872535,
-      "date" : "2016-12-27"
+      "score" : 7.183743,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 8.16428,
-      "date" : "2016-12-27"
+      "score" : 6.691141,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 7.454591,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 5.269732,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 4.48056,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 26.257347,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
       "pattern" : 4,
-      "score" : 15.361677,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 9.292313,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 6.507225,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 5.514048,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 25.188925,
-      "date" : "2016-12-27"
+      "score" : 19.719116,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 8,
-      "score" : 13.246877,
-      "date" : "2016-12-27"
+      "score" : 10.941493,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 16,
-      "score" : 9.231809,
-      "date" : "2016-12-27"
+      "score" : 7.641075,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 32,
-      "score" : 7.210478,
-      "date" : "2016-12-27"
+      "score" : 6.108183,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 6.604011,
-      "date" : "2016-12-27"
+      "score" : 5.610778,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 26.309135,
-      "date" : "2016-12-27"
+      "score" : 20.421417,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 15.414007,
-      "date" : "2016-12-27"
+      "score" : 13.057464,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 10.530366,
-      "date" : "2016-12-27"
+      "score" : 8.807352,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 8.983701,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 30.485223,
-      "date" : "2016-12-27"
+      "score" : 7.663575,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 22.574043,
-      "date" : "2016-12-27"
+      "score" : 18.252583,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 14.086197,
-      "date" : "2016-12-27"
+      "score" : 11.494905,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 11.496256,
-      "date" : "2016-12-27"
+      "score" : 9.53703,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 10.080598,
-      "date" : "2016-12-27"
+      "score" : 8.528278,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 23.388031,
+      "date" : "2018-12-30"
     } ]
   } ]
 }, {
@@ -2655,283 +2659,258 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 27.682472,
-      "date" : "2016-12-27"
+      "score" : 22.492575,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 12.31201,
-      "date" : "2016-12-27"
+      "score" : 10.112788,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 6.003979,
-      "date" : "2016-12-27"
+      "score" : 4.804787,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 3.257486,
-      "date" : "2016-12-27"
+      "score" : 2.699843,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 1.807068,
-      "date" : "2016-12-27"
+      "score" : 1.499005,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 1.128103,
-      "date" : "2016-12-27"
+      "score" : 0.913652,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 0.630953,
-      "date" : "2016-12-27"
+      "score" : 0.544023,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 32.328793,
-      "date" : "2016-12-27"
+      "score" : 26.158469,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 14.334219,
-      "date" : "2016-12-27"
+      "score" : 11.693145,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 7.089889,
-      "date" : "2016-12-27"
+      "score" : 5.867715,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 3.777535,
-      "date" : "2016-12-27"
+      "score" : 3.025416,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 2.127959,
-      "date" : "2016-12-27"
+      "score" : 1.706971,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 1.335255,
-      "date" : "2016-12-27"
+      "score" : 0.995778,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 0.74147,
-      "date" : "2016-12-27"
+      "score" : 0.594679,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 0.477832,
-      "date" : "2016-12-27"
+      "score" : 0.411678,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 23.687264,
-      "date" : "2016-12-27"
+      "score" : 19.298976,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 16,
-      "score" : 10.766865,
-      "date" : "2016-12-27"
+      "score" : 8.995138,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 5.439943,
-      "date" : "2016-12-27"
+      "score" : 4.432773,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 2.966738,
-      "date" : "2016-12-27"
+      "score" : 2.364148,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 1.58418,
-      "date" : "2016-12-27"
+      "score" : 1.259897,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 1.001577,
-      "date" : "2016-12-27"
+      "score" : 0.733789,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 0.60131,
-      "date" : "2016-12-27"
+      "score" : 0.470092,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 0.366778,
-      "date" : "2016-12-27"
+      "score" : 0.320041,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 4.88688,
-      "date" : "2016-12-27"
+      "score" : 4.012509,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 2.380727,
-      "date" : "2016-12-27"
+      "score" : 1.991301,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 1.369157,
-      "date" : "2016-12-27"
+      "score" : 1.017532,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 0.832275,
-      "date" : "2016-12-27"
+      "score" : 0.604688,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 0.455785,
-      "date" : "2016-12-27"
+      "score" : 0.39889,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 0.3408,
-      "date" : "2016-12-27"
+      "score" : 0.28418,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 16,
-      "score" : 8.52667,
-      "date" : "2016-12-27"
+      "score" : 6.709263,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 4.277076,
-      "date" : "2016-12-27"
+      "score" : 3.462155,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 2.389006,
-      "date" : "2016-12-27"
+      "score" : 1.890771,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 1.352388,
-      "date" : "2016-12-27"
+      "score" : 1.014146,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 0.627189,
-      "date" : "2016-12-27"
+      "score" : 0.539974,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 0.403797,
-      "date" : "2016-12-27"
+      "score" : 0.335541,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 0.308305,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 32,
-      "score" : 3.862222,
-      "date" : "2016-12-27"
+      "score" : 0.262915,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 2.068008,
-      "date" : "2016-12-27"
+      "score" : 1.641565,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 1.1771,
-      "date" : "2016-12-27"
+      "score" : 0.899007,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 0.618346,
-      "date" : "2016-12-27"
+      "score" : 0.513022,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 0.379621,
-      "date" : "2016-12-27"
+      "score" : 0.326927,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 0.31477,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 2.006709,
-      "date" : "2016-12-27"
+      "score" : 0.262867,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 1.134533,
-      "date" : "2016-12-27"
+      "score" : 0.826342,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 0.54468,
-      "date" : "2016-12-27"
+      "score" : 0.445112,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 0.334757,
-      "date" : "2016-12-27"
+      "score" : 0.283662,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 0.296622,
-      "date" : "2016-12-27"
+      "score" : 0.250125,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 0.862201,
-      "date" : "2016-12-27"
+      "score" : 0.640226,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 0.478807,
-      "date" : "2016-12-27"
+      "score" : 0.413449,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 0.379451,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 0.861763,
-      "date" : "2016-12-27"
+      "score" : 0.320714,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 0.439456,
-      "date" : "2016-12-27"
+      "score" : 0.36587,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 0.37133,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 0.718353,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 0.407062,
-      "date" : "2016-12-27"
+      "score" : 0.322774,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 0.350499,
-      "date" : "2016-12-27"
+      "score" : 0.299089,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Naive Multi Pattern (JDK)",
@@ -2939,38 +2918,33 @@
     "results" : [ {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 21.897948,
-      "date" : "2016-12-27"
+      "score" : 16.130467,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 15.280123,
-      "date" : "2016-12-27"
+      "score" : 11.168281,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 11.731404,
-      "date" : "2016-12-27"
+      "score" : 8.832194,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 2,
-      "score" : 10.303991,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 11.149553,
-      "date" : "2016-12-27"
+      "score" : 7.614859,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 2,
-      "score" : 9.670761,
-      "date" : "2016-12-27"
+      "score" : 7.200751,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 2,
-      "score" : 9.369477,
-      "date" : "2016-12-27"
+      "score" : 7.350917,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -2978,43 +2952,43 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 70.940146,
-      "date" : "2017-04-04"
+      "score" : 42.773052,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 55.742737,
-      "date" : "2017-04-04"
+      "score" : 41.454236,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 39.214966,
-      "date" : "2017-04-04"
+      "score" : 33.042372,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 67.442482,
-      "date" : "2017-04-04"
+      "score" : 48.203566,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 40.333704,
-      "date" : "2017-04-04"
+      "score" : 33.524255,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 40.599776,
-      "date" : "2017-04-04"
+      "score" : 32.513316,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 38.329825,
-      "date" : "2017-04-04"
+      "score" : 31.047143,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 32.911001,
-      "date" : "2017-04-04"
+      "score" : 26.416457,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
@@ -3022,58 +2996,78 @@
     "results" : [ {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 15.077907,
-      "date" : "2016-12-27"
+      "score" : 10.487388,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 8,
-      "score" : 10.564812,
-      "date" : "2016-12-27"
+      "score" : 7.185798,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
+      "pattern" : 16,
+      "score" : 3.194286,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 32,
+      "score" : 2.680681,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
       "pattern" : 4,
-      "score" : 10.399781,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 6.711567,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 4.865828,
-      "date" : "2016-12-27"
+      "score" : 6.46163,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 8,
-      "score" : 5.086389,
-      "date" : "2016-12-27"
+      "score" : 3.065929,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 16,
-      "score" : 3.157252,
-      "date" : "2016-12-27"
+      "score" : 1.996415,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 5.730741,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 16,
-      "score" : 2.440013,
-      "date" : "2016-12-27"
+      "score" : 1.489359,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 1.102436,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 1.306957,
-      "date" : "2016-12-27"
+      "score" : 0.843524,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 1.260914,
-      "date" : "2016-12-27"
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 0.458538,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 1.128589,
-      "date" : "2016-12-27"
+      "score" : 0.726616,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 0.515863,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 0.290482,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
@@ -3081,83 +3075,93 @@
     "results" : [ {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 27.052937,
-      "date" : "2016-12-27"
+      "score" : 21.558018,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 128,
+      "alphabet" : 64,
       "pattern" : 4,
-      "score" : 9.662964,
-      "date" : "2016-12-27"
+      "score" : 6.954587,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 4.282345,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 32,
-      "score" : 2.415514,
-      "date" : "2016-12-27"
+      "score" : 1.461574,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 1.325217,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 8,
-      "score" : 4.214902,
-      "date" : "2016-12-27"
+      "score" : 2.553117,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 1.600357,
-      "date" : "2016-12-27"
+      "pattern" : 128,
+      "score" : 0.782326,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 7.075078,
-      "date" : "2016-12-27"
+      "score" : 4.186148,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 4.12876,
-      "date" : "2016-12-27"
+      "score" : 2.244127,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 2.215406,
-      "date" : "2016-12-27"
+      "score" : 1.43732,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 1.489652,
-      "date" : "2016-12-27"
+      "score" : 0.965291,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 1.239566,
-      "date" : "2016-12-27"
+      "score" : 0.855809,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 1.296444,
-      "date" : "2016-12-27"
+      "score" : 0.757059,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 7.051522,
-      "date" : "2016-12-27"
+      "score" : 4.240316,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 3.910991,
-      "date" : "2016-12-27"
+      "score" : 2.725275,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 2.177439,
-      "date" : "2016-12-27"
+      "score" : 1.548433,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 1.516486,
-      "date" : "2016-12-27"
+      "score" : 1.025125,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 1.249102,
-      "date" : "2016-12-27"
+      "score" : 0.789382,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Wu-Manber (Stringsearchalgorithms)",
@@ -3165,13 +3169,13 @@
     "results" : [ {
       "alphabet" : 16,
       "pattern" : 8,
-      "score" : 18.032372,
-      "date" : "2016-12-27"
+      "score" : 13.426164,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 9.598782,
-      "date" : "2016-12-27"
+      "score" : 7.182134,
+      "date" : "2018-12-30"
     } ]
   } ]
 }, {
@@ -3181,349 +3185,359 @@
     "algorithm" : "Set-BOM (Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 23.265299,
-      "date" : "2016-12-27"
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 21.605909,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 31.235653,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 16.823098,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 19.147653,
-      "date" : "2016-12-27"
+      "score" : 14.341983,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 8,
-      "score" : 33.365051,
-      "date" : "2016-12-27"
+      "score" : 23.589861,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 13.146925,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 22.504836,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
     "family" : "FACTOR",
     "results" : [ {
       "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 19.444169,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
       "pattern" : 64,
-      "score" : 13.563341,
-      "date" : "2016-12-27"
+      "score" : 10.664543,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 7.554961,
-      "date" : "2016-12-27"
+      "score" : 6.74739,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 6.283635,
-      "date" : "2016-12-27"
+      "score" : 4.878038,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 4.557293,
-      "date" : "2016-12-27"
+      "score" : 3.883111,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 4.92984,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 27.986739,
-      "date" : "2016-12-27"
+      "score" : 3.569091,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 14.067227,
-      "date" : "2016-12-27"
+      "score" : 12.244854,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 8.870531,
-      "date" : "2016-12-27"
+      "score" : 7.532161,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 5.532704,
-      "date" : "2016-12-27"
+      "score" : 5.281909,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 4.275385,
-      "date" : "2016-12-27"
+      "score" : 4.106376,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 4.032405,
-      "date" : "2016-12-27"
+      "score" : 3.483045,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 3.994249,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 22.43694,
-      "date" : "2016-12-27"
+      "score" : 3.377425,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 12.103185,
-      "date" : "2016-12-27"
+      "score" : 9.435988,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 7.353724,
-      "date" : "2016-12-27"
+      "score" : 6.050986,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 5.053727,
-      "date" : "2016-12-27"
+      "score" : 4.430373,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 3.853894,
-      "date" : "2016-12-27"
+      "score" : 3.553206,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 3.70506,
-      "date" : "2016-12-27"
+      "score" : 3.183929,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 3.895458,
-      "date" : "2016-12-27"
+      "score" : 3.182552,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 10.565395,
-      "date" : "2016-12-27"
+      "score" : 8.228621,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 6.494907,
-      "date" : "2016-12-27"
+      "score" : 5.483739,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 4.680569,
-      "date" : "2016-12-27"
+      "score" : 4.084613,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 3.624156,
-      "date" : "2016-12-27"
+      "score" : 3.27888,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 3.656928,
-      "date" : "2016-12-27"
+      "score" : 2.982092,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 3.963486,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 17.736311,
-      "date" : "2016-12-27"
+      "score" : 3.154,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 10.352799,
-      "date" : "2016-12-27"
+      "score" : 8.119516,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 6.16073,
-      "date" : "2016-12-27"
+      "score" : 5.171997,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 4.292591,
-      "date" : "2016-12-27"
+      "score" : 3.759039,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 3.528838,
-      "date" : "2016-12-27"
+      "score" : 3.247919,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 3.490088,
-      "date" : "2016-12-27"
+      "score" : 2.999847,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 3.908442,
-      "date" : "2016-12-27"
+      "score" : 3.165332,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 16.114666,
-      "date" : "2016-12-27"
+      "score" : 12.251854,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 9.340842,
-      "date" : "2016-12-27"
+      "score" : 7.34752,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 6.09438,
-      "date" : "2016-12-27"
+      "score" : 5.024044,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 4.172772,
-      "date" : "2016-12-27"
+      "score" : 3.808839,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 3.517175,
-      "date" : "2016-12-27"
+      "score" : 3.125113,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 3.48533,
-      "date" : "2016-12-27"
+      "score" : 2.890854,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 3.897185,
-      "date" : "2016-12-27"
+      "score" : 3.129306,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 32,
-      "score" : 9.067431,
-      "date" : "2016-12-27"
+      "score" : 7.038184,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 64,
-      "score" : 5.535166,
-      "date" : "2016-12-27"
+      "score" : 4.650299,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 4.070822,
-      "date" : "2016-12-27"
+      "score" : 3.561825,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 3.429781,
-      "date" : "2016-12-27"
+      "score" : 3.071749,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 3.443723,
-      "date" : "2016-12-27"
+      "score" : 2.872278,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 3.945011,
-      "date" : "2016-12-27"
+      "score" : 3.107471,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 32,
-      "score" : 13.014326,
-      "date" : "2016-12-27"
+      "score" : 10.496549,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 8.099081,
-      "date" : "2016-12-27"
+      "score" : 7.118991,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 128,
-      "score" : 6.050928,
-      "date" : "2016-12-27"
+      "score" : 5.385628,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 5.166455,
-      "date" : "2016-12-27"
+      "score" : 4.684941,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 5.196593,
-      "date" : "2016-12-27"
+      "score" : 4.543289,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 6.082757,
-      "date" : "2016-12-27"
+      "score" : 5.025229,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 16,
-      "score" : 21.238767,
-      "date" : "2016-12-27"
+      "score" : 17.328487,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 32,
-      "score" : 12.973115,
-      "date" : "2016-12-27"
+      "score" : 10.944712,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 8.501377,
-      "date" : "2016-12-27"
+      "score" : 7.632684,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 6.738643,
-      "date" : "2016-12-27"
+      "score" : 6.105796,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 6.163349,
-      "date" : "2016-12-27"
+      "score" : 5.373147,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 6.014594,
-      "date" : "2016-12-27"
+      "score" : 5.303992,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 6.859439,
-      "date" : "2016-12-27"
+      "score" : 5.88441,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 16,
-      "score" : 19.893698,
-      "date" : "2016-12-27"
+      "score" : 16.045591,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 32,
-      "score" : 12.780077,
-      "date" : "2016-12-27"
+      "score" : 10.72997,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 64,
-      "score" : 8.678682,
-      "date" : "2016-12-27"
+      "score" : 7.672602,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 6.72116,
-      "date" : "2016-12-27"
+      "score" : 6.201319,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 256,
-      "score" : 6.22003,
-      "date" : "2016-12-27"
+      "score" : 5.586398,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 6.347132,
-      "date" : "2016-12-27"
+      "score" : 5.500395,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 7.24427,
-      "date" : "2016-12-27"
+      "score" : 6.250432,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -3531,108 +3545,117 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 79.795716,
-      "date" : "2017-04-04"
+      "score" : 47.171513,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 57.122866,
-      "date" : "2017-04-04"
+      "score" : 37.590157,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 50.908271,
-      "date" : "2017-04-04"
+      "score" : 40.831899,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 40.974173,
-      "date" : "2017-04-04"
+      "score" : 34.199087,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 80.138327,
-      "date" : "2017-04-04"
+      "score" : 48.411707,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 54.137212,
-      "date" : "2017-04-04"
+      "score" : 44.939601,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 44.187025,
-      "date" : "2017-04-04"
+      "score" : 36.355545,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 74.217107,
-      "date" : "2017-04-04"
+      "score" : 51.659306,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 45.389653,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 40.031256,
-      "date" : "2017-04-04"
+      "score" : 37.008369,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 45.820997,
-      "date" : "2017-04-04"
+      "score" : 34.857499,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 34.777535,
-      "date" : "2017-04-04"
+      "score" : 26.758733,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 8,
-      "score" : 31.512404,
-      "date" : "2017-04-04"
+      "score" : 23.038575,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 41.703798,
-      "date" : "2017-04-04"
+      "score" : 32.18353,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 38.947978,
-      "date" : "2017-04-04"
+      "score" : 30.079155,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 39.230591,
-      "date" : "2017-04-04"
+      "score" : 31.32037,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 28.199085,
-      "date" : "2017-04-04"
+      "score" : 23.92332,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 2,
-      "score" : 46.206256,
-      "date" : "2017-04-04"
+      "score" : 37.70673,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 2,
-      "score" : 43.171727,
-      "date" : "2017-04-04"
+      "score" : 30.751262,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 2,
-      "score" : 36.156236,
-      "date" : "2017-04-04"
+      "score" : 28.666921,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 28.768131,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 36.086897,
-      "date" : "2017-04-04"
+      "score" : 26.378539,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 8,
+      "score" : 22.406924,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
@@ -3640,58 +3663,43 @@
     "results" : [ {
       "alphabet" : 64,
       "pattern" : 4,
-      "score" : 34.329827,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 30.575459,
-      "date" : "2016-12-27"
+      "score" : 27.905334,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 4,
-      "score" : 22.3894,
-      "date" : "2016-12-27"
+      "score" : 18.17054,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 8,
-      "score" : 16.430598,
-      "date" : "2016-12-27"
+      "score" : 13.474159,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 16,
-      "score" : 13.960073,
-      "date" : "2016-12-27"
+      "score" : 11.838735,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 4,
-      "score" : 32.337647,
-      "date" : "2016-12-27"
+      "score" : 25.86581,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 8,
-      "score" : 21.905507,
-      "date" : "2016-12-27"
+      "score" : 17.805399,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 16,
-      "score" : 17.523223,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 35.34454,
-      "date" : "2016-12-27"
+      "score" : 14.596978,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 26.681438,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 8,
-      "score" : 28.024072,
-      "date" : "2016-12-27"
+      "score" : 22.114921,
+      "date" : "2018-12-30"
     } ]
   } ]
 }, {
@@ -3703,348 +3711,328 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 32,
-      "score" : 15.68174,
-      "date" : "2016-12-27"
+      "score" : 13.393841,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 64,
-      "score" : 7.378897,
-      "date" : "2016-12-27"
+      "score" : 6.469212,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 128,
-      "score" : 4.309667,
-      "date" : "2016-12-27"
+      "score" : 3.499994,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 256,
-      "score" : 2.623353,
-      "date" : "2016-12-27"
+      "score" : 2.030048,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 512,
-      "score" : 2.004256,
-      "date" : "2016-12-27"
+      "score" : 1.275679,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 1024,
-      "score" : 1.502951,
-      "date" : "2016-12-27"
+      "score" : 0.916449,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 16,
-      "score" : 17.151324,
-      "date" : "2016-12-27"
+      "score" : 14.320564,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 32,
-      "score" : 8.430204,
-      "date" : "2016-12-27"
+      "score" : 6.909683,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 64,
-      "score" : 4.40997,
-      "date" : "2016-12-27"
+      "score" : 3.809157,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 128,
-      "score" : 2.747336,
-      "date" : "2016-12-27"
+      "score" : 2.185983,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 256,
-      "score" : 1.842843,
-      "date" : "2016-12-27"
+      "score" : 1.374832,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 512,
-      "score" : 1.373544,
-      "date" : "2016-12-27"
+      "score" : 0.916509,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 1024,
-      "score" : 1.30816,
-      "date" : "2016-12-27"
+      "score" : 0.713779,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 8,
-      "score" : 26.504502,
-      "date" : "2016-12-27"
+      "score" : 22.162176,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 16,
-      "score" : 12.62258,
-      "date" : "2016-12-27"
+      "score" : 10.487924,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 32,
-      "score" : 5.936998,
-      "date" : "2016-12-27"
+      "score" : 5.056114,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 64,
-      "score" : 3.373529,
-      "date" : "2016-12-27"
+      "score" : 2.792893,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 128,
-      "score" : 2.152272,
-      "date" : "2016-12-27"
+      "score" : 1.648318,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 256,
-      "score" : 1.475818,
-      "date" : "2016-12-27"
+      "score" : 1.035076,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 512,
-      "score" : 1.074819,
-      "date" : "2016-12-27"
+      "score" : 0.710511,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 1024,
-      "score" : 1.266666,
-      "date" : "2016-12-27"
+      "score" : 0.689444,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 8,
-      "score" : 22.941445,
-      "date" : "2016-12-27"
+      "score" : 19.255961,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 16,
-      "score" : 10.486159,
-      "date" : "2016-12-27"
+      "score" : 8.398131,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 32,
-      "score" : 4.975058,
-      "date" : "2016-12-27"
+      "score" : 4.093318,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 64,
-      "score" : 2.875816,
-      "date" : "2016-12-27"
+      "score" : 2.293459,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 128,
-      "score" : 1.814803,
-      "date" : "2016-12-27"
+      "score" : 1.374706,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 256,
-      "score" : 1.119495,
-      "date" : "2016-12-27"
+      "score" : 0.833157,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 512,
-      "score" : 0.97482,
-      "date" : "2016-12-27"
+      "score" : 0.620458,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 1024,
-      "score" : 1.279277,
-      "date" : "2016-12-27"
+      "score" : 0.623268,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 8,
-      "score" : 19.11789,
-      "date" : "2016-12-27"
+      "score" : 15.557823,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 16,
-      "score" : 9.672994,
-      "date" : "2016-12-27"
+      "score" : 7.89997,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 32,
-      "score" : 4.856885,
-      "date" : "2016-12-27"
+      "score" : 4.008427,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 64,
-      "score" : 2.616466,
-      "date" : "2016-12-27"
+      "score" : 2.088357,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 128,
-      "score" : 1.512786,
-      "date" : "2016-12-27"
+      "score" : 1.148117,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 256,
-      "score" : 0.920902,
-      "date" : "2016-12-27"
+      "score" : 0.70504,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 512,
-      "score" : 0.834017,
-      "date" : "2016-12-27"
+      "score" : 0.540412,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 1024,
-      "score" : 1.280121,
-      "date" : "2016-12-27"
+      "score" : 0.62585,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 8,
-      "score" : 17.53034,
-      "date" : "2016-12-27"
+      "score" : 13.872248,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 16,
-      "score" : 8.374361,
-      "date" : "2016-12-27"
+      "score" : 6.828534,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 32,
-      "score" : 4.483608,
-      "date" : "2016-12-27"
+      "score" : 3.476301,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 64,
-      "score" : 2.596191,
-      "date" : "2016-12-27"
+      "score" : 2.018058,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 128,
-      "score" : 1.59504,
-      "date" : "2016-12-27"
+      "score" : 1.156299,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 256,
-      "score" : 0.914555,
-      "date" : "2016-12-27"
+      "score" : 0.680143,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 512,
-      "score" : 0.759674,
-      "date" : "2016-12-27"
+      "score" : 0.491283,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 1024,
-      "score" : 1.11404,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 7.925773,
-      "date" : "2016-12-27"
+      "score" : 0.50967,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 32,
-      "score" : 4.09637,
-      "date" : "2016-12-27"
+      "score" : 3.310428,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 64,
-      "score" : 2.240333,
-      "date" : "2016-12-27"
+      "score" : 1.75295,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 128,
-      "score" : 1.319593,
-      "date" : "2016-12-27"
+      "score" : 0.999775,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 256,
-      "score" : 0.832651,
-      "date" : "2016-12-27"
+      "score" : 0.65078,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 512,
-      "score" : 0.878612,
-      "date" : "2016-12-27"
+      "score" : 0.505308,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 1024,
-      "score" : 1.099913,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 5.515586,
-      "date" : "2016-12-27"
+      "score" : 0.523997,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 64,
-      "score" : 3.145624,
-      "date" : "2016-12-27"
+      "score" : 2.311834,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 128,
-      "score" : 2.428122,
-      "date" : "2016-12-27"
+      "score" : 1.393995,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 256,
-      "score" : 1.365939,
-      "date" : "2016-12-27"
+      "score" : 0.889399,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 512,
-      "score" : 1.020016,
-      "date" : "2016-12-27"
+      "score" : 0.664807,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 1024,
-      "score" : 1.186066,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 5.297746,
-      "date" : "2016-12-27"
+      "score" : 0.664268,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 64,
-      "score" : 3.318874,
-      "date" : "2016-12-27"
+      "score" : 2.123541,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 128,
-      "score" : 1.957665,
-      "date" : "2016-12-27"
+      "score" : 1.229354,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 256,
-      "score" : 1.276602,
-      "date" : "2016-12-27"
+      "score" : 0.834055,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 512,
-      "score" : 0.90698,
-      "date" : "2016-12-27"
+      "score" : 0.579678,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 1024,
-      "score" : 1.092435,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 3.473677,
-      "date" : "2016-12-27"
+      "score" : 0.643863,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 128,
-      "score" : 1.782344,
-      "date" : "2016-12-27"
+      "score" : 1.224285,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 256,
-      "score" : 1.061797,
-      "date" : "2016-12-27"
+      "score" : 0.728257,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 512,
-      "score" : 0.925155,
-      "date" : "2016-12-27"
+      "score" : 0.587379,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 1024,
-      "score" : 1.228711,
-      "date" : "2016-12-27"
+      "score" : 0.64709,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Aho-Corasick (Hankcs)",
@@ -4052,1198 +4040,1226 @@
     "results" : [ {
       "alphabet" : 2,
       "pattern" : 2,
-      "score" : 72.776198,
-      "date" : "2017-04-04"
+      "score" : 44.07998,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 4,
-      "score" : 51.359498,
-      "date" : "2017-04-04"
+      "score" : 35.339908,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 8,
-      "score" : 46.283421,
-      "date" : "2017-04-04"
+      "score" : 37.543961,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 2,
       "pattern" : 16,
-      "score" : 35.960787,
-      "date" : "2017-04-04"
+      "score" : 30.994068,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 2,
-      "score" : 70.468538,
-      "date" : "2017-04-04"
+      "score" : 42.990667,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 4,
-      "score" : 49.749046,
-      "date" : "2017-04-04"
+      "score" : 41.379853,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 4,
       "pattern" : 8,
-      "score" : 39.983562,
-      "date" : "2017-04-04"
+      "score" : 33.621478,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 2,
-      "score" : 70.814295,
-      "date" : "2017-04-04"
+      "score" : 47.986509,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 8,
       "pattern" : 4,
-      "score" : 39.949453,
-      "date" : "2017-04-04"
+      "score" : 33.252865,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 2,
-      "score" : 40.324019,
-      "date" : "2017-04-04"
+      "score" : 31.950413,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 16,
       "pattern" : 4,
-      "score" : 30.3908,
-      "date" : "2017-04-04"
+      "score" : 23.444104,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 2,
-      "score" : 36.346159,
-      "date" : "2017-04-04"
+      "score" : 29.089985,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 32,
       "pattern" : 4,
-      "score" : 34.329682,
-      "date" : "2017-04-04"
+      "score" : 26.840395,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 64,
       "pattern" : 2,
-      "score" : 34.272799,
-      "date" : "2017-04-04"
+      "score" : 28.711993,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 128,
       "pattern" : 2,
-      "score" : 23.667583,
-      "date" : "2017-04-04"
+      "score" : 18.88346,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 2,
-      "score" : 18.457875,
-      "date" : "2017-04-04"
+      "score" : 16.028469,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 12.459817,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 64,
+      "pattern" : 4,
+      "score" : 18.593143,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 10.673168,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 7.284187,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 6.122538,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 256,
       "pattern" : 4,
-      "score" : 17.709491,
-      "date" : "2017-04-04"
+      "score" : 7.315061,
+      "date" : "2018-12-30"
     }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 15.999882,
-      "date" : "2017-04-04"
+      "alphabet" : 256,
+      "pattern" : 8,
+      "score" : 4.262444,
+      "date" : "2018-12-30"
     }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 3.168542,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 2.941016,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 2.546315,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 1.769165,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
       "alphabet" : 512,
       "pattern" : 4,
-      "score" : 15.354767,
-      "date" : "2017-04-04"
+      "score" : 5.592858,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 3.407695,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 3.158493,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 2.52171,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 2,
-      "score" : 13.291808,
-      "date" : "2017-04-04"
+      "score" : 11.463725,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 15.135751,
-      "date" : "2017-04-04"
+      "score" : 5.172589,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 8,
+      "score" : 3.858412,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 16,
+      "score" : 2.994434,
+      "date" : "2018-12-30"
+    } ]
+  } ]
+}, {
+  "number" : 128,
+  "type" : "in files",
+  "candidates" : [ {
+    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 24.741843,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 1024,
+      "score" : 6.100899,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 26.274569,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 1024,
+      "score" : 6.208863,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 18.691928,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 1024,
+      "score" : 6.201923,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 29.66708,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 16,
+      "score" : 15.832013,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 1024,
+      "score" : 6.17606,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 14.615631,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 1024,
+      "score" : 6.203189,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 1024,
+      "score" : 6.158359,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 22.040148,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 12.614246,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 1024,
+      "score" : 6.025109,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 64,
+      "score" : 13.663856,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 128,
+      "score" : 8.307874,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 256,
+      "score" : 5.974413,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 512,
+      "score" : 5.180428,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 32,
+      "score" : 14.74928,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 64,
+      "score" : 9.09057,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 128,
+      "score" : 6.08852,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 256,
+      "score" : 4.844823,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 512,
+      "score" : 4.828101,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 32,
+      "score" : 11.24808,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 64,
+      "score" : 7.102922,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 128,
+      "score" : 5.096149,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 256,
+      "score" : 4.385097,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 512,
+      "score" : 4.690352,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 9.918861,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 6.243522,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 128,
+      "score" : 4.728037,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 256,
+      "score" : 4.080117,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 512,
+      "score" : 4.48371,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 32,
+      "score" : 8.496227,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 5.812958,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 128,
+      "score" : 4.374515,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 256,
+      "score" : 4.039408,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 512,
+      "score" : 4.490744,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 16,
+      "score" : 14.154974,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 32,
+      "score" : 8.571421,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 64,
+      "score" : 5.583871,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 128,
+      "score" : 4.18626,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 256,
+      "score" : 3.816132,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 512,
+      "score" : 4.350573,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 7.677717,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 5.358059,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 128,
+      "score" : 4.187049,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 256,
+      "score" : 3.775891,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 512,
+      "score" : 4.479659,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 8,
+      "score" : 43.381601,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 21.730823,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 11.645097,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 7.946836,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 6.206774,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 256,
+      "score" : 5.983932,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 7.00241,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 1024,
+      "score" : 9.835885,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 19.862998,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 11.958258,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 64,
+      "score" : 8.623512,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 7.007116,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 6.99763,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 8.075417,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 11.100329,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 16,
+      "score" : 18.91804,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 11.752603,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 8.294933,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 7.176138,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 7.208671,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 8.871966,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 11.568979,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Aho-Corasick (Hankcs)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 51.551122,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 38.815715,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 49.645202,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 35.346008,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 46.886946,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 4,
+      "score" : 50.291293,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 38.073625,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 50.370526,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 4,
+      "score" : 33.283971,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 32.547144,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 2,
+      "score" : 47.526707,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 4,
+      "score" : 33.104838,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 2,
+      "score" : 27.280589,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 4,
+      "score" : 22.339457,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 21.210843,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 2,
+      "score" : 24.344656,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 4,
+      "score" : 21.569859,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 21.437457,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 2,
+      "score" : 28.596065,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 29.257311,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 50.152314,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 4,
+      "score" : 47.157492,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 36.76365,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 4,
+      "score" : 35.973237,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 31.820783,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 4,
+      "score" : 32.049273,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
+    "family" : "SUFFIX",
+    "results" : [ {
+      "alphabet" : 512,
+      "pattern" : 8,
+      "score" : 35.842216,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 8,
+      "score" : 29.038274,
+      "date" : "2018-12-30"
+    } ]
+  } ]
+}, {
+  "number" : 128,
+  "type" : "in strings",
+  "candidates" : [ {
+    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
+    "family" : "FACTOR",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 32,
+      "score" : 18.360967,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 64,
+      "score" : 9.027288,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 128,
+      "score" : 4.942352,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 256,
+      "score" : 3.042069,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 512,
+      "score" : 2.333308,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 1024,
+      "score" : 2.732094,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 16,
+      "score" : 18.762548,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 32,
+      "score" : 9.370687,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 64,
+      "score" : 5.230703,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 128,
+      "score" : 3.110867,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 256,
+      "score" : 2.04604,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 512,
+      "score" : 1.990585,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 1024,
+      "score" : 2.772573,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 8,
+      "score" : 28.177089,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 16,
+      "score" : 12.053962,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 32,
+      "score" : 6.630458,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 64,
+      "score" : 3.776874,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 128,
+      "score" : 2.279475,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 256,
+      "score" : 1.645176,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 512,
+      "score" : 1.672153,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 1024,
+      "score" : 2.76815,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 8,
+      "score" : 20.563675,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 16,
+      "score" : 9.814574,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 32,
+      "score" : 5.396284,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 64,
+      "score" : 3.016908,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 128,
+      "score" : 1.867399,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 256,
+      "score" : 1.350114,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 512,
+      "score" : 1.55816,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 1024,
+      "score" : 2.767335,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 16,
+      "score" : 8.565092,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 32,
+      "score" : 4.445737,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 64,
+      "score" : 2.562013,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 128,
+      "score" : 1.697515,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 256,
+      "score" : 1.279997,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 512,
+      "score" : 1.556672,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 1024,
+      "score" : 2.871748,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 8,
+      "score" : 15.951672,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 16,
+      "score" : 8.206009,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 32,
+      "score" : 4.421495,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 64,
+      "score" : 2.414437,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 128,
+      "score" : 1.45887,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 256,
+      "score" : 1.098004,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 512,
+      "score" : 1.466299,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 1024,
+      "score" : 2.693339,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 8,
+      "score" : 14.53748,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 16,
+      "score" : 7.081006,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 32,
+      "score" : 3.888328,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 64,
+      "score" : 2.304732,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 128,
+      "score" : 1.481401,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 256,
+      "score" : 1.069598,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 512,
+      "score" : 1.520658,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 1024,
+      "score" : 2.906065,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 16,
+      "score" : 9.250938,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 32,
+      "score" : 5.299013,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 64,
+      "score" : 3.061229,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 128,
+      "score" : 1.903144,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 256,
+      "score" : 1.398877,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 512,
+      "score" : 1.718687,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 1024,
+      "score" : 3.026474,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 16,
+      "score" : 8.476414,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 32,
+      "score" : 4.673261,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 64,
+      "score" : 2.9275,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 128,
+      "score" : 1.796818,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 256,
+      "score" : 1.355993,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 512,
+      "score" : 1.539571,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 1024,
+      "score" : 2.631386,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 32,
+      "score" : 4.378225,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 64,
+      "score" : 2.60899,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 128,
+      "score" : 1.8715,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 256,
+      "score" : 1.29226,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 512,
+      "score" : 1.440993,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 1024,
+      "score" : 2.405831,
+      "date" : "2018-12-30"
+    } ]
+  }, {
+    "algorithm" : "Aho-Corasick (Hankcs)",
+    "family" : "PREFIX",
+    "results" : [ {
+      "alphabet" : 2,
+      "pattern" : 2,
+      "score" : 43.572983,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 4,
+      "score" : 34.894979,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 8,
+      "score" : 45.981229,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 2,
+      "pattern" : 16,
+      "score" : 32.076403,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 2,
+      "score" : 43.455079,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 4,
+      "score" : 47.091741,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 4,
+      "pattern" : 8,
+      "score" : 33.271939,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 2,
+      "score" : 46.586324,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 8,
+      "pattern" : 4,
+      "score" : 29.988799,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 2,
+      "score" : 43.08083,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 16,
+      "pattern" : 4,
+      "score" : 29.375889,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 2,
+      "score" : 24.183596,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 4,
+      "score" : 19.143365,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 32,
+      "pattern" : 8,
+      "score" : 18.238964,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 2,
+      "score" : 21.494704,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 64,
+      "pattern" : 4,
+      "score" : 18.949095,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 2,
+      "score" : 25.374915,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 128,
+      "pattern" : 4,
+      "score" : 26.250164,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 2,
+      "score" : 27.717379,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 512,
+      "pattern" : 2,
+      "score" : 19.017895,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 1024,
+      "pattern" : 2,
+      "score" : 14.820996,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
       "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 10.10417,
-      "date" : "2016-12-27"
+      "pattern" : 4,
+      "score" : 19.91468,
+      "date" : "2018-12-30"
+    }, {
+      "alphabet" : 256,
+      "pattern" : 8,
+      "score" : 17.609491,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 5.082275,
-      "date" : "2016-12-27"
+      "pattern" : 16,
+      "score" : 6.947228,
+      "date" : "2018-12-30"
     } ]
   }, {
     "algorithm" : "Set-Horspool (UC-variant, Stringsearchalgorithms)",
     "family" : "SUFFIX",
     "results" : [ {
-      "alphabet" : 64,
+      "alphabet" : 512,
       "pattern" : 4,
-      "score" : 23.3015,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 14.461755,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 10.387993,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 11.95525,
-      "date" : "2016-12-27"
+      "score" : 14.14623,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 512,
       "pattern" : 8,
-      "score" : 12.49497,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 16,
-      "score" : 10.160553,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 8,
-      "score" : 12.77749,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 4.133315,
-      "date" : "2016-12-27"
-    } ]
-  } ]
-}, {
-  "number" : 128,
-  "type" : "in files",
-  "candidates" : [ {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 29.478382,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 1024,
-      "score" : 8.504683,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 32.160406,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 23.953074,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 1024,
-      "score" : 8.105026,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 18.369847,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 30.183824,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 16.871987,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Set-BOM (byte-variant, Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 64,
-      "score" : 15.486863,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 128,
-      "score" : 9.61779,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 256,
-      "score" : 7.837912,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 512,
-      "score" : 7.458604,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 32,
-      "score" : 16.684655,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 64,
-      "score" : 10.192412,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 128,
-      "score" : 7.17706,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 256,
-      "score" : 6.637752,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 512,
-      "score" : 6.932363,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 1024,
-      "score" : 7.924725,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 32,
-      "score" : 14.086882,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 64,
-      "score" : 8.03294,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 128,
-      "score" : 6.120646,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 256,
-      "score" : 5.822345,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 512,
-      "score" : 6.720091,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 1024,
-      "score" : 8.165337,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 16,
-      "score" : 20.671796,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 12.200028,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 7.168412,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 128,
-      "score" : 5.92005,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 256,
-      "score" : 5.434329,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 512,
-      "score" : 6.336296,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 1024,
-      "score" : 7.72708,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 18.480542,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 32,
-      "score" : 10.022279,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 6.658539,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 128,
-      "score" : 5.479981,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 256,
-      "score" : 5.299107,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 512,
-      "score" : 6.363137,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 32,
-      "score" : 10.493681,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 64,
-      "score" : 6.769623,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 128,
-      "score" : 5.037684,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 256,
-      "score" : 5.079268,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 512,
-      "score" : 6.03983,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 1024,
-      "score" : 7.483475,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 9.655304,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 6.312708,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 128,
-      "score" : 5.440786,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 256,
-      "score" : 5.255771,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 512,
-      "score" : 6.009421,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 1024,
-      "score" : 7.757414,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 27.857793,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 13.363656,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 9.385891,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 7.513351,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 7.814477,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 8.992504,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 1024,
-      "score" : 11.571441,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 16,
-      "score" : 24.617517,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 14.300178,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 64,
-      "score" : 10.145738,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 8.544567,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 8.69064,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 10.135501,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 13.113847,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 23.957837,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 13.296312,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 9.812772,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 128,
-      "score" : 8.752187,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 9.294183,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 10.60177,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 15.186858,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (Hankcs)",
-    "family" : "PREFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 81.912386,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 57.025712,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 61.164663,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 42.03644,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 2,
-      "score" : 88.797302,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 4,
-      "score" : 69.013595,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 48.835381,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 2,
-      "score" : 85.721104,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 4,
-      "score" : 40.461312,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 41.336191,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 2,
-      "score" : 68.138413,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 4,
-      "score" : 40.291273,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 40.098203,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 2,
-      "score" : 35.98847,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 29.884879,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 28.363193,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 32.628229,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 4,
-      "score" : 28.052854,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 28.00123,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 2,
-      "score" : 37.445375,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 38.031026,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 62.179148,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 60.684843,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 49.330459,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 47.3933,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 47.82722,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 42.967538,
-      "date" : "2017-04-04"
+      "score" : 13.164803,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 4,
-      "score" : 41.239439,
-      "date" : "2017-04-04"
+      "score" : 11.822802,
+      "date" : "2018-12-30"
     }, {
       "alphabet" : 1024,
       "pattern" : 8,
-      "score" : 40.376532,
-      "date" : "2017-04-04"
-    } ]
-  }, {
-    "algorithm" : "Set-Horspool (byte-variant, Stringsearchalgorithms)",
-    "family" : "SUFFIX",
-    "results" : [ {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 56.310818,
-      "date" : "2016-12-27"
-    } ]
-  } ]
-}, {
-  "number" : 128,
-  "type" : "in strings",
-  "candidates" : [ {
-    "algorithm" : "Set-BOM (Stringsearchalgorithms)",
-    "family" : "FACTOR",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 32,
-      "score" : 22.314787,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 64,
-      "score" : 11.899988,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 128,
-      "score" : 6.4692,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 256,
-      "score" : 4.740784,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 512,
-      "score" : 4.330309,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 1024,
-      "score" : 4.633093,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 16,
-      "score" : 22.171519,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 32,
-      "score" : 12.008582,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 64,
-      "score" : 6.883354,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 128,
-      "score" : 4.399944,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 256,
-      "score" : 3.547299,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 512,
-      "score" : 3.910996,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 1024,
-      "score" : 4.64066,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 8,
-      "score" : 32.769903,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 16,
-      "score" : 14.709142,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 32,
-      "score" : 8.548296,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 64,
-      "score" : 4.867491,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 128,
-      "score" : 3.551773,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 256,
-      "score" : 3.028247,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 512,
-      "score" : 3.57252,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 1024,
-      "score" : 4.487622,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 8,
-      "score" : 24.016587,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 16,
-      "score" : 11.865915,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 32,
-      "score" : 6.863667,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 64,
-      "score" : 3.985828,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 128,
-      "score" : 2.700945,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 256,
-      "score" : 2.578898,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 512,
-      "score" : 3.504995,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 1024,
-      "score" : 4.377762,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 8,
-      "score" : 23.155436,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 16,
-      "score" : 10.173058,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 32,
-      "score" : 5.457759,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 64,
-      "score" : 3.597643,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 128,
-      "score" : 2.605084,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 256,
-      "score" : 2.496511,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 512,
-      "score" : 3.477531,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 1024,
-      "score" : 4.480591,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 8,
-      "score" : 18.960931,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 16,
-      "score" : 9.822435,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 32,
-      "score" : 5.759627,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 64,
-      "score" : 3.167071,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 128,
-      "score" : 2.400296,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 256,
-      "score" : 2.179214,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 512,
-      "score" : 3.230156,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 1024,
-      "score" : 4.130836,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 8,
-      "score" : 17.973454,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 16,
-      "score" : 8.620005,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 32,
-      "score" : 4.916028,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 64,
-      "score" : 3.14944,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 128,
-      "score" : 2.304231,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 256,
-      "score" : 2.25782,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 512,
-      "score" : 3.225744,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 1024,
-      "score" : 4.290809,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 8,
-      "score" : 23.638044,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 16,
-      "score" : 11.249693,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 32,
-      "score" : 7.211276,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 64,
-      "score" : 4.760109,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 128,
-      "score" : 3.269908,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 256,
-      "score" : 2.889968,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 512,
-      "score" : 3.493789,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 1024,
-      "score" : 4.315332,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 16,
-      "score" : 10.975289,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 32,
-      "score" : 6.601952,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 64,
-      "score" : 4.450319,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 128,
-      "score" : 3.301722,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 256,
-      "score" : 2.51561,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 512,
-      "score" : 3.133855,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 1024,
-      "score" : 3.93171,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 16,
-      "score" : 12.207625,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 32,
-      "score" : 6.175538,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 64,
-      "score" : 3.89718,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 128,
-      "score" : 2.973671,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 256,
-      "score" : 2.452285,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 512,
-      "score" : 2.856368,
-      "date" : "2016-12-27"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 1024,
-      "score" : 3.540606,
-      "date" : "2016-12-27"
-    } ]
-  }, {
-    "algorithm" : "Aho-Corasick (Hankcs)",
-    "family" : "PREFIX",
-    "results" : [ {
-      "alphabet" : 2,
-      "pattern" : 2,
-      "score" : 72.863579,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 4,
-      "score" : 51.308598,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 8,
-      "score" : 55.837861,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 2,
-      "pattern" : 16,
-      "score" : 37.286715,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 2,
-      "score" : 71.297996,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 4,
-      "score" : 59.20164,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 4,
-      "pattern" : 8,
-      "score" : 41.824144,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 2,
-      "score" : 75.768987,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 8,
-      "pattern" : 4,
-      "score" : 37.000759,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 2,
-      "score" : 61.213548,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 16,
-      "pattern" : 4,
-      "score" : 35.117817,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 2,
-      "score" : 30.857832,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 32,
-      "pattern" : 4,
-      "score" : 25.611033,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 2,
-      "score" : 28.016226,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 64,
-      "pattern" : 4,
-      "score" : 23.515137,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 2,
-      "score" : 32.900728,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 128,
-      "pattern" : 4,
-      "score" : 33.084301,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 2,
-      "score" : 33.787688,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 256,
-      "pattern" : 4,
-      "score" : 32.03747,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 2,
-      "score" : 23.744651,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 4,
-      "score" : 21.841039,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 512,
-      "pattern" : 8,
-      "score" : 22.181363,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 2,
-      "score" : 18.49557,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 4,
-      "score" : 17.239359,
-      "date" : "2017-04-04"
-    }, {
-      "alphabet" : 1024,
-      "pattern" : 8,
-      "score" : 18.820815,
-      "date" : "2017-04-04"
+      "score" : 10.494822,
+      "date" : "2018-12-30"
     } ]
   } ]
 } ]
