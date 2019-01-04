@@ -50,8 +50,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 5)
-	@Measurement(iterations = 5)
+	@Warmup(iterations = 5, time=1)
+	@Measurement(iterations = 5, time=1)
 	@Fork(1)
 	public void benchmarkFindInString() {
 		Set<String> patterns = sample.getPattern();
@@ -65,8 +65,8 @@ public abstract class SinglePatternMatcherBenchmark {
 	@Benchmark
 	@BenchmarkMode(Mode.AverageTime)
 	@OutputTimeUnit(TimeUnit.MILLISECONDS)
-	@Warmup(iterations = 5)
-	@Measurement(iterations = 5)
+	@Warmup(iterations = 5, time=1)
+	@Measurement(iterations = 5, time=1)
 	@Fork(1)
 	public void benchmarkFindInFile() throws IOException {
 		Set<String> patterns = sample.getPattern();
