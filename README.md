@@ -189,6 +189,16 @@ Interpretation of the [results of 2017-04-04](benchmarkresults/result-2017-04-04
 ----------------------------------------------------------------------------------------------
 * Participating: SDK, SC, BS, ACDA
 * Excluded: AC, SS, RA (api problems)
-* The most important result of this benchmark is the newcomer AhoCorasickDoubleArrayTrie. Its basic characteristics are that of the Aho-Corasick-Algorithm, but among all correct implementations it is the most performant. So we have a new winner for smaller alphabets and small patterns.
+* New Participants:
+  * AhoCorasickDoubleArrayTrie (ACDA)
+* New Winners
+  * AhoCorasickDoubleArrayTrie (ACDA) for large pattern number, small alphabet size, small pattern size
 
-
+Interpretation of the [results of 2019-01-05](benchmarkresults/result-2019-01-05.csv?raw=true)
+----------------------------------------------------------------------------------------------
+* Participating: SDK, SC, BS, ACDA
+* Excluded: AC, SS, RA (api problems)
+* The multi pattern algorithms were tested on a faster machine
+* New Winners
+  * SetHorspool (SC) for large pattern number, large alphabet size, medium pattern size
+ 
