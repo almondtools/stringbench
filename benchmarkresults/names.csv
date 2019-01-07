@@ -22,6 +22,8 @@ com.almondtools.stringbench.singlepattern.jdk.JavaIndexOfBenchmark,Naive (JDK)
 com.almondtools.stringbench.JavaRegexMultiBenchmark,"Boyer-Moore Multi Pattern (regex, JDK)"
 com.almondtools.stringbench.multipattern.jdk.JavaRegexMultiBenchmark,"Boyer-Moore Multi Pattern (regex, JDK)"
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolRelaxedBenchmark,"Horspool (UC-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.SCHorspoolRelaxedCharBenchmark,"Horspool (UC-variant, Stringsearchalgorithms)"
+com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCHorspoolRelaxedCharBenchmark,"Horspool (UC-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickBenchmark,Aho-Corasick (Stringsearchalgorithms)
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCAhoCorasickCharBenchmark,Aho-Corasick (Stringsearchalgorithms)
@@ -52,7 +54,7 @@ com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolCha
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolByteBenchmark,"Set-Horspool (byte-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolRelaxedBenchmark,"Set-Horspool (UC-variant, Stringsearchalgorithms)"
 com.almondtools.stringbench.multipattern.stringsearchalgorithms.SCSetHorspoolRelaxedCharBenchmark,"Set-Horspool (UC-variant, Stringsearchalgorithms)"
-com.almondtools.stringbench.SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
+SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndBenchmark,Shift-And (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndCharBenchmark,Shift-And (Stringsearchalgorithms)
 com.almondtools.stringbench.singlepattern.stringsearchalgorithms.SCShiftAndByteBenchmark,"Shift-And (byte-variant, Stringsearchalgorithms)"
