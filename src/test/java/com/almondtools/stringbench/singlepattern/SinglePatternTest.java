@@ -2,8 +2,6 @@ package com.almondtools.stringbench.singlepattern;
 
 import java.io.IOException;
 
-import com.almondtools.stringbench.singlepattern.SinglePatternSample;
-
 public abstract class SinglePatternTest {
 
 	protected static SinglePatternSample createSample(int alphabet, int pattern) {

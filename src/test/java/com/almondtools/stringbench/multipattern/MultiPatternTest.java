@@ -2,8 +2,6 @@ package com.almondtools.stringbench.multipattern;
 
 import java.io.IOException;
 
-import com.almondtools.stringbench.multipattern.MultiPatternSample;
-
 public abstract class MultiPatternTest {
 
 	protected static MultiPatternSample createSample(int alphabet, int pattern, int patternNumber) {

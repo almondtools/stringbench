@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 import org.simpleflatmapper.csv.CellValueReader;
 import org.simpleflatmapper.csv.CsvColumnDefinition;
 import org.simpleflatmapper.csv.CsvParser;
-import org.simpleflatmapper.csv.CsvParser.StaticMapToDSL;
+import org.simpleflatmapper.csv.CsvParser.MapToDSL;
 import org.simpleflatmapper.csv.ParsingContext;
 
 import com.almondtools.stringbench.analyzer.json.BenchmarkCollection;
@@ -67,15 +67,15 @@ public class UpdateBenchmarks {
 		File namesFile = root.resolve("names.csv").toFile();
 		CsvParser
 			.mapTo(Mapping.class)
-			.addMapping("name", renameDefinition("from"))
-			.addMapping("normalization", renameDefinition("to"))
+			.columnDefinition("name", renameDefinition("from"))
+			.columnDefinition("normalization", renameDefinition("to"))
 			.forEach(namesFile, mapping -> names.put(mapping.from, mapping.to));
 
 		File familiesFile = root.resolve("families.csv").toFile();
 		CsvParser
 			.mapTo(Mapping.class)
-			.addMapping("name", renameDefinition("from"))
-			.addMapping("family", renameDefinition("to"))
+			.columnDefinition("name", renameDefinition("from"))
+			.columnDefinition("family", renameDefinition("to"))
 			.forEach(familiesFile, mapping -> families.put(mapping.from, mapping.to));
 
 		for (File file : csvFiles) {
@@ -84,25 +84,25 @@ public class UpdateBenchmarks {
 			String format = matches ? matcher.group(1) != null ? matcher.group(1) : "ans" : "ans";
 			Date date = matches ? parseDate(matcher.group(2)) : null;
 
-			StaticMapToDSL<BenchmarkRecord> parser = CsvParser
+			MapToDSL<BenchmarkRecord> parser = CsvParser
 				.skip(1)
 				.mapTo(BenchmarkRecord.class)
-				.addMapping("Benchmark", identity())
-				.addMapping("Mode", ignoreDefinition())
-				.addMapping("Threads", ignoreDefinition())
-				.addMapping("Samples", ignoreDefinition())
-				.addMapping("Score", doubleReader())
-				.addMapping("Score Error (99,9%)", ignoreDefinition())
-				.addMapping("Unit", ignoreDefinition());
+				.columnDefinition("Benchmark", identity())
+				.columnDefinition("Mode", ignoreDefinition())
+				.columnDefinition("Threads", ignoreDefinition())
+				.columnDefinition("Samples", ignoreDefinition())
+				.columnDefinition("Score", doubleReader())
+				.columnDefinition("Score Error (99,9%)", ignoreDefinition())
+				.columnDefinition("Unit", ignoreDefinition());
 
 			if (format.contains("a")) {
-				parser = parser.addMapping("Param: alphabetSize", renameDefinition("alphabet"));
+				parser = parser.columnDefinition("Param: alphabetSize", renameDefinition("alphabet"));
 			}
 			if (format.contains("n")) {
-				parser = parser.addMapping("Param: patternNumber", intReader().addRename("number"));
+				parser = parser.columnDefinition("Param: patternNumber", intReader().addRename("number"));
 			}
 			if (format.contains("s")) {
-				parser = parser.addMapping("Param: patternSize", renameDefinition("pattern"));
+				parser = parser.columnDefinition("Param: patternSize", renameDefinition("pattern"));
 			}
 
 			parser.forEach(file, benchmark -> benchmarks.add(benchmark.withDefaultPatternNumber(1)

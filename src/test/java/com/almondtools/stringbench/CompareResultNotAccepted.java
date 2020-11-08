@@ -1,10 +1,10 @@
 package com.almondtools.stringbench;
 
-import junit.framework.ComparisonFailure;
-
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
+
+import junit.framework.ComparisonFailure;
 
 public class CompareResultNotAccepted implements TestRule {
 

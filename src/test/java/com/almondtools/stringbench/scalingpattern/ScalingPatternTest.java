@@ -2,8 +2,6 @@ package com.almondtools.stringbench.scalingpattern;
 
 import java.io.IOException;
 
-import com.almondtools.stringbench.scalingpattern.ScalingPatternSample;
-
 public abstract class ScalingPatternTest {
 
 	protected static ScalingPatternSample createSample(String patternCorpus, int patternNumber) {
