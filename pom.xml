@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.almondtools</groupId>
 	<artifactId>stringbench</artifactId>
@@ -10,13 +10,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<uberjar.name>benchmarks</uberjar.name>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>eaio.com</id>
-			<url>http://repo.eaio.com/maven2</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -43,12 +36,6 @@
 			<groupId>org.antlr</groupId>
 			<artifactId>ST4</artifactId>
 			<version>4.3.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.eaio.stringsearch</groupId>
-			<artifactId>stringsearch</artifactId>
-			<version>2.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ahocorasick</groupId>
@@ -115,9 +102,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
+				<version>3.2.5</version>
 				<configuration>
-					<argLine>-Xmx2048m -XX:MaxPermSize=256m</argLine>
+					<argLine>-Xmx2048m</argLine>
 					<excludes>
 						<exclude>**/incubation/**/*.java</exclude>
 					</excludes>
